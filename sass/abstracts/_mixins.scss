@@ -1,0 +1,41 @@
+@mixin boxshadow_bottom {
+    -webkit-box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
+    -moz-box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
+    box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
+}
+
+@mixin random_boxshadow_hover {
+    -webkit-box-shadow: 0px 9px 15px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 9px 15px 0px rgba(0,0,0,0.55);
+    box-shadow: 0px 9px 15px 0px rgba(0,0,0,0.55);
+}
+
+@mixin random_boxshadow {
+    -webkit-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.35);
+}
+
+@mixin header_blue_background {
+    margin-top: 0;
+    padding-top: 0;
+    display: block;
+    text-align: center;
+    margin-bottom: 70px;
+    color: $white-color;
+    font-weight: 600;
+}
+
+
+@mixin header_white_background {
+    margin-top: 0;
+    padding-top: 0;
+    display:block;
+    text-align: center;
+    margin-bottom: 70px;
+    background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+

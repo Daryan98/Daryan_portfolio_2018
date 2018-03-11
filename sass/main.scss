@@ -1,0 +1,40 @@
+
+
+// Abstracts Folder
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//____________________________________________________________
+
+// Base Folder
+@import "base/base";
+@import "base/buttons";
+@import "base/animation";
+
+
+
+//____________________________________________________________
+
+// Responsive Folder
+
+
+
+
+
+//____________________________________________________________
+
+
+// Body Folder
+// header
+@import "body/header/header";
+
+//Main
+@import "body/main/scheduel_section";
+@import "body/main/random_section";
+@import "body/main/skills_section";
+@import "body/main/profiles_section";
+@import "body/main/projects_section";
+@import "body/main/contact_section";
+
+// Footer
+@import "body/footer/footer";

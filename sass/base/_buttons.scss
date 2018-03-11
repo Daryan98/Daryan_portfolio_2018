@@ -1,0 +1,42 @@
+.btn {
+    outline: none;
+    position: relative;
+    display: inline-block;
+    border-radius: 10rem;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: all .2s;
+    text-decoration: none;
+    background-color: #FFF;
+    padding: 12px 24px;
+    color: $primary-color; //Change for the <button> element
+    border: none;
+    cursor: pointer;
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+        background-color: $white-color;
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($black-color, .2);
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($black-color, .2);
+    }
+}
