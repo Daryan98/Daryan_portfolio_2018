@@ -1,8 +1,8 @@
 // //Preloader Prinner
-$(document).ready(()=> {
-
+$(document).ready(() => {
+  setTimeout(() => {
     $('div#loader-wrapper').addClass('loaded');
-
+  }, 3000);
 });
 
 
@@ -10,11 +10,11 @@ $(document).ready(()=> {
 var num = 50; //number of pixels before modifying styles
 
 $(window).bind('scroll', function () {
-    if ($(window).scrollTop() > num) {
-        $('nav').addClass('fixed');
-    } else {
-        $('nav').removeClass('fixed');
-    }
+  if ($(window).scrollTop() > num) {
+    $('nav').addClass('fixed');
+  } else {
+    $('nav').removeClass('fixed');
+  }
 });
 
 
@@ -24,11 +24,10 @@ $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
-  .click(function(event) {
+  .click(function (event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
@@ -40,7 +39,7 @@ $('a[href*="#"]')
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, function() {
+        }, 1000, function () {
           // Callback after animation
           // Must change focus!
           var $target = $(target);
@@ -48,7 +47,7 @@ $('a[href*="#"]')
           if ($target.is(":focus")) { // Checking if the target was focused
             return false;
           } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
           };
         });
