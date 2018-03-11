@@ -1,3 +1,11 @@
+// //Preloader Prinner
+$(document).ready(()=> {
+
+    $('div#loader-wrapper').addClass('loaded');
+
+});
+
+
 // Navbar Position Fix on scroll
 var num = 50; //number of pixels before modifying styles
 

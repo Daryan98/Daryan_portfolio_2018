@@ -1,10 +1,13 @@
 
-
 // Abstracts Folder
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
 //____________________________________________________________
+
+// Preloader 
+@import "body/preloader/preloader";
+
 
 // Base Folder
 @import "base/base";
@@ -27,6 +30,8 @@
 // Body Folder
 // header
 @import "body/header/header";
+
+
 
 //Main
 @import "body/main/scheduel_section";
