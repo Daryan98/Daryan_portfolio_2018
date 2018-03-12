@@ -159,97 +159,9 @@ header {
   background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/hero.jpg);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
-  header nav {
-    width: 100%;
-    height: 120px;
-    line-height: 60px;
-    line-height: 120px;
-    transition: all .5s; }
-    header nav div.navbar div#logo {
-      float: left;
-      text-align: left;
-      display: inline; }
-      header nav div.navbar div#logo img {
-        float: left;
-        height: 40px;
-        border-radius: 50%;
-        margin-top: 30px;
-        margin-right: 20px;
-        display: none; }
-      header nav div.navbar div#logo h2 {
-        margin: 0;
-        display: inline-block;
-        font-size: 2rem; }
-    header nav div.navbar ul {
-      float: right;
-      display: inline-block;
-      text-align: right; }
-      header nav div.navbar ul li {
-        display: inline;
-        margin: 0 15px;
-        font-weight: 500;
-        position: relative; }
-        header nav div.navbar ul li:last-child {
-          margin-right: 0; }
-        header nav div.navbar ul li a {
-          text-decoration: none;
-          color: #FFF;
-          transition: border-bottom .2s;
-          width: 100%; }
-        header nav div.navbar ul li::after {
-          position: absolute;
-          top: 110%;
-          left: -1%;
-          width: 100%;
-          height: 2px;
-          background: #FFF;
-          content: '';
-          opacity: 0;
-          -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-          -moz-transition: opacity 0.3s, -moz-transform 0.3s;
-          transition: opacity 0.3s, transform 0.3s;
-          -webkit-transform: translateY(-10px);
-          -moz-transform: translateY(-10px);
-          transform: translateY(-10px); }
-        header nav div.navbar ul li:hover::after, header nav div.navbar ul li:focus::after {
-          opacity: 1;
-          -webkit-transform: translateY(0px);
-          -moz-transform: translateY(0px);
-          transform: translateY(0px); }
-    header nav.fixed {
-      position: fixed;
-      height: 60px;
-      padding: 0;
-      background: #FFF;
-      z-index: 1000;
-      color: #3a3a3a;
-      -webkit-box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
-      -moz-box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
-      box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
-      margin-bottom: 100px;
-      line-height: 60px; }
-      header nav.fixed div.navbar {
-        height: 100%; }
-        header nav.fixed div.navbar div#logo img {
-          display: inline;
-          margin-top: 10px; }
-        header nav.fixed div.navbar ul {
-          height: 100%;
-          margin-bottom: 0;
-          padding: 0; }
-          header nav.fixed div.navbar ul li {
-            padding: 14px 0;
-            height: 100%; }
-            header nav.fixed div.navbar ul li a {
-              display: inline;
-              height: 60px;
-              color: #777777; }
-              header nav.fixed div.navbar ul li a:hover {
-                color: #3a3a3a; }
-            header nav.fixed div.navbar ul li::after {
-              background: #3a3a3a; }
   header div.container {
-    padding: 0; }
+    padding: 0;
+    margin-top: 70px; }
   header div#header-aboutme {
     padding: 70px 0 70px;
     width: 100%;
@@ -293,7 +205,102 @@ header {
         word-spacing: 1px;
         font-weight: 400; }
 
-div.navigation {
+nav.navigation__big {
+  width: 100%;
+  height: 120px;
+  line-height: 60px;
+  line-height: 120px;
+  transition: all .5s;
+  position: absolute;
+  z-index: 10000000; }
+  nav.navigation__big div.navbar div#logo {
+    float: left;
+    text-align: left;
+    display: inline; }
+    nav.navigation__big div.navbar div#logo img {
+      float: left;
+      height: 40px;
+      border-radius: 50%;
+      margin-top: 30px;
+      margin-right: 20px;
+      display: none; }
+    nav.navigation__big div.navbar div#logo h2 {
+      margin: 0;
+      display: inline-block;
+      font-size: 2rem;
+      color: #FFF; }
+  nav.navigation__big div.navbar ul {
+    float: right;
+    display: inline-block;
+    text-align: right; }
+    nav.navigation__big div.navbar ul li {
+      display: inline;
+      margin: 0 15px;
+      font-weight: 500;
+      position: relative; }
+      nav.navigation__big div.navbar ul li:last-child {
+        margin-right: 0; }
+      nav.navigation__big div.navbar ul li a {
+        text-decoration: none;
+        color: #FFF;
+        transition: border-bottom .2s;
+        width: 100%; }
+      nav.navigation__big div.navbar ul li::after {
+        position: absolute;
+        top: 110%;
+        left: -1%;
+        width: 100%;
+        height: 2px;
+        background: #FFF;
+        content: '';
+        opacity: 0;
+        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+        -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+        transition: opacity 0.3s, transform 0.3s;
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        transform: translateY(-10px); }
+      nav.navigation__big div.navbar ul li:hover::after, nav.navigation__big div.navbar ul li:focus::after {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px); }
+  nav.navigation__big.fixed {
+    position: fixed;
+    height: 60px;
+    padding: 0;
+    background: #FFF;
+    z-index: 1000;
+    color: #3a3a3a;
+    -webkit-box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
+    -moz-box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
+    box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
+    margin-bottom: 100px;
+    line-height: 60px; }
+    nav.navigation__big.fixed div.navbar {
+      height: 100%; }
+      nav.navigation__big.fixed div.navbar div#logo img {
+        display: inline;
+        margin-top: 10px; }
+      nav.navigation__big.fixed div.navbar div#logo h2 {
+        color: #3a3a3a; }
+      nav.navigation__big.fixed div.navbar ul {
+        height: 100%;
+        margin-bottom: 0;
+        padding: 0; }
+        nav.navigation__big.fixed div.navbar ul li {
+          padding: 14px 0;
+          height: 100%; }
+          nav.navigation__big.fixed div.navbar ul li a {
+            display: inline;
+            height: 60px;
+            color: #777777; }
+            nav.navigation__big.fixed div.navbar ul li a:hover {
+              color: #3a3a3a; }
+          nav.navigation__big.fixed div.navbar ul li::after {
+            background: #3a3a3a; }
+
+div.navigation_small {
   display: none; }
 
 .navigation__checkbox {
@@ -479,14 +486,15 @@ section#scheduel_section {
   section#scheduel_section #coding-colum ul {
     float: right; }
 
-section#section-features {
+section#random_section {
+  margin-top: 60px;
   padding: 120px 70px;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(41, 152, 255, 0.8)), to(rgba(86, 67, 250, 0.8))), url(../img/random.jpg);
   background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/random.jpg);
   background-size: cover;
   -webkit-transform: skewY(-5deg);
   transform: skewY(-5deg); }
-  section#section-features h1 {
+  section#random_section h1 {
     margin-top: 0;
     padding-top: 0;
     display: block;
@@ -494,20 +502,20 @@ section#section-features {
     margin-bottom: 70px;
     color: #FFF;
     font-weight: 600; }
-  section#section-features i {
+  section#random_section i {
     font-size: 50px;
     color: #2998ff; }
-  section#section-features h3 {
+  section#random_section h3 {
     color: #3a3a3a;
     margin-top: 0;
     font-size: 20px; }
-  section#section-features p {
+  section#random_section p {
     word-spacing: 1px;
     text-align: left;
     font-weight: 500;
     color: #3a3a3a; }
 
-#section-features > * {
+#random_section > * {
   -webkit-transform: skewY(5deg);
   transform: skewY(5deg); }
 
@@ -739,13 +747,13 @@ section#skills_section {
           section#skills_section div.all_content div.skills_about ul li p strong {
             color: #FF0033; }
 
-section#profiles {
+section#profiles_section {
   width: 100%;
   background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8));
   padding: 140px 70px;
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%); }
-  section#profiles h1 {
+  section#profiles_section h1 {
     margin-top: 0;
     padding-top: 0;
     display: block;
@@ -753,11 +761,11 @@ section#profiles {
     margin-bottom: 70px;
     color: #FFF;
     font-weight: 600; }
-  section#profiles div.all_boxes {
+  section#profiles_section div.all_boxes {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around; }
-    section#profiles div.all_boxes div.box {
+    section#profiles_section div.all_boxes div.box {
       width: 48%;
       height: 160px;
       background: rgba(255, 255, 255, 0.7);
@@ -767,28 +775,28 @@ section#profiles {
       clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
       margin-bottom: 50px;
       border-radius: 5px; }
-      section#profiles div.all_boxes div.box:last-child {
+      section#profiles_section div.all_boxes div.box:last-child {
         margin-bottom: 0; }
-      section#profiles div.all_boxes div.box img {
+      section#profiles_section div.all_boxes div.box img {
         height: 80px;
         border-radius: 50%;
         display: inline-block;
         float: left;
         margin-top: 15px;
         margin-right: 25px; }
-      section#profiles div.all_boxes div.box h2 {
+      section#profiles_section div.all_boxes div.box h2 {
         margin-top: 15px;
         color: #3a3a3a;
         display: inline-block;
         text-align: left;
         font-size: 20px; }
 
-section#projects {
+section#projects_section {
   width: 100%;
   padding: 70px; }
-  section#projects div.container {
+  section#projects_section div.container {
     padding: 0; }
-    section#projects div.container h1 {
+    section#projects_section div.container h1 {
       margin-top: 0;
       padding-top: 0;
       display: block;
@@ -798,14 +806,14 @@ section#projects {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: 600; }
-    section#projects div.container div.all_projects {
+    section#projects_section div.container div.all_projects {
       width: 100%; }
-      section#projects div.container div.all_projects ul {
+      section#projects_section div.container div.all_projects ul {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         width: 100%; }
-        section#projects div.container div.all_projects ul li.project {
+        section#projects_section div.container div.all_projects ul li.project {
           width: 18%;
           position: relative;
           display: inline;
@@ -816,7 +824,7 @@ section#projects {
           background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/random.jpg);
           background-size: cover;
           text-align: center; }
-          section#projects div.container div.all_projects ul li.project div.show {
+          section#projects_section div.container div.all_projects ul li.project div.show {
             width: 100%;
             height: 101%;
             background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8));
@@ -824,37 +832,37 @@ section#projects {
             left: 0;
             top: 0px;
             display: none; }
-            section#projects div.container div.all_projects ul li.project div.show a {
+            section#projects_section div.container div.all_projects ul li.project div.show a {
               text-decoration: none;
               color: #FFF;
               font-size: 18px;
               font-weight: 600;
               z-index: 10; }
-          section#projects div.container div.all_projects ul li.project:hover div.show {
+          section#projects_section div.container div.all_projects ul li.project:hover div.show {
             display: block; }
-          section#projects div.container div.all_projects ul li.project img {
+          section#projects_section div.container div.all_projects ul li.project img {
             margin-top: 0px;
             width: 100%;
             height: 100%;
             padding: 0; }
 
-section#conatct {
+section#conatct_section {
   padding: 70px 0;
   width: 100%;
   height: 100vh;
   background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)); }
-  section#conatct div.container {
+  section#conatct_section div.container {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
-    section#conatct div.container div.contact_box {
+    section#conatct_section div.container div.contact_box {
       width: 100%;
       height: 550px;
       background: url(../img/contact.jpg);
       background-size: 100% 100%;
       background-repeat: no-repeat; }
-      section#conatct div.container div.contact_box div.contact_form {
+      section#conatct_section div.container div.contact_box div.contact_form {
         padding: 50px;
         width: 60%;
         height: 100%;
@@ -862,7 +870,7 @@ section#conatct {
         background: rgba(255, 255, 255, 0.85);
         -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); }
-        section#conatct div.container div.contact_box div.contact_form h1 {
+        section#conatct_section div.container div.contact_box div.contact_form h1 {
           margin-top: 0;
           padding-top: 0;
           display: block;
@@ -874,8 +882,8 @@ section#conatct {
           font-weight: 600;
           margin-bottom: 50px;
           text-align: left; }
-        section#conatct div.container div.contact_box div.contact_form form.form div.input_elments input,
-        section#conatct div.container div.contact_box div.contact_form form.form div.input_elments textarea {
+        section#conatct_section div.container div.contact_box div.contact_form form.form div.input_elments input,
+        section#conatct_section div.container div.contact_box div.contact_form form.form div.input_elments textarea {
           font-size: 1.5rem;
           font-family: inherit;
           color: inherit;
@@ -889,23 +897,23 @@ section#conatct {
           transition: all .3s;
           margin-bottom: 30px;
           outline: none; }
-          section#conatct div.container div.contact_box div.contact_form form.form div.input_elments input:focus,
-          section#conatct div.container div.contact_box div.contact_form form.form div.input_elments textarea:focus {
+          section#conatct_section div.container div.contact_box div.contact_form form.form div.input_elments input:focus,
+          section#conatct_section div.container div.contact_box div.contact_form form.form div.input_elments textarea:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
             border-bottom: 3px solid #ff7730; }
-          section#conatct div.container div.contact_box div.contact_form form.form div.input_elments input:focus:invalid,
-          section#conatct div.container div.contact_box div.contact_form form.form div.input_elments textarea:focus:invalid {
+          section#conatct_section div.container div.contact_box div.contact_form form.form div.input_elments input:focus:invalid,
+          section#conatct_section div.container div.contact_box div.contact_form form.form div.input_elments textarea:focus:invalid {
             border-bottom: 3px solid #ff7730; }
-          section#conatct div.container div.contact_box div.contact_form form.form div.input_elments input::-webkit-input-placeholder,
-          section#conatct div.container div.contact_box div.contact_form form.form div.input_elments textarea::-webkit-input-placeholder {
+          section#conatct_section div.container div.contact_box div.contact_form form.form div.input_elments input::-webkit-input-placeholder,
+          section#conatct_section div.container div.contact_box div.contact_form form.form div.input_elments textarea::-webkit-input-placeholder {
             color: #777777; }
-        section#conatct div.container div.contact_box div.contact_form form.form div.form_button button.contact_btn {
+        section#conatct_section div.container div.contact_box div.contact_form form.form div.form_button button.contact_btn {
           outline: none;
           background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8));
           color: #FFF;
           font-weight: 600; }
-          section#conatct div.container div.contact_box div.contact_form form.form div.form_button button.contact_btn::after {
+          section#conatct_section div.container div.contact_box div.contact_form form.form div.form_button button.contact_btn::after {
             background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)); }
 
 footer {
@@ -957,10 +965,14 @@ footer {
       transition: all .2s;
       text-transform: uppercase;
       line-height: 28px; }
+      footer div.left nav ul li a {
+        text-decoration: none;
+        color: #FFF; }
       footer div.left nav ul li:hover {
         box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
-        transform: rotate(10deg);
-        color: #2998ff; }
+        transform: rotate(10deg); }
+        footer div.left nav ul li:hover a {
+          color: #2998ff; }
   footer div.right {
     width: 40%;
     float: right; }

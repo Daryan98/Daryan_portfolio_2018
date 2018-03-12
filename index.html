@@ -30,8 +30,8 @@
         <div class="loader-section section-right"></div>
 
     </div>
-
-    <div class="navigation open">
+    <!-- Navbar for small screen -->
+    <div class="navigation_small open">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
         <label for="navi-toggle" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
@@ -42,61 +42,70 @@
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">
-                        <span>01</span>About Natous</a>
+                    <a href="#header-aboutme" class="navigation__link">
+                        <span>01</span>About Me</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">
-                        <span>02</span>Your benfits</a>
+                    <a href="#cheduel_section" class="navigation__link">
+                        <span>02</span>Scheduel</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">
-                        <span>03</span>Popular tours</a>
+                    <a href="#random_section" class="navigation__link">
+                        <span>03</span>Random</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">
-                        <span>04</span>Stories</a>
+                    <a href="#skills_section" class="navigation__link">
+                        <span>04</span>Skills</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">
-                        <span>05</span>Book now</a>
+                    <a href="#profiles_section" class="navigation__link">
+                        <span>05</span>Skills</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#projects_section" class="navigation__link">
+                        <span>06</span>Projects</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#conatct_section" class="navigation__link">
+                        <span>07</span>Contact Me</a>
                 </li>
             </ul>
         </nav>
     </div>
-
-    <header>
-        <nav class="nav">
-            <div class="navbar container">
-                <div id="logo">
-                    <img src="img/mypic.png" alt="">
-                    <h2>Daryan.</h2>
-                </div>
-                <ul>
-                    <li>
-                        <a href="#header-aboutme">About me</a>
-                    </li>
-                    <li>
-                        <a href="#scheduel_section">Scheduel</a>
-                    </li>
-                    <li>
-                        <a href="#random_section">Random</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#profiles">Profiles</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#conatct">CONTACT</a>
-                    </li>
-                </ul>
+    <!-- NavBar for Big screen -->
+    <nav class="navigation__big">
+        <div class="navbar container">
+            <div id="logo">
+                <img src="img/mypic.png" alt="">
+                <h2>Daryan.</h2>
             </div>
-        </nav>
+            <ul>
+                <li>
+                    <a href="#header-aboutme">About me</a>
+                </li>
+                <li>
+                    <a href="#scheduel_section">Scheduel</a>
+                </li>
+                <li>
+                    <a href="#random_section">Random</a>
+                </li>
+                <li>
+                    <a href="#skills_section">Skills</a>
+                </li>
+                <li>
+                    <a href="#profiles_section">Profiles</a>
+                </li>
+                <li>
+                    <a href="#projects_section">Projects</a>
+                </li>
+                <li>
+                    <a href="#conatct_section">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+
         <div id="header-aboutme">
             <div class="container">
                 <div id="info" class="col-md-6">
@@ -178,7 +187,7 @@
 
             </div>
         </section>
-        <section id="section-features">
+        <section id="random_section">
             <div class="container">
                 <h1>Random Things that i do</h1>
                 <div class="row">
@@ -230,7 +239,7 @@
                         <ul class="skills_header">
                             <li id="development">
                                 <div class="circle develpment">
-                                    <div class="circle__spin active">
+                                    <div class="circle__spin skills__header active">
                                         <svg>
                                             <circle cx="50%" cy="50%" r="110"></circle>
                                         </svg>
@@ -243,7 +252,7 @@
                             </li>
                             <li id="design">
                                 <div class="circle develpment">
-                                    <div class="circle__spin active">
+                                    <div class="circle__spin skills__header ">
                                         <svg>
                                             <circle cx="50%" cy="50%" r="110"></circle>
                                         </svg>
@@ -259,7 +268,7 @@
                             <ul class="developemnt_skill">
                                 <li>
                                     <div class="circle develpment">
-                                        <div class="circle__spin active">
+                                        <div class="circle__spin dev__skill active">
                                             <svg>
                                                 <circle cx="50%" cy="50%" r="82"></circle>
                                             </svg>
@@ -271,7 +280,7 @@
                                 </li>
                                 <li>
                                     <div class="circle develpment">
-                                        <div class="circle__spin ">
+                                        <div class="circle__spin dev__skill">
                                             <svg>
                                                 <circle cx="50%" cy="50%" r="82"></circle>
                                             </svg>
@@ -283,7 +292,7 @@
                                 </li>
                                 <li>
                                     <div class="circle develpment">
-                                        <div class="circle__spin ">
+                                        <div class="circle__spin dev__skill">
                                             <svg>
                                                 <circle cx="50%" cy="50%" r="82"></circle>
                                             </svg>
@@ -295,7 +304,7 @@
                                 </li>
                                 <li>
                                     <div class="circle develpment">
-                                        <div class="circle__spin ">
+                                        <div class="circle__spin dev__skill">
                                             <svg>
                                                 <circle cx="50%" cy="50%" r="82"></circle>
                                             </svg>
@@ -307,7 +316,7 @@
                                 </li>
                                 <li>
                                     <div class="circle develpment">
-                                        <div class="circle__spin ">
+                                        <div class="circle__spin dev__skill">
                                             <svg>
                                                 <circle cx="50%" cy="50%" r="82"></circle>
                                             </svg>
@@ -320,8 +329,8 @@
                             </ul>
                             <ul class="design_skill">
                                 <li>
-                                    <div class="circle develpment">
-                                        <div class="circle__spin active">
+                                    <div class="circle design">
+                                        <div class="circle__spin des__skill">
                                             <svg>
                                                 <circle cx="50%" cy="50%" r="82"></circle>
                                             </svg>
@@ -332,8 +341,8 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="circle develpment">
-                                        <div class="circle__spin">
+                                    <div class="circle design">
+                                        <div class="circle__spin des__skill">
                                             <svg>
                                                 <circle cx="50%" cy="50%" r="82"></circle>
                                             </svg>
@@ -344,8 +353,8 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="circle develpment">
-                                        <div class="circle__spin">
+                                    <div class="circle design">
+                                        <div class="circle__spin des__skill">
                                             <svg>
                                                 <circle cx="50%" cy="50%" r="82"></circle>
                                             </svg>
@@ -356,8 +365,8 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="circle develpment">
-                                        <div class="circle__spin ">
+                                    <div class="circle design">
+                                        <div class="circle__spin des__skill">
                                             <svg>
                                                 <circle cx="50%" cy="50%" r="82"></circle>
                                             </svg>
@@ -368,8 +377,8 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="circle develpment">
-                                        <div class="circle__spin ">
+                                    <div class="circle design">
+                                        <div class="circle__spin des__skill">
                                             <svg>
                                                 <circle cx="50%" cy="50%" r="82"></circle>
                                             </svg>
@@ -402,7 +411,7 @@
             </div>
 
         </section>
-        <section id="profiles">
+        <section id="profiles_section">
             <h1>My Profiles</h1>
 
             <div class="all_boxes">
@@ -471,7 +480,7 @@
                 </div>
             </div>
         </section>
-        <section id="projects">
+        <section id="projects_section">
             <div class="container">
                 <h1>My Projects</h1>
                 <div class="all_projects">
@@ -486,7 +495,7 @@
                 </div>
             </div>
         </section>
-        <section id="conatct">
+        <section id="conatct_section">
             <div class="container">
                 <div class="contact_box">
                     <div class="contact_form">
@@ -519,19 +528,26 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href=""></a>About me</li>
+                            <a href="#header-aboutme">About me</a>
+                        </li>
                         <li>
-                            <a href=""></a>Scheduel</li>
+                            <a href="#scheduel_section">Scheduel</a>
+                        </li>
                         <li>
-                            <a href=""></a>Random</li>
+                            <a href="#random_section">Random</a>
+                        </li>
                         <li>
-                            <a href=""></a>Skills</li>
+                            <a href="#skills_section">Skills</a>
+                        </li>
                         <li>
-                            <a href=""></a>Profiles</li>
+                            <a href="#profiles_section">Profiles</a>
+                        </li>
                         <li>
-                            <a href=""></a>Projects</li>
+                            <a href="#projects_section">Projects</a>
+                        </li>
                         <li>
-                            <a href=""></a>Contact</li>
+                            <a href="#conatct_section">CONTACT</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -546,6 +562,8 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
