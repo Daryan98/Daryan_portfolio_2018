@@ -5,9 +5,6 @@
 
 //____________________________________________________________
 
-// Preloader 
-@import "body/preloader/preloader";
-
 
 // Base Folder
 @import "base/base";
@@ -28,8 +25,12 @@
 
 
 // Body Folder
+// Preloader 
+@import "body/preloader/preloader";
+
 // header
 @import "body/header/header";
+@import "body/header/small_screen_navbar";
 
 
 

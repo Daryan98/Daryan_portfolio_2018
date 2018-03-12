@@ -1,82 +1,3 @@
-#loader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000; }
-  #loader-wrapper #loader {
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #00cf4f;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-    z-index: 1001; }
-    #loader-wrapper #loader::before {
-      content: "";
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      right: 5px;
-      bottom: 5px;
-      border-radius: 50%;
-      border: 3px solid transparent;
-      border-top-color: #e74c3c;
-      -webkit-animation: spin 3s linear infinite;
-      animation: spin 3s linear infinite; }
-    #loader-wrapper #loader::after {
-      content: "";
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      right: 15px;
-      bottom: 15px;
-      border-radius: 50%;
-      border: 3px solid transparent;
-      border-top-color: #f9c922;
-      -webkit-animation: spin 1.5s linear infinite;
-      animation: spin 1.5s linear infinite; }
-  #loader-wrapper div.loader-section {
-    position: fixed;
-    top: 0;
-    width: 51%;
-    height: 100%;
-    background: linear-gradient(to right bottom, #2998ff, #2998ff);
-    z-index: 1000; }
-    #loader-wrapper div.loader-section.section-left {
-      left: 0; }
-    #loader-wrapper div.loader-section.section-right {
-      right: 0; }
-
-#loader-wrapper.loaded div.loader-section.section-left {
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-transition: all .3s .3s ease-out;
-  transition: all .3s .3s ease-out; }
-
-#loader-wrapper.loaded div.loader-section.section-right {
-  -webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  transform: translateX(100%);
-  -webkit-transition: all .3s .3s ease-out;
-  transition: all .3s .3s ease-out; }
-
-.loaded #loader {
-  opacity: 0;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out; }
-
-#loader-wrapper.loaded {
-  visibility: hidden; }
-
 * {
   margin: 0;
   padding: 0;
@@ -151,6 +72,85 @@ body {
   100% {
     transform: rotateZ(360deg); } }
 
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000; }
+  #loader-wrapper #loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF7209;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    z-index: 1001; }
+    #loader-wrapper #loader::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #FF0033;
+      -webkit-animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite; }
+    #loader-wrapper #loader::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #7D2582;
+      -webkit-animation: spin 1.5s linear infinite;
+      animation: spin 1.5s linear infinite; }
+  #loader-wrapper div.loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: linear-gradient(to right bottom, #2998ff, #2998ff);
+    z-index: 1000; }
+    #loader-wrapper div.loader-section.section-left {
+      left: 0; }
+    #loader-wrapper div.loader-section.section-right {
+      right: 0; }
+
+#loader-wrapper.loaded div.loader-section.section-left {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all .3s .3s ease-out;
+  transition: all .3s .3s ease-out; }
+
+#loader-wrapper.loaded div.loader-section.section-right {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: all .3s .3s ease-out;
+  transition: all .3s .3s ease-out; }
+
+.loaded #loader {
+  opacity: 0;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
+
+#loader-wrapper.loaded {
+  visibility: hidden; }
+
 header {
   width: 100%;
   height: 95vh;
@@ -161,9 +161,9 @@ header {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
   header nav {
     width: 100%;
-    height: 100px;
+    height: 120px;
     line-height: 60px;
-    padding: 30px 0;
+    line-height: 120px;
     transition: all .5s; }
     header nav div.navbar div#logo {
       float: left;
@@ -218,17 +218,16 @@ header {
           transform: translateY(0px); }
     header nav.fixed {
       position: fixed;
-      display: block;
       height: 60px;
       padding: 0;
       background: #FFF;
       z-index: 1000;
-      top: 0;
       color: #3a3a3a;
       -webkit-box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
       -moz-box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
       box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
-      margin-bottom: 100px; }
+      margin-bottom: 100px;
+      line-height: 60px; }
       header nav.fixed div.navbar {
         height: 100%; }
         header nav.fixed div.navbar div#logo img {
@@ -294,6 +293,163 @@ header {
         word-spacing: 1px;
         font-weight: 400; }
 
+div.navigation {
+  display: none; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer; }
+
+@media only screen and (max-width: 56.25em) {
+  .navigation__button {
+    top: 4rem;
+    right: 4rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .navigation__button {
+    top: 3rem;
+    right: 3rem; } }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#2998ff, #5643fa);
+  z-index: 1000;
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+
+@media only screen and (max-width: 56.25em) {
+  .navigation__background {
+    top: 4.5rem;
+    right: 4.5rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .navigation__background {
+    top: 3.5rem;
+    right: 3.5rem; } }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link,
+.navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%;
+  -webkit-transition: all .4s;
+  transition: all .4s; }
+
+.navigation__link:link span,
+.navigation__link:visited span {
+  margin-right: 1.5rem;
+  display: inline-block; }
+
+.navigation__link:hover,
+.navigation__link:active {
+  background-position: 100%;
+  color: #2998ff;
+  -webkit-transform: translateX(1rem);
+  transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  -webkit-transform: scale(80);
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: #333;
+  display: inline-block; }
+
+.navigation__icon::before,
+.navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s; }
+
+.navigation__icon::before {
+  top: -.8rem; }
+
+.navigation__icon::after {
+  top: .8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg); }
+
 section#scheduel_section {
   padding: 70px; }
   section#scheduel_section h1 {
@@ -323,20 +479,14 @@ section#scheduel_section {
   section#scheduel_section #coding-colum ul {
     float: right; }
 
-section#random_section {
-  padding: 160px;
-  width: 100%;
-  -webkit-box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
-  -moz-box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
-  box-shadow: 0px 1px 8px 0px rgba(82, 82, 82, 0.2);
-  color: #FFF;
-  background-repeat: no-repeat;
+section#section-features {
+  padding: 120px 70px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(41, 152, 255, 0.8)), to(rgba(86, 67, 250, 0.8))), url(../img/random.jpg);
   background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/random.jpg);
-  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-  background-size: 100%;
-  background-attachment: fixed; }
-  section#random_section h1 {
+  background-size: cover;
+  -webkit-transform: skewY(-5deg);
+  transform: skewY(-5deg); }
+  section#section-features h1 {
     margin-top: 0;
     padding-top: 0;
     display: block;
@@ -344,42 +494,61 @@ section#random_section {
     margin-bottom: 70px;
     color: #FFF;
     font-weight: 600; }
-  section#random_section .flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around; }
-    section#random_section .flex-container div.boxs {
-      padding: 20px;
-      width: 22%;
-      height: 300px;
-      background: #FFF;
-      opacity: .7;
-      border-radius: 5px;
-      z-index: -1;
-      text-align: center;
-      -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.35);
-      -moz-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.35);
-      box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.35);
-      transition: all .2s; }
-      section#random_section .flex-container div.boxs.box1:hover {
-        transform: scale(1.1);
-        margin-top: -15px;
-        -webkit-box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.55);
-        -moz-box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.55);
-        box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.55);
-        opacity: 0; }
-      section#random_section .flex-container div.boxs i {
-        font-size: 50px;
-        color: #2998ff; }
-      section#random_section .flex-container div.boxs h2 {
-        color: #3a3a3a;
-        margin-top: 0;
-        font-size: 20px; }
-      section#random_section .flex-container div.boxs p {
-        word-spacing: 1px;
-        text-align: left;
-        font-weight: 500;
-        color: #3a3a3a; }
+  section#section-features i {
+    font-size: 50px;
+    color: #2998ff; }
+  section#section-features h3 {
+    color: #3a3a3a;
+    margin-top: 0;
+    font-size: 20px; }
+  section#section-features p {
+    word-spacing: 1px;
+    text-align: left;
+    font-weight: 500;
+    color: #3a3a3a; }
+
+#section-features > * {
+  -webkit-transform: skewY(5deg);
+  transform: skewY(5deg); }
+
+@media only screen and (max-width: 56.25em) {
+  .section-features {
+    padding: 10rem 0; } }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  width: 100%;
+  height: 300px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s; }
+
+@media only screen and (max-width: 56.25em) {
+  .feature-box {
+    padding: 2rem; } }
+
+.feature-box__icon {
+  font-size: 6rem;
+  margin-bottom: .5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent; }
+
+@media only screen and (max-width: 56.25em) {
+  .feature-box__icon {
+    margin-bottom: 0; } }
+
+.feature-box:hover {
+  -webkit-transform: translateY(-1.5rem) scale(1.03);
+  transform: translateY(-1.5rem) scale(1.03); }
 
 section#skills_section {
   padding: 70px; }
@@ -389,10 +558,11 @@ section#skills_section {
     section#skills_section div.all_content div.circles {
       width: 100%;
       height: 100%;
-      background: url(../img/skills.png), url(..img/skills_bottom.png) repeat-y;
+      background: url(../img/skills.png) repeat-y;
       background-size: 100%; }
       section#skills_section div.all_content div.circles ul.skills_header,
-      section#skills_section div.all_content div.circles ul.skills {
+      section#skills_section div.all_content div.circles ul.developemnt_skill,
+      section#skills_section div.all_content div.circles ul.design_skill {
         width: 100%;
         height: 100%;
         display: inline-block;
@@ -401,58 +571,75 @@ section#skills_section {
         justify-items: center;
         justify-content: center; }
         section#skills_section div.all_content div.circles ul.skills_header li,
-        section#skills_section div.all_content div.circles ul.skills li {
+        section#skills_section div.all_content div.circles ul.developemnt_skill li,
+        section#skills_section div.all_content div.circles ul.design_skill li {
           list-style: none;
           display: inline;
           float: left;
           margin-left: -50px; }
           section#skills_section div.all_content div.circles ul.skills_header li:first-child,
-          section#skills_section div.all_content div.circles ul.skills li:first-child {
+          section#skills_section div.all_content div.circles ul.developemnt_skill li:first-child,
+          section#skills_section div.all_content div.circles ul.design_skill li:first-child {
             margin-left: 0; }
           section#skills_section div.all_content div.circles ul.skills_header li#development .circle,
-          section#skills_section div.all_content div.circles ul.skills li#development .circle {
+          section#skills_section div.all_content div.circles ul.developemnt_skill li#development .circle,
+          section#skills_section div.all_content div.circles ul.design_skill li#development .circle {
             background-color: #2998ff; }
             section#skills_section div.all_content div.circles ul.skills_header li#development .circle .circle__spin.active circle,
-            section#skills_section div.all_content div.circles ul.skills li#development .circle .circle__spin.active circle {
+            section#skills_section div.all_content div.circles ul.developemnt_skill li#development .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.design_skill li#development .circle .circle__spin.active circle {
               stroke: #2998ff; }
           section#skills_section div.all_content div.circles ul.skills_header li#design .circle,
-          section#skills_section div.all_content div.circles ul.skills li#design .circle {
+          section#skills_section div.all_content div.circles ul.developemnt_skill li#design .circle,
+          section#skills_section div.all_content div.circles ul.design_skill li#design .circle {
             background-color: #5643fa; }
             section#skills_section div.all_content div.circles ul.skills_header li#design .circle .circle__spin.active circle,
-            section#skills_section div.all_content div.circles ul.skills li#design .circle .circle__spin.active circle {
+            section#skills_section div.all_content div.circles ul.developemnt_skill li#design .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.design_skill li#design .circle .circle__spin.active circle {
               stroke: #5643fa; }
           section#skills_section div.all_content div.circles ul.skills_header li:nth-child(1) .circle,
-          section#skills_section div.all_content div.circles ul.skills li:nth-child(1) .circle {
+          section#skills_section div.all_content div.circles ul.developemnt_skill li:nth-child(1) .circle,
+          section#skills_section div.all_content div.circles ul.design_skill li:nth-child(1) .circle {
             background-color: #FF0033; }
             section#skills_section div.all_content div.circles ul.skills_header li:nth-child(1) .circle .circle__spin.active circle,
-            section#skills_section div.all_content div.circles ul.skills li:nth-child(1) .circle .circle__spin.active circle {
+            section#skills_section div.all_content div.circles ul.developemnt_skill li:nth-child(1) .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.design_skill li:nth-child(1) .circle .circle__spin.active circle {
               stroke: #FF0033; }
           section#skills_section div.all_content div.circles ul.skills_header li:nth-child(2) .circle,
-          section#skills_section div.all_content div.circles ul.skills li:nth-child(2) .circle {
+          section#skills_section div.all_content div.circles ul.developemnt_skill li:nth-child(2) .circle,
+          section#skills_section div.all_content div.circles ul.design_skill li:nth-child(2) .circle {
             background-color: #7D2582; }
             section#skills_section div.all_content div.circles ul.skills_header li:nth-child(2) .circle .circle__spin.active circle,
-            section#skills_section div.all_content div.circles ul.skills li:nth-child(2) .circle .circle__spin.active circle {
+            section#skills_section div.all_content div.circles ul.developemnt_skill li:nth-child(2) .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.design_skill li:nth-child(2) .circle .circle__spin.active circle {
               stroke: #7D2582; }
           section#skills_section div.all_content div.circles ul.skills_header li:nth-child(3) .circle,
-          section#skills_section div.all_content div.circles ul.skills li:nth-child(3) .circle {
+          section#skills_section div.all_content div.circles ul.developemnt_skill li:nth-child(3) .circle,
+          section#skills_section div.all_content div.circles ul.design_skill li:nth-child(3) .circle {
             background-color: #09B7E3; }
             section#skills_section div.all_content div.circles ul.skills_header li:nth-child(3) .circle .circle__spin.active circle,
-            section#skills_section div.all_content div.circles ul.skills li:nth-child(3) .circle .circle__spin.active circle {
+            section#skills_section div.all_content div.circles ul.developemnt_skill li:nth-child(3) .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.design_skill li:nth-child(3) .circle .circle__spin.active circle {
               stroke: #09B7E3; }
           section#skills_section div.all_content div.circles ul.skills_header li:nth-child(4) .circle,
-          section#skills_section div.all_content div.circles ul.skills li:nth-child(4) .circle {
+          section#skills_section div.all_content div.circles ul.developemnt_skill li:nth-child(4) .circle,
+          section#skills_section div.all_content div.circles ul.design_skill li:nth-child(4) .circle {
             background-color: #50953A; }
             section#skills_section div.all_content div.circles ul.skills_header li:nth-child(4) .circle .circle__spin.active circle,
-            section#skills_section div.all_content div.circles ul.skills li:nth-child(4) .circle .circle__spin.active circle {
+            section#skills_section div.all_content div.circles ul.developemnt_skill li:nth-child(4) .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.design_skill li:nth-child(4) .circle .circle__spin.active circle {
               stroke: #50953A; }
           section#skills_section div.all_content div.circles ul.skills_header li:nth-child(5) .circle,
-          section#skills_section div.all_content div.circles ul.skills li:nth-child(5) .circle {
+          section#skills_section div.all_content div.circles ul.developemnt_skill li:nth-child(5) .circle,
+          section#skills_section div.all_content div.circles ul.design_skill li:nth-child(5) .circle {
             background-color: #FF7209; }
             section#skills_section div.all_content div.circles ul.skills_header li:nth-child(5) .circle .circle__spin.active circle,
-            section#skills_section div.all_content div.circles ul.skills li:nth-child(5) .circle .circle__spin.active circle {
+            section#skills_section div.all_content div.circles ul.developemnt_skill li:nth-child(5) .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.design_skill li:nth-child(5) .circle .circle__spin.active circle {
               stroke: #FF7209; }
           section#skills_section div.all_content div.circles ul.skills_header li .circle,
-          section#skills_section div.all_content div.circles ul.skills li .circle {
+          section#skills_section div.all_content div.circles ul.developemnt_skill li .circle,
+          section#skills_section div.all_content div.circles ul.design_skill li .circle {
             position: relative;
             margin: 40px;
             height: 200px;
@@ -462,66 +649,95 @@ section#skills_section {
             opacity: .9;
             transition: all .2s; }
             section#skills_section div.all_content div.circles ul.skills_header li .circle:hover,
-            section#skills_section div.all_content div.circles ul.skills li .circle:hover {
+            section#skills_section div.all_content div.circles ul.developemnt_skill li .circle:hover,
+            section#skills_section div.all_content div.circles ul.design_skill li .circle:hover {
               opacity: 1;
               box-shadow: 0px 0px 10px #000; }
             section#skills_section div.all_content div.circles ul.skills_header li .circle .circle__spin,
-            section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin {
+            section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin,
+            section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin {
               position: absolute;
               left: -15px;
               top: -15px;
               width: 220px;
               height: 220px; }
               section#skills_section div.all_content div.circles ul.skills_header li .circle .circle__spin.not_active svg,
-              section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin.not_active svg {
+              section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin.not_active svg,
+              section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin.not_active svg {
                 display: none; }
               section#skills_section div.all_content div.circles ul.skills_header li .circle .circle__spin.active svg,
-              section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin.active svg {
+              section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin.active svg,
+              section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin.active svg {
                 display: block;
                 animation: circle_border_spin 10s linear infinite; }
               section#skills_section div.all_content div.circles ul.skills_header li .circle .circle__spin.active circle,
-              section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin.active circle {
+              section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin.active circle,
+              section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin.active circle {
                 stroke: orange; }
               section#skills_section div.all_content div.circles ul.skills_header li .circle .circle__spin svg,
-              section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin svg {
+              section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin svg,
+              section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin svg {
                 width: 105%;
                 height: 105%; }
               section#skills_section div.all_content div.circles ul.skills_header li .circle .circle__spin circle,
-              section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin circle {
+              section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin circle,
+              section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin circle {
                 stroke-width: 2;
                 stroke-dasharray: 15, 10;
                 fill: none; }
             section#skills_section div.all_content div.circles ul.skills_header li .circle div.content,
-            section#skills_section div.all_content div.circles ul.skills li .circle div.content {
+            section#skills_section div.all_content div.circles ul.developemnt_skill li .circle div.content,
+            section#skills_section div.all_content div.circles ul.design_skill li .circle div.content {
               text-align: center;
               line-height: 120px; }
               section#skills_section div.all_content div.circles ul.skills_header li .circle div.content img,
-              section#skills_section div.all_content div.circles ul.skills li .circle div.content img {
+              section#skills_section div.all_content div.circles ul.developemnt_skill li .circle div.content img,
+              section#skills_section div.all_content div.circles ul.design_skill li .circle div.content img {
                 height: 50px;
                 margin-top: 35px; }
               section#skills_section div.all_content div.circles ul.skills_header li .circle div.content h2,
-              section#skills_section div.all_content div.circles ul.skills li .circle div.content h2 {
+              section#skills_section div.all_content div.circles ul.developemnt_skill li .circle div.content h2,
+              section#skills_section div.all_content div.circles ul.design_skill li .circle div.content h2 {
                 font-size: 16px;
                 margin: 0;
                 margin-top: 10px;
                 font-weight: 500;
                 color: #FFF; }
-      section#skills_section div.all_content div.circles ul.skills li .circle {
+      section#skills_section div.all_content div.circles ul.developemnt_skill li .circle,
+      section#skills_section div.all_content div.circles ul.design_skill li .circle {
         width: 150px;
-        height: 150px; }
-        section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin {
+        height: 150px;
+        opacity: .9; }
+        section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin,
+        section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin {
           width: 174px;
           height: 174px;
           left: -16px;
           top: -16px; }
-          section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin circle {
+          section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin circle,
+          section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin circle {
             stroke-width: 2;
             stroke-dasharray: 15, 10;
             fill: none; }
-      section#skills_section div.all_content div.circles ul.skills h2 {
+      section#skills_section div.all_content div.circles ul.developemnt_skill h2,
+      section#skills_section div.all_content div.circles ul.design_skill h2 {
         line-height: 150px; }
-    section#skills_section div.all_content div.skills ul.design {
-      display: none; }
+      section#skills_section div.all_content div.circles div.skills ul.design_skill {
+        display: none; }
+    section#skills_section div.all_content div.skills_about {
+      margin-top: 70px; }
+      section#skills_section div.all_content div.skills_about ul li {
+        list-style: none; }
+        section#skills_section div.all_content div.skills_about ul li h2 {
+          text-align: center;
+          margin-bottom: 30px;
+          color: #FF0033; }
+        section#skills_section div.all_content div.skills_about ul li p {
+          display: inline-block;
+          margin-left: 10%;
+          width: 80%; }
+          section#skills_section div.all_content div.skills_about ul li p strong {
+            color: #FF0033; }
 
 section#profiles {
   width: 100%;
@@ -600,26 +816,26 @@ section#projects {
           background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/random.jpg);
           background-size: cover;
           text-align: center; }
-          section#projects div.container div.all_projects ul li.project:hover::after {
-            display: block; }
-          section#projects div.container div.all_projects ul li.project::after {
-            display: none;
-            content: "Show More";
-            font-family: "Montserrat";
-            color: #FFF;
-            font-size: 18px;
-            font-weight: 600;
-            z-index: 2;
+          section#projects div.container div.all_projects ul li.project div.show {
             width: 100%;
-            height: 132px;
+            height: 101%;
             background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8));
             position: absolute;
             left: 0;
-            top: 0; }
+            top: 0px;
+            display: none; }
+            section#projects div.container div.all_projects ul li.project div.show a {
+              text-decoration: none;
+              color: #FFF;
+              font-size: 18px;
+              font-weight: 600;
+              z-index: 10; }
+          section#projects div.container div.all_projects ul li.project:hover div.show {
+            display: block; }
           section#projects div.container div.all_projects ul li.project img {
-            margin-top: -1px;
+            margin-top: 0px;
             width: 100%;
-            height: 101%;
+            height: 100%;
             padding: 0; }
 
 section#conatct {

@@ -31,6 +31,40 @@
 
     </div>
 
+    <div class="navigation open">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>01</span>About Natous</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>02</span>Your benfits</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>03</span>Popular tours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>04</span>Stories</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>05</span>Book now</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
     <header>
         <nav class="nav">
             <div class="navbar container">
@@ -144,36 +178,50 @@
 
             </div>
         </section>
-        <section id="random_section">
+        <section id="section-features">
             <div class="container">
                 <h1>Random Things that i do</h1>
-                <div class="flex-container">
-                    <div class="boxs box1">
-                        <i class="ion-model-s"></i>
-                        <h2 id="box_header"> Driving Car</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, inventore? Necessitatibus
-                        </p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="feature-box">
+                            <i class="ion-model-s"></i>
+                            <h3>Explore the world</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            </p>
+                        </div>
                     </div>
-                    <div class="boxs box2">
-                        <i class="ion-ios-football"></i>
-                        <h2 id="box_header">Sport</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate voluptatibus vel? Fugiat</p>
-                    </div>
-                    <div class="boxs box3">
-                        <i class="ion-code-working"></i>
-                        <h2 id="box_header">Coding</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus commodi voluptate ab blanditiis
-                        </p>
-                    </div>
-                    <div class="boxs box4">
-                        <i class="ion-coffee"></i>
-                        <h2 id="box_header">Caffe</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis cupiditate iste nesciunt rerum
-                        </p>
 
+                    <div class="col-md-3">
+                        <div class="feature-box">
+                            <i class="ion-ios-football"></i>
+                            <h3>Meet nature</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="feature-box">
+                            <i class="ion-code-working"></i>
+                            <h3>Find your way</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="feature-box">
+                            <i class="ion-coffee"></i>
+                            <h3>Live a healthier life</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
         <section id="skills_section">
             <div class="container">
@@ -208,7 +256,7 @@
                             </li>
                         </ul>
                         <div class="skills">
-                            <ul class="skills developemnt">
+                            <ul class="developemnt_skill">
                                 <li>
                                     <div class="circle develpment">
                                         <div class="circle__spin active">
@@ -270,7 +318,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <ul class="skills design">
+                            <ul class="design_skill">
                                 <li>
                                     <div class="circle develpment">
                                         <div class="circle__spin active">
@@ -335,7 +383,20 @@
                         </div>
 
                     </div>
-
+                    <div class="skills_about">
+                        <ul>
+                            <li>
+                                <h2>HTML</h2>
+                                <p>Lorem ipsum dolor sit amet
+                                    <strong>consectetur</strong> adipisicing elit. Enim repellat natus, error nulla excepturi est
+                                    omnis, cupiditate dolor tenetur sit, consectetur quibusdam. Modi impedit sed porro ea
+                                    recusandae id in.Lorem ipsum dolor sit amet
+                                    <strong>consectetur</strong> adipisicing elit. Enim repellat natus, error nulla excepturi est
+                                    omnis, cupiditate dolor tenetur sit, consectetur quibusdam. Modi impedit sed porro ea
+                                    recusandae id in.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -417,48 +478,9 @@
                     <ul>
                         <li class="project project1">
                             <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
-                        </li>
-                        <li class="project project1">
-                            <img src="img/random.jpg" alt="">
+                            <div class="show">
+                                <a href="">Show More</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
