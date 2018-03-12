@@ -28,3 +28,9 @@
     transform: rotate(360deg);
   }
 }
+// Skills section circleSpin
+@keyframes circle_border_spin {
+  100% {
+      transform: rotateZ(360deg);
+  }
+}

@@ -2,7 +2,7 @@
 $(document).ready(() => {
   setTimeout(() => {
     $('div#loader-wrapper').addClass('loaded');
-  }, 3000);
+  }, 1000);
 });
 
 

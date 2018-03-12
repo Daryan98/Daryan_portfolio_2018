@@ -147,6 +147,10 @@ body {
     -moz-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
+@keyframes circle_border_spin {
+  100% {
+    transform: rotateZ(360deg); } }
+
 header {
   width: 100%;
   height: 95vh;
@@ -283,8 +287,6 @@ header {
     header div#header-aboutme a.btn {
       font-weight: 600;
       color: #2998ff; }
-      header div#header-aboutme a.btn:hover {
-        color: #5643fa; }
     header div#header-aboutme div#about-me {
       margin-top: 100px; }
       header div#header-aboutme div#about-me p {
@@ -379,946 +381,147 @@ section#random_section {
         font-weight: 500;
         color: #3a3a3a; }
 
-.servicemain .topser {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  width: 100%; }
-
-.servicemain .topser:before,
-.servicemain .topser:after {
-  content: "";
-  display: inline-block;
-  left: 0;
-  position: absolute;
-  width: 100%; }
-
-.servicemain .topser:before {
-  background: url(https://websoftsystem.com/images/services_top.png) no-repeat center top;
-  height: 310px;
-  top: -110px;
-  background-size: 100% auto; }
-
-.servicemain .topser:after {
-  background: url(https://websoftsystem.com/images/services_bottom.png) no-repeat center top;
-  height: 156px;
-  top: 180px;
-  background-size: 100% auto;
-  z-index: -1; }
-
-.servicemain .serblk {
-  float: left;
-  width: 250px;
-  height: 250px;
-  position: relative;
-  margin: 0; }
-
-.servicemain .serblk.active a,
-.servicemain .serblk:hover {
-  background: none;
-  border: none;
-  border-radius: 0; }
-
-.servicemain .sermain_2,
-.servicemain .sermain_3,
-.servicemain .sermain_4,
-.servicemain .sermain_5 {
-  margin-left: -65px; }
-
-.servicemain .blockbg {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0; }
-
-.servicemain .nav-tabs {
-  border: none; }
-
-.servicemain .nav-tabs > li > a,
-.servicemain .nav-tabs > li > a:hover,
-.servicemain .nav-tabs > li > a:focus,
-.servicemain .nav-tabs > li.active > a,
-.servicemain .nav-tabs > li.active > a:hover,
-.servicemain .nav-tabs > li.active > a:focus {
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer; }
-
-.servicemain .serblk a {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0; }
-
-.servicemain .blockbg svg.default {
-  width: 100%;
-  height: 100%;
-  opacity: 0.97; }
-
-.servicemain .blockbg svg.hover {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: all ease-in-out 0.5s; }
-
-.servicemain .sermain_1 svg.default,
-.servicemain .sermain_1 svg.hover {
-  fill: #ff0033; }
-
-.servicemain .sermain_2 svg.default,
-.servicemain .sermain_2 svg.hover {
-  fill: #7a1f7f; }
-
-.servicemain .sermain_3 svg.default,
-.servicemain .sermain_3 svg.hover {
-  fill: #01b5e2; }
-
-.servicemain .sermain_4 svg.default,
-.servicemain .sermain_4 svg.hover {
-  fill: #4b9335; }
-
-.servicemain .sermain_5 svg.default,
-.servicemain .sermain_5 svg.hover {
-  fill: #ff6d01; }
-
-.servicemain .serblk.active .blockbg svg.hover {
-  opacity: 1;
-  z-index: 1; }
-
-.servicemain .serblk:hover .blockbg svg.hover {
-  opacity: 1;
-  z-index: 2; }
-
-.servicemain .serblk.active a {
-  z-index: 2; }
-
-.servicemain .serblk:hover a {
-  z-index: 3; }
-
-.servicemain .serblk .caption {
-  display: block;
-  left: 0;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.servicemain .serblk .icon {
-  margin-top: 0;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block; }
-
-.servicemain .serblk .icon img {
-  width: 100%; }
-
-.servicemain .serblk .caption h2 {
-  color: #fff;
-  display: block;
-  font-family: 'open_sansregular';
-  font-size: 14px;
-  text-transform: uppercase; }
-
-.servicemain .sermain_1 .icon,
-.servicemain .sermain_2 .icon,
-.servicemain .sermain_3 .icon,
-.servicemain .sermain_5 .icon {
-  width: 70px; }
-
-.servicemain .sermain_4 .icon {
-  width: 50px; }
-
-.servicemain .cat_content h2 {
-  font-size: 34px;
-  color: #FF0036;
-  padding: 0 0 10px 0; }
-
-.servicemain .webdeve .cat_content h2 {
-  color: #7e2683; }
-
-.servicemain .ecommerce .cat_content h2 {
-  color: #01b5e2; }
-
-.servicemain .appdev .cat_content h2 {
-  color: #4b9335; }
-
-.servicemain .gamedev .cat_content h2 {
-  color: #ff6d01; }
-
-.servicemain .cat_content p {
-  margin: 0 auto;
-  padding: 20px 0 0 0;
-  max-width: 920px; }
-
-.servicemain .cat_content p strong {
-  font-weight: normal; }
-
-.servicemain .blockbg svg.active {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: scale(1.05, 1.05);
-  transition: all ease-in-out 0.3s;
-  opacity: 0; }
-
-.servicemain .serblk.active .blockbg svg.active {
-  opacity: 1;
-  z-index: 1; }
-
-.servicemain .blockbg .path_ser {
-  animation-delay: 0;
-  animation-direction: normal;
-  animation-duration: 3s;
-  animation-fill-mode: none;
-  animation-iteration-count: infinite;
-  animation-name: path_ser_active;
-  animation-play-state: running;
-  animation-timing-function: linear; }
-
-@-webkit-keyframes path_ser_active {
-  0% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 120; } }
-
-@keyframes path_ser_active {
-  0% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 120; } }
-
-.servicemain .tab-content {
-  margin-top: 100px; }
-
-.servicemain .tab-content > .tab-pane {
-  position: relative; }
-
-.servicemain .tab-content > .tab-pane .overlaytab {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0; }
-
-.servicemain .tab-content > .tab-pane.active .overlaytab {
-  background: #fff;
-  -webkit-transition: all ease-in-out 0.2s;
-  -moz-transition: all ease-in-out 0.2s;
-  -ms-transition: all ease-in-out 0.2s;
-  transition: all ease-in-out 0.2s;
-  animation-delay: 0.5s;
-  animation-direction: normal;
-  animation-duration: 0.7s;
-  animation-name: overlaytab;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-  z-index: 100;
-  animation-fill-mode: forwards; }
-
-@-webkit-keyframes overlaytab {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0;
-    visibility: hidden; } }
-
-@keyframes overlaytab {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0;
-    visibility: hidden; } }
-
-.servicemain .tab-content ul {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%; }
-
-.servicemain .tab-content ul li {
-  display: block;
-  float: left;
-  text-align: center;
-  margin: 30px 0 30px;
-  width: 100%;
-  position: relative; }
-
-.servicemain .tab-content ul li:after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -200px;
-  opacity: 0;
-  height: 100px;
-  width: 2px;
-  background: #000;
-  -webkit-transition: all ease-in-out 0.3s;
-  -moz-transition: all ease-in-out 0.3s;
-  -ms-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
-  z-index: -1; }
-
-.servicemain .tab-content ul li.active:after {
-  bottom: -60px;
-  opacity: 1; }
-
-.servicemain .tab-content .webdesign ul li.active:after {
-  background: #ff0036; }
-
-.servicemain .tab-content .webdeve ul li.active:after {
-  background: #7E2683; }
-
-.servicemain .tab-content .ecommerce ul li.active:after {
-  background: #01b5e2; }
-
-.servicemain .tab-content .appdev ul li.active:after {
-  background: #4b9335; }
-
-.servicemain .tab-content .gamedev ul li.active:after {
-  background: #ff6d01; }
-
-.servicemain .tab-content ul li a {
-  display: block;
-  min-height: 170px;
-  position: relative;
-  text-align: center; }
-
-.servicemain .tab-content ul li .detailbox {
-  display: none; }
-
-.servicemain .tab-content ul li .main_bg {
-  width: 107px;
-  height: 107px;
-  margin: 0 auto 10px;
-  position: relative; }
-
-.servicemain .tab-content ul li .main_bg svg.default {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0; }
-
-.servicemain .tab-content ul li .main_bg svg.default path {
-  -webkit-transition: all ease-in-out 0.3s;
-  -moz-transition: all ease-in-out 0.3s;
-  -ms-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
-  fill: #ffffff;
-  stroke: #e6e6e6; }
-
-.servicemain .tab-content ul li .main_bg i {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  color: #E6E6E6;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all ease-in-out 0.3s;
-  -moz-transition: all ease-in-out 0.3s;
-  -ms-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s; }
-
-.servicemain .tab-content ul li a h3 {
-  color: #292929;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 20px;
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  padding: 0 0 5px 0;
-  background: #fff; }
-
-.servicemain .tab-content ul li .main_bg svg.hover {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: all ease-in-out 0.3s;
-  transform: scale(1.1, 1.1); }
-
-.servicemain .tab-content ul li a .main_bg .fa,
-.servicemain .tab-content ul li a .icon-magento {
-  font-size: 50px; }
-
-.servicemain .tab-content ul li.active a .main_bg i,
-.servicemain .tab-content ul li a:hover .main_bg i {
-  color: #fff; }
-
-.servicemain .tab-content ul li.active a .main_bg svg.default path,
-.servicemain .tab-content ul li a:hover .main_bg svg.default path {
-  fill: #ff0036;
-  stroke: #ff0036; }
-
-.servicemain .tab-content ul li.active a .main_bg svg.hover,
-.servicemain .tab-content ul li a:hover .main_bg svg.hover {
-  opacity: 1; }
-
-.servicemain .tab-content ul li.active a .main_bg svg.hover path,
-.servicemain .tab-content ul li a:hover .main_bg svg.hover path {
-  stroke: #ff0036; }
-
-.servicemain .tab-content .webdeve ul li.active a .main_bg svg.default path,
-.servicemain .tab-content .webdeve ul li a:hover .main_bg svg.default path {
-  fill: #7E2683;
-  stroke: #7E2683; }
-
-.servicemain .tab-content .webdeve ul li.active a .main_bg svg.hover path,
-.servicemain .tab-content .webdeve ul li a:hover .main_bg svg.hover path {
-  stroke: #7E2683; }
-
-.servicemain .tab-content .ecommerce ul li.active a .main_bg svg.default path,
-.servicemain .tab-content .ecommerce ul li a:hover .main_bg svg.default path {
-  fill: #01b5e2;
-  stroke: #01b5e2; }
-
-.servicemain .tab-content .ecommerce ul li.active a .main_bg svg.hover path,
-.servicemain .tab-content .ecommerce ul li a:hover .main_bg svg.hover path {
-  stroke: #01b5e2; }
-
-.servicemain .tab-content .appdev ul li.active a .main_bg svg.default path,
-.servicemain .tab-content .appdev ul li a:hover .main_bg svg.default path {
-  fill: #4b9335;
-  stroke: #4b9335; }
-
-.servicemain .tab-content .appdev ul li.active a .main_bg svg.hover path,
-.servicemain .tab-content .appdev ul li a:hover .main_bg svg.hover path {
-  stroke: #4b9335; }
-
-.servicemain .tab-content .gamedev ul li.active a .main_bg svg.default path,
-.servicemain .tab-content .gamedev ul li a:hover .main_bg svg.default path {
-  fill: #ff6d01;
-  stroke: #ff6d01; }
-
-.servicemain .tab-content .gamedev ul li.active a .main_bg svg.hover path,
-.servicemain .tab-content .gamedev ul li a:hover .main_bg svg.hover path {
-  stroke: #ff6d01; }
-
-.servicemain .tab-content ul li .path_ser {
-  animation-delay: 0;
-  animation-direction: normal;
-  animation-duration: 3s;
-  animation-fill-mode: none;
-  animation-iteration-count: infinite;
-  animation-name: path_ser;
-  animation-play-state: running;
-  animation-timing-function: linear; }
-
-@-webkit-keyframes path_ser {
-  0% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 120; } }
-
-@keyframes path_ser {
-  0% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 120; } }
-
-.servicemain .tab-content .detailani {
-  padding: 60px 15px 30px 40px;
-  text-align: left;
-  color: #666666;
-  line-height: 24px;
-  font-size: 14px; }
-
-.servicemain .tab-content .detailani strong {
-  font-weight: normal;
-  font-family: "open_sansbold"; }
-
-.servicemain .tab-content .detailani .readmore {
-  display: inline-block;
-  width: 100%;
-  vertical-align: top;
-  margin-top: 20px;
-  text-align: right;
-  padding-right: 100px; }
-
-.servicemain .tab-content .detailani .readmore a {
-  display: inline-block;
-  color: #fff;
-  font-size: 14px;
-  height: 30px;
-  line-height: 28px;
-  padding: 0 12px; }
-
-.servicemain .tab-content .ser_detailbox {
-  position: relative;
-  z-index: 1;
-  margin-top: -33px; }
-
-.servicemain .tab-content .webdesign .ser_detailbox {
-  background: url(../images/red_line_1.svg) no-repeat center;
-  background-size: 100% 100%; }
-
-.servicemain .tab-content .webdeve .ser_detailbox {
-  background: url(../images/par_line_1.svg) no-repeat center;
-  background-size: 100% 100%; }
-
-.servicemain .tab-content .ecommerce .ser_detailbox {
-  background: url(../images/blue_line_1.svg) no-repeat center;
-  background-size: 100% 100%; }
-
-.servicemain .tab-content .appdev .ser_detailbox {
-  background: url(../images/green_line_1.svg) no-repeat center;
-  background-size: 100% 100%; }
-
-.servicemain .tab-content .gamedev .ser_detailbox {
-  background: url(../images/orange_line_1.svg) no-repeat center;
-  background-size: 100% 100%; }
-
-.servicemain .tab-content .webdesign .detailani .readmore a {
-  background: #ff0036;
-  border: solid 1px #ff0036; }
-
-.servicemain .tab-content .webdeve .detailani .readmore a {
-  background: #7E2683;
-  border: solid 1px #7E2683; }
-
-.servicemain .tab-content .ecommerce .detailani .readmore a {
-  background: #01b5e2;
-  border: solid 1px #01b5e2; }
-
-.servicemain .tab-content .appdev .detailani .readmore a {
-  background: #4b9335;
-  border: solid 1px #4b9335; }
-
-.servicemain .tab-content .gamedev .detailani .readmore a {
-  background: #ff6d01;
-  border: solid 1px #ff6d01; }
-
-.servicemain .tab-content .detailani .readmore a:hover {
-  background: #000;
-  border-color: #000; }
-
-.servicemain .tab-content .owl-nav {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  height: 0; }
-
-.servicemain .tab-content .owl-nav .fa {
-  height: 30px;
-  line-height: 30px;
-  font-size: 20px;
-  display: block;
-  position: absolute;
-  top: -45px;
-  color: #333; }
-
-.servicemain .tab-content .owl-nav .owl-prev {
-  left: 0; }
-
-.servicemain .tab-content .owl-nav .owl-next {
-  right: 0; }
-
-@-webkit-keyframes dash_downarrow {
-  0% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 120; } }
-
-@keyframes dash_downarrow {
-  0% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 120; } }
-
-@-webkit-keyframes down_arrow {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes down_arrow {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@-webkit-keyframes path_ser_moreser {
-  0% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 120; } }
-
-@keyframes path_ser_moreser {
-  0% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 120; } }
-
-@-webkit-keyframes path_ser_port {
-  0% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 120; } }
-
-@keyframes path_ser_port {
-  0% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 120; } }
-
-@-webkit-keyframes path_ser_port_2 {
-  0% {
-    stroke-dashoffset: 120; }
-  100% {
-    stroke-dashoffset: 0; } }
-
-@keyframes path_ser_port_2 {
-  0% {
-    stroke-dashoffset: 120; }
-  100% {
-    stroke-dashoffset: 0; } }
-
-@-webkit-keyframes dash_downarrow {
-  0% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 120; } }
-
-@keyframes dash_downarrow {
-  0% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 120; } }
-
-@-webkit-keyframes down_arrow {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes down_arrow {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-.septore {
-  width: 100%;
-  display: none;
-  min-height: 1px; }
-
-.servicemain .tab-content .owl-nav .fa {
-  width: 13px; }
-
-@keyframes snow {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px; }
-  50% {
-    background-position: 500px 500px, 100px 200px, -100px 150px; }
-  100% {
-    background-position: 500px 1000px, 200px 400px, -100px 300px; } }
-
-@-moz-keyframes snow {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px; }
-  50% {
-    background-position: 500px 500px, 100px 200px, -100px 150px; }
-  100% {
-    background-position: 400px 1000px, 200px 400px, 100px 300px; } }
-
-@-webkit-keyframes snow {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px; }
-  50% {
-    background-position: 500px 500px, 100px 200px, -100px 150px; }
-  100% {
-    background-position: 500px 1000px, 200px 400px, -100px 300px; } }
-
-@-ms-keyframes snow {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px; }
-  50% {
-    background-position: 500px 500px, 100px 200px, -100px 150px; }
-  100% {
-    background-position: 500px 1000px, 200px 400px, -100px 300px; } }
-
-@-webkit-keyframes santaGif {
-  0% {
-    left: 0;
-    opacity: 0; }
-  50% {
-    left: 50%;
-    opacity: 1; }
-  100% {
-    left: 100%;
-    opacity: 0; } }
-
-@keyframes santaGif {
-  0% {
-    left: 0;
-    opacity: 0; }
-  50% {
-    left: 50%;
-    opacity: 1; }
-  100% {
-    left: 100%;
-    opacity: 0; } }
-
-@-webkit-keyframes candy1 {
-  0% {
-    top: -250px;
-    opacity: 0.5; }
-  100% {
-    top: 100%;
-    opacity: 1; } }
-
-@keyframes candy1 {
-  0% {
-    top: -250px;
-    opacity: 0.5; }
-  100% {
-    top: 100%;
-    opacity: 1; } }
-
-/* Large desktop */
-@media only screen and (min-width: 1200px) {
-  .homeservices {
-    margin-top: 190px; }
-  h2.seo-top {
-    margin-bottom: -35px; }
-  .servicemain .topser {
-    text-align: center;
-    margin-left: 80px; } }
-
-/* Portrait tablet to landscape and desktop */
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
-  .homeservices {
-    margin-top: 190px; }
-  h2.seo-top {
-    margin-bottom: -35px; }
-  .servicemain .topser {
-    text-align: center;
-    margin-left: 80px; }
-  /*li.serblk.sermain_4.site-evokingtab {display: none;}*/ }
-
-/* Portrait tablet to landscape and desktop */
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-  .homeservices {
-    margin-top: 160px;
-    margin-left: 20px; }
-  .site-evoking {
-    display: none; } }
-
-/* Landscape phone to portrait tablet */
-@media only screen and (max-width: 767px) {
-  .homeservices {
-    margin-top: 100px; }
-  .site-evoking {
-    display: none; } }
-
-/* Landscape phones and down */
-@media only screen and (max-width: 480px) {
-  .homeservices {
-    margin-top: 90px; }
-  .site-evoking {
-    display: none; } }
-
-@media (min-width: 1200px) {
-  .footer_top .container {
-    width: 1170px; } }
-
-@media (max-width: 1199px) {
-  body {
-    overflow-x: hidden; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  #com_nav ul li {
-    margin: 0 8px; }
-  .servicemain .serblk {
-    width: 190px;
-    height: 190px; }
-  .servicemain .sermain_4 .icon {
-    width: 40px; }
-  .servicemain .sermain_1 .icon,
-  .servicemain .sermain_2 .icon,
-  .servicemain .sermain_3 .icon,
-  .servicemain .sermain_5 .icon {
-    width: 50px; }
-  .servicemain .serblk .icon {
-    margin-bottom: 0px; }
-  .servicemain .serblk .caption h2 {
-    padding: 0 17%;
-    display: none; }
-  .servicemain .sermain_2 .caption h2 {
-    padding: 53px 17% 0; } }
-
-@media (max-width: 767px) {
-  .servicemain .serblk {
-    float: none;
-    display: inline-block;
-    width: 98px;
-    margin: 0 0.5%;
-    height: 98px; }
-  .servicemain .sermain_4 .icon {
-    width: 40px; }
-  .servicemain .sermain_1 .icon,
-  .servicemain .sermain_2 .icon,
-  .servicemain .sermain_3 .icon,
-  .servicemain .sermain_5 .icon {
-    width: 40px; }
-  .servicemain .serblk .icon {
-    margin-bottom: 0px; }
-  .servicemain .serblk .caption h2 {
-    padding: 0 17%;
-    display: none; }
-  .servicemain .sermain_2 .caption h2 {
-    padding: 53px 17% 0; }
-  .servicemain .topser {
-    text-align: center; }
-  .servicemain .topser ul {
-    display: inline-block;
-    width: 100%;
-    text-align: center; }
-  .services_body #header {
-    opacity: 1;
-    visibility: visible; }
-  .services_body #com_header .com_head {
-    opacity: 0; }
-  #ser_nuts .ser_top {
-    max-width: 100%;
-    text-align: center;
-    display: inline-block; }
-  #ser_nuts .ser_top p {
-    max-width: 100%;
-    text-align: center;
-    display: inline-block; }
-  .services_body.navopen .pushmenu {
-    z-index: 1111; }
-  svg.mobileviewsvg {
-    position: absolute;
-    left: 0px;
-    top: 0px;
+section#skills_section {
+  padding: 70px; }
+  section#skills_section div.all_content {
     width: 100%;
     height: 100%; }
-  .servicemain .tab-content .webdesign .ser_detailbox,
-  .servicemain .tab-content .webdeve .ser_detailbox,
-  .servicemain .tab-content .ecommerce .ser_detailbox,
-  .servicemain .tab-content .appdev .ser_detailbox,
-  .servicemain .tab-content .gamedev .ser_detailbox {
-    background: none;
-    z-index: 5; }
-  .servicemain .tab-content .detailani {
-    position: relative;
-    z-index: 10;
-    padding: 50px 30px 60px; }
-  svg.mobileviewsvg path {
-    fill: #ffffff;
-    stroke: #ff0036; }
-  #webdevelopment svg.mobileviewsvg path {
-    fill: #ffffff;
-    stroke: #7e2683; }
-  #ecommerce svg.mobileviewsvg path {
-    fill: #ffffff;
-    stroke: #01b5e2; }
-  #appdevelopment svg.mobileviewsvg path {
-    fill: #ffffff;
-    stroke: #4b9335; }
-  #gamedevelopment svg.mobileviewsvg path {
-    fill: #ffffff;
-    stroke: #ff6d01; }
-  .servicemain .topser::before {
-    top: -70px; }
-  #ser_nuts .ser_top h6 {
-    padding-bottom: 60px; }
-  #ser_nuts {
-    padding: 41px 0 0 0; }
-  #com_header .com_nuts .c_nuts .c_text {
-    padding: 0 0px 12px;
-    letter-spacing: -0.5px;
-    border-bottom-width: 4px;
-    margin: 0 auto; }
-  #com_header .com_nuts .c_nuts .c_text h4 {
-    font-size: 22px; }
-  #com_header .com_nuts .c_nuts .c_text h1 {
-    font-size: 22px; }
-  #com_header .com_nuts {
-    height: 54px; }
-  .servicemain .tab-content {
-    margin-top: 60px; }
-  .servicemain .cat_content h2 {
-    font-size: 20px; }
-  .servicemain .serblk {
-    opacity: 1; }
-  .servicemain .serblk svg.default {
-    fill: #000;
-    opacity: 0.8; } }
-
-@media (min-width: 568px) and (max-width: 767px) {
-  .servicemain .topser:after {
-    top: 60px; } }
-
-@media (min-width: 240px) and (max-width: 567px) {
-  .servicemain .serblk {
-    float: none;
-    display: inline-block;
-    width: 90px;
-    margin: 0 0.5%;
-    height: 90px; }
-  .servicemain .sermain_4 .icon img,
-  .servicemain .sermain_1 .icon img,
-  .servicemain .sermain_2 .icon img,
-  .servicemain .sermain_3 .icon img,
-  .servicemain .sermain_5 .icon img {
-    max-height: 48px; }
-  .servicemain .topser ul li:nth-child(1),
-  .servicemain .topser ul li:nth-child(2) {
-    margin-bottom: -20px; }
-  .septore {
-    display: inline-block; } }
+    section#skills_section div.all_content div.circles {
+      width: 100%;
+      height: 100%;
+      background: url(../img/skills.png), url(..img/skills_bottom.png) repeat-y;
+      background-size: 100%; }
+      section#skills_section div.all_content div.circles ul.skills_header,
+      section#skills_section div.all_content div.circles ul.skills {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        display: flex;
+        flex: row wrap;
+        justify-items: center;
+        justify-content: center; }
+        section#skills_section div.all_content div.circles ul.skills_header li,
+        section#skills_section div.all_content div.circles ul.skills li {
+          list-style: none;
+          display: inline;
+          float: left;
+          margin-left: -50px; }
+          section#skills_section div.all_content div.circles ul.skills_header li:first-child,
+          section#skills_section div.all_content div.circles ul.skills li:first-child {
+            margin-left: 0; }
+          section#skills_section div.all_content div.circles ul.skills_header li#development .circle,
+          section#skills_section div.all_content div.circles ul.skills li#development .circle {
+            background-color: #2998ff; }
+            section#skills_section div.all_content div.circles ul.skills_header li#development .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.skills li#development .circle .circle__spin.active circle {
+              stroke: #2998ff; }
+          section#skills_section div.all_content div.circles ul.skills_header li#design .circle,
+          section#skills_section div.all_content div.circles ul.skills li#design .circle {
+            background-color: #5643fa; }
+            section#skills_section div.all_content div.circles ul.skills_header li#design .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.skills li#design .circle .circle__spin.active circle {
+              stroke: #5643fa; }
+          section#skills_section div.all_content div.circles ul.skills_header li:nth-child(1) .circle,
+          section#skills_section div.all_content div.circles ul.skills li:nth-child(1) .circle {
+            background-color: #FF0033; }
+            section#skills_section div.all_content div.circles ul.skills_header li:nth-child(1) .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.skills li:nth-child(1) .circle .circle__spin.active circle {
+              stroke: #FF0033; }
+          section#skills_section div.all_content div.circles ul.skills_header li:nth-child(2) .circle,
+          section#skills_section div.all_content div.circles ul.skills li:nth-child(2) .circle {
+            background-color: #7D2582; }
+            section#skills_section div.all_content div.circles ul.skills_header li:nth-child(2) .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.skills li:nth-child(2) .circle .circle__spin.active circle {
+              stroke: #7D2582; }
+          section#skills_section div.all_content div.circles ul.skills_header li:nth-child(3) .circle,
+          section#skills_section div.all_content div.circles ul.skills li:nth-child(3) .circle {
+            background-color: #09B7E3; }
+            section#skills_section div.all_content div.circles ul.skills_header li:nth-child(3) .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.skills li:nth-child(3) .circle .circle__spin.active circle {
+              stroke: #09B7E3; }
+          section#skills_section div.all_content div.circles ul.skills_header li:nth-child(4) .circle,
+          section#skills_section div.all_content div.circles ul.skills li:nth-child(4) .circle {
+            background-color: #50953A; }
+            section#skills_section div.all_content div.circles ul.skills_header li:nth-child(4) .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.skills li:nth-child(4) .circle .circle__spin.active circle {
+              stroke: #50953A; }
+          section#skills_section div.all_content div.circles ul.skills_header li:nth-child(5) .circle,
+          section#skills_section div.all_content div.circles ul.skills li:nth-child(5) .circle {
+            background-color: #FF7209; }
+            section#skills_section div.all_content div.circles ul.skills_header li:nth-child(5) .circle .circle__spin.active circle,
+            section#skills_section div.all_content div.circles ul.skills li:nth-child(5) .circle .circle__spin.active circle {
+              stroke: #FF7209; }
+          section#skills_section div.all_content div.circles ul.skills_header li .circle,
+          section#skills_section div.all_content div.circles ul.skills li .circle {
+            position: relative;
+            margin: 40px;
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            border-radius: 50%;
+            opacity: .9;
+            transition: all .2s; }
+            section#skills_section div.all_content div.circles ul.skills_header li .circle:hover,
+            section#skills_section div.all_content div.circles ul.skills li .circle:hover {
+              opacity: 1;
+              box-shadow: 0px 0px 10px #000; }
+            section#skills_section div.all_content div.circles ul.skills_header li .circle .circle__spin,
+            section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin {
+              position: absolute;
+              left: -15px;
+              top: -15px;
+              width: 220px;
+              height: 220px; }
+              section#skills_section div.all_content div.circles ul.skills_header li .circle .circle__spin.not_active svg,
+              section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin.not_active svg {
+                display: none; }
+              section#skills_section div.all_content div.circles ul.skills_header li .circle .circle__spin.active svg,
+              section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin.active svg {
+                display: block;
+                animation: circle_border_spin 10s linear infinite; }
+              section#skills_section div.all_content div.circles ul.skills_header li .circle .circle__spin.active circle,
+              section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin.active circle {
+                stroke: orange; }
+              section#skills_section div.all_content div.circles ul.skills_header li .circle .circle__spin svg,
+              section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin svg {
+                width: 105%;
+                height: 105%; }
+              section#skills_section div.all_content div.circles ul.skills_header li .circle .circle__spin circle,
+              section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin circle {
+                stroke-width: 2;
+                stroke-dasharray: 15, 10;
+                fill: none; }
+            section#skills_section div.all_content div.circles ul.skills_header li .circle div.content,
+            section#skills_section div.all_content div.circles ul.skills li .circle div.content {
+              text-align: center;
+              line-height: 120px; }
+              section#skills_section div.all_content div.circles ul.skills_header li .circle div.content img,
+              section#skills_section div.all_content div.circles ul.skills li .circle div.content img {
+                height: 50px;
+                margin-top: 35px; }
+              section#skills_section div.all_content div.circles ul.skills_header li .circle div.content h2,
+              section#skills_section div.all_content div.circles ul.skills li .circle div.content h2 {
+                font-size: 16px;
+                margin: 0;
+                margin-top: 10px;
+                font-weight: 500;
+                color: #FFF; }
+      section#skills_section div.all_content div.circles ul.skills li .circle {
+        width: 150px;
+        height: 150px; }
+        section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin {
+          width: 174px;
+          height: 174px;
+          left: -16px;
+          top: -16px; }
+          section#skills_section div.all_content div.circles ul.skills li .circle .circle__spin circle {
+            stroke-width: 2;
+            stroke-dasharray: 15, 10;
+            fill: none; }
+      section#skills_section div.all_content div.circles ul.skills h2 {
+        line-height: 150px; }
+    section#skills_section div.all_content div.skills ul.design {
+      display: none; }
 
 section#profiles {
   width: 100%;
