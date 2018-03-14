@@ -15,7 +15,7 @@ section#projects_section {
                 justify-content: space-around;
                 width: 100%;
                 li {
-                    width: 22%;
+                    width: 24%;
                     display: inline;
                     float: left;
                     height: 140px;
@@ -115,8 +115,7 @@ section#projects_section {
             width: 33.333333%;
             height: 100%;
             display: table-cell;
-            position: relative;
-            // padding: 20px;
+            position: relative; // padding: 20px;
         }
         &__right {
             width: 66.6666667%;
@@ -184,7 +183,6 @@ section#projects_section {
             color: $primary-color;
         }
     }
-    
     @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
         .popup {
             -webkit-backdrop-filter: blur(10px);
@@ -193,8 +191,6 @@ section#projects_section {
         }
     }
 }
-
-
 
 // .popup.open .popup__content {
 //     opacity: 1;
