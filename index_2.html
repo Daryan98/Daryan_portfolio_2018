@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div.scheduel_diagram{
+            width: 300px;
+            height: 300px;
+            padding: 2%;
+            position: relative;
+        }
+        div.scheduel_diagram div.circle.design {
+            width: 94%;
+            height: 94%;
+            position: absolute;
+            left: 0;
+            background: #ccc;
+            border-radius: 50%;
+        }
+        div.scheduel_diagram div.circle.development {
+            width: 94%;
+            height: 94%;
+            
+            position: absolute;
+            right: 0;
+            background: rgb(116, 116, 116);
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="scheduel_diagram">
+        <div class="circle design"><span>Design</span> </div>
+        <div class="circle development"><span>Development</span> </div>
+    </div>
+</body>
+</html>

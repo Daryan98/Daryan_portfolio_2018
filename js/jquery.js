@@ -54,3 +54,19 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+  //Peoject Section
+  $(document).ready(() => {
+    $(".project div.show a").on("click", ()=> {
+      $(".popup").removeClass("close");
+      $(".popup").addClass("open");
+    })
+  })
+
+  $(document).ready(() => {
+    $(".popup__close").on("click", ()=> {
+      $(".popup").removeClass("open");
+      $(".popup").addClass("close");
+    })
+  })

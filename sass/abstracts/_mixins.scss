@@ -30,8 +30,9 @@
 @mixin header_white_background {
     margin-top: 0;
     padding-top: 0;
-    display:block;
+    // display:block;
     text-align: center;
+    text-decoration: none;
     margin-bottom: 70px;
     background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
     -webkit-background-clip: text;
@@ -39,3 +40,11 @@
     font-weight: 600;
 }
 
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50% -50%);
+}

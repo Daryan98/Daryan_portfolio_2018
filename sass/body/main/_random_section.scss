@@ -4,8 +4,8 @@ section#random_section {
     background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($primary-color, 0.8)), to(rgba($secondary-color, 0.8))), url(../img/random.jpg);
     background-image: linear-gradient(to right bottom, rgba($primary-color, 0.8), rgba($secondary-color, 0.8)), url(../img/random.jpg);
     background-size: cover;
-    -webkit-transform: skewY(-5deg);
-    transform: skewY(-5deg);
+    -webkit-transform: skewY(-4deg);
+    transform: skewY(-4deg);
 
     h1 {
         margin-top: 0;
@@ -36,8 +36,8 @@ section#random_section {
 }
 
 #random_section>* {
-    -webkit-transform: skewY(5deg);
-    transform: skewY(5deg)
+    -webkit-transform: skewY(4deg);
+    transform: skewY(4deg)
 }
 
 @media only screen and (max-width: 56.25em) {

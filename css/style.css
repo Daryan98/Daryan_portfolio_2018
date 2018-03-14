@@ -212,7 +212,7 @@ nav.navigation__big {
   line-height: 120px;
   transition: all .5s;
   position: absolute;
-  z-index: 10000000; }
+  z-index: 100; }
   nav.navigation__big div.navbar div#logo {
     float: left;
     text-align: left;
@@ -477,14 +477,48 @@ section#scheduel_section {
       font-weight: 500;
       list-style: none;
       margin-bottom: 10px; }
-  section#scheduel_section #design-colum {
-    float: left; }
+  section#scheduel_section #development-colum ul {
+    float: right; }
+    section#scheduel_section #development-colum ul li:first-child {
+      position: relative; }
+      section#scheduel_section #development-colum ul li:first-child::before {
+        content: "";
+        counter-increment: big-numba;
+        position: absolute;
+        font-size: 19px;
+        left: -30px;
+        top: 6px;
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        color: #FFF;
+        background: #2998ff none repeat scroll 0% 0%;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); }
   section#scheduel_section #scheduel_pic img {
     margin-left: 50%;
     transform: translateX(-50%);
     height: 300px; }
-  section#scheduel_section #coding-colum ul {
-    float: right; }
+  section#scheduel_section #design-colum ul {
+    float: left; }
+    section#scheduel_section #design-colum ul li:first-child {
+      position: relative; }
+      section#scheduel_section #design-colum ul li:first-child::before {
+        content: "";
+        counter-increment: big-numba;
+        position: absolute;
+        font-size: 19px;
+        left: -30px;
+        top: 6px;
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        color: #FFF;
+        background: #5643fa none repeat scroll 0% 0%;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); }
 
 section#random_section {
   margin-top: 60px;
@@ -492,8 +526,8 @@ section#random_section {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(41, 152, 255, 0.8)), to(rgba(86, 67, 250, 0.8))), url(../img/random.jpg);
   background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/random.jpg);
   background-size: cover;
-  -webkit-transform: skewY(-5deg);
-  transform: skewY(-5deg); }
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg); }
   section#random_section h1 {
     margin-top: 0;
     padding-top: 0;
@@ -516,8 +550,8 @@ section#random_section {
     color: #3a3a3a; }
 
 #random_section > * {
-  -webkit-transform: skewY(5deg);
-  transform: skewY(5deg); }
+  -webkit-transform: skewY(4deg);
+  transform: skewY(4deg); }
 
 @media only screen and (max-width: 56.25em) {
   .section-features {
@@ -690,8 +724,9 @@ section#skills_section {
               section#skills_section div.all_content div.circles ul.skills_header li .circle .circle__spin circle,
               section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin circle,
               section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin circle {
-                stroke-width: 2;
-                stroke-dasharray: 15, 10;
+                stroke-width: 4;
+                stroke-dasharray: 0, 10;
+                stroke-linecap: round;
                 fill: none; }
             section#skills_section div.all_content div.circles ul.skills_header li .circle div.content,
             section#skills_section div.all_content div.circles ul.developemnt_skill li .circle div.content,
@@ -724,14 +759,13 @@ section#skills_section {
           top: -16px; }
           section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin circle,
           section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin circle {
-            stroke-width: 2;
-            stroke-dasharray: 15, 10;
+            stroke-width: 3;
+            stroke-dasharray: 0, 8;
+            stroke-linecap: round;
             fill: none; }
       section#skills_section div.all_content div.circles ul.developemnt_skill h2,
       section#skills_section div.all_content div.circles ul.design_skill h2 {
         line-height: 150px; }
-      section#skills_section div.all_content div.circles div.skills ul.design_skill {
-        display: none; }
     section#skills_section div.all_content div.skills_about {
       margin-top: 70px; }
       section#skills_section div.all_content div.skills_about ul li {
@@ -792,6 +826,7 @@ section#profiles_section {
         font-size: 20px; }
 
 section#projects_section {
+  position: relative;
   width: 100%;
   padding: 70px; }
   section#projects_section div.container {
@@ -799,8 +834,8 @@ section#projects_section {
     section#projects_section div.container h1 {
       margin-top: 0;
       padding-top: 0;
-      display: block;
       text-align: center;
+      text-decoration: none;
       margin-bottom: 70px;
       background: linear-gradient(to right, #2998ff 0%, #5643fa 100%);
       -webkit-background-clip: text;
@@ -813,38 +848,154 @@ section#projects_section {
         flex-flow: row wrap;
         justify-content: space-around;
         width: 100%; }
-        section#projects_section div.container div.all_projects ul li.project {
+        section#projects_section div.container div.all_projects ul li {
           width: 18%;
-          position: relative;
           display: inline;
           float: left;
-          line-height: 130px;
-          height: 130px;
+          height: 100px;
           margin-bottom: 35px;
-          background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/random.jpg);
+          background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8));
           background-size: cover;
-          text-align: center; }
-          section#projects_section div.container div.all_projects ul li.project div.show {
-            width: 100%;
-            height: 101%;
-            background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8));
+          text-align: center;
+          list-style: none; }
+          section#projects_section div.container div.all_projects ul li .project {
+            position: relative;
+            height: 100%; }
+            section#projects_section div.container div.all_projects ul li .project img {
+              width: 100%;
+              height: 105%;
+              padding: 0; }
+            section#projects_section div.container div.all_projects ul li .project div.show {
+              width: 100%;
+              height: 105px;
+              background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8));
+              position: absolute;
+              left: 0;
+              top: 0px;
+              display: none;
+              opacity: 0;
+              transition: all .2s; }
+              section#projects_section div.container div.all_projects ul li .project div.show a {
+                text-decoration: none;
+                color: #FFF;
+                font-size: 18px;
+                line-height: 105px;
+                font-weight: 600;
+                z-index: 10;
+                transition: all .2s;
+                cursor: pointer; }
+            section#projects_section div.container div.all_projects ul li .project:hover div.show {
+              display: inline;
+              opacity: 1; }
+              section#projects_section div.container div.all_projects ul li .project:hover div.show a:hover {
+                font-size: 1.4em; }
+          section#projects_section div.container div.all_projects ul li div.preview_popup {
             position: absolute;
-            left: 0;
-            top: 0px;
-            display: none; }
-            section#projects_section div.container div.all_projects ul li.project div.show a {
-              text-decoration: none;
-              color: #FFF;
-              font-size: 18px;
-              font-weight: 600;
-              z-index: 10; }
-          section#projects_section div.container div.all_projects ul li.project:hover div.show {
-            display: block; }
-          section#projects_section div.container div.all_projects ul li.project img {
-            margin-top: 0px;
-            width: 100%;
-            height: 100%;
-            padding: 0; }
+            top: 0%;
+            left: 20%;
+            height: 400px;
+            width: 60%;
+            background: #dddddd; }
+
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all .5s .2s;
+  transition: all .5s .2s; }
+  .popup.open {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  .popup.close {
+    visibility: hidden;
+    -webkit-transform: scale(0.25);
+    transform: scale(0.25); }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50% -50%);
+    width: 75%;
+    background-color: #FFF;
+    -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: table;
+    text-align: left; }
+  .popup__left {
+    width: 33.333333%;
+    height: 100%;
+    display: table-cell;
+    position: relative; }
+  .popup__right {
+    width: 66.6666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+    .popup__right h3 {
+      font-size: .9em;
+      margin: 0 0 25px 0;
+      font-weight: 500; }
+    .popup__right div.urls {
+      margin: 10px; }
+      .popup__right div.urls a {
+        outline: none;
+        background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8));
+        color: #FFF;
+        font-weight: 400;
+        display: inline;
+        margin-right: 40px; }
+        .popup__right div.urls a::after {
+          background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)); }
+  .popup__img {
+    display: block;
+    width: 35%; }
+  .popup__text {
+    font-size: .8em;
+    margin-bottom: 4rem;
+    font-weight: 400;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #eee;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 4rem;
+    column-gap: 4rem;
+    -webkit-column-rule: 1px solid #eee;
+    column-rule: 1px solid #eee;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    line-height: 25px; }
+  .popup__close:link, .popup__close:visited {
+    text-decoration: none;
+    color: #777;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    line-height: 1; }
+  .popup__close:hover {
+    color: #2998ff; }
+
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+  .popup {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3); } }
 
 section#conatct_section {
   padding: 70px 0;
@@ -873,8 +1024,8 @@ section#conatct_section {
         section#conatct_section div.container div.contact_box div.contact_form h1 {
           margin-top: 0;
           padding-top: 0;
-          display: block;
           text-align: center;
+          text-decoration: none;
           margin-bottom: 70px;
           background: linear-gradient(to right, #2998ff 0%, #5643fa 100%);
           -webkit-background-clip: text;
@@ -945,8 +1096,8 @@ footer {
   footer h1 {
     margin-top: 0;
     padding-top: 0;
-    display: block;
     text-align: center;
+    text-decoration: none;
     margin-bottom: 70px;
     background: linear-gradient(to right, #2998ff 0%, #5643fa 100%);
     -webkit-background-clip: text;

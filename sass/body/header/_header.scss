@@ -81,7 +81,7 @@ nav.navigation__big {
     line-height: 120px;
     transition: all .5s; //Navbar style when it is not fixed
     position: absolute;
-    z-index: 10000000;
+    z-index: 100;
     div.navbar {
         div#logo {
             float: left;
