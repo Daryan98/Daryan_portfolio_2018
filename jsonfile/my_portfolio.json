@@ -37,32 +37,32 @@
     },
     "profiles": [{
             "name": "TreeHouse",
-            "img_avatar": "../img/profiles/treehouse.png",
+            "img_avatar": "img/profiles/treehouse.png",
             "paragraph": "I used treehouse in start of my career I finished design and front end track after that I stop treehouse for personal reason then after that I took other courses in Udemy and I started to practice and build websites. Now I started with JavaScript course."
         },
         {
             "name": "Udemy",
-            "img_avatar": "../img/profiles/udemy.jpg",
+            "img_avatar": "img/profiles/udemy.jpg",
             "paragraph": "I have completed some jQuery and sass courses in Udemy, and while I took these course I build website with them."
         },
         {
             "name": "CodeCademy",
-            "img_avatar": "../img/profiles/codecademy.png",
+            "img_avatar": "img/profiles/codecademy.png",
             "paragraph": "I have finished more than 5 course in codecademy I used when I started to learn about programing. i started with python in start but it was little difficult for me and I choose to start from front end and grow from there."
         },
         {
             "name": "FreeCodeCamp",
-            "img_avatar": "../img/profiles/freecodecamp.png",
+            "img_avatar": "img/profiles/freecodecamp.png",
             "paragraph": "Now that I have started with JavaScript track in treehouse I have started freecodecamp JavaScript part from start and also use the w3Reasourses exercise to learn coding and learn to solve problem."
         },
         {
             "name": "KhanAcademy",
-            "img_avatar": "../img/profiles/khanacademy.jpg",
+            "img_avatar": "img/profiles/khanacademy.jpg",
             "paragraph": "khanacademy before I used it to learn programming i used it to earn mathematics. it was for 8 months ago I learned some basic HTML and css in it and some animation with CSS"
         },
         {
             "name": "Github",
-            "img_avatar": "../img/profiles/github.png",
+            "img_avatar": "img/profiles/github.png",
             "paragraph": "This is my Github With all my respositorys, click her if you want to see all the Websites that i have created"
         }
 
@@ -73,8 +73,8 @@
             "name": "My Second Portfolio",
             "website_url": "https://daryan98.github.io/Daryan_portfolio_2018/",
             "github_url": "https://github.com/Daryan98/Daryan_portfolio_2018",
-            "img_avatar_small": "../img/projects/project_1.jpg",
-            "img_avatar_big": "../img/projects/project_1_big.jpg",
+            "img_avatar_small": "img/projects/project_1.jpg",
+            "img_avatar_big": "img/projects/project_1_big.jpg",
             "used_languges": "Html, CSS, JavaScript, node, Jquery, SASS, BootStrap, Responsive Design, felxBox, Ajax",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -83,8 +83,8 @@
             "name": "JavaScript Advaneced Ajax Project",
             "website_url": "https://daryan98.github.io/IMDBmoviesJsonProject/",
             "github_url": "https://github.com/Daryan98/IMDBmoviesJsonProject",
-            "img_avatar_small": "../img/projects/project_2.png",
-            "img_avatar_big": "../img/projects/project_2_big.png",
+            "img_avatar_small": "img/projects/project_2.png",
+            "img_avatar_big": "img/projects/project_2_big.png",
             "used_languges": "Html, CSS,JavaScript, Ajax, SASS",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -93,8 +93,8 @@
             "name": "JavaScript Closure",
             "website_url": "https://daryan98.github.io/Divisible-HMW-week8/",
             "github_url": "https://github.com/Daryan98/Divisible-HMW-week8",
-            "img_avatar_small": "../img/projects/project_3.png",
-            "img_avatar_big": "../img/projects/project_3.png",
+            "img_avatar_small": "img/projects/project_3.png",
+            "img_avatar_big": "img/projects/project_3.png",
             "used_languges": "Html, CSS, JavaScript, SASS",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -103,8 +103,8 @@
             "name": "JavaScript Ajax",
             "website_url": "https://daryan98.github.io/Imdb_json-p/",
             "github_url": "https://github.com/Daryan98/Imdb_json-p",
-            "img_avatar_small": "../img/projects/project_4.png",
-            "img_avatar_big": "../img/projects/project_4_big.png",
+            "img_avatar_small": "img/projects/project_4.png",
+            "img_avatar_big": "img/projects/project_4_big.png",
             "used_languges": "Html, CSS, JavaScript, SASS",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -113,8 +113,8 @@
             "name": "My First Portfolio",
             "website_url": "https://daryan98.github.io/Portfolio_DaryanKf/",
             "github_url": "https://github.com/Daryan98/Portfolio_DaryanKf",
-            "img_avatar_small": "../img/projects/project_5.png",
-            "img_avatar_big": "../img/projects/project_5_big.png",
+            "img_avatar_small": "img/projects/project_5.png",
+            "img_avatar_big": "img/projects/project_5_big.png",
             "used_languges": "Html, CSS, BootStrap, JavaScript, Jquery, Responsive Design, SASS",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -123,8 +123,8 @@
             "name": "JavaScript Ajax Advanced",
             "website_url": "https://daryan98.github.io/Ajax_WEEK6_HYF/",
             "github_url": "https://github.com/Daryan98/Ajax_WEEK6_HYF",
-            "img_avatar_small": "../img/projects/project_6.png",
-            "img_avatar_big": "../img/projects/project_6_big.png",
+            "img_avatar_small": "img/projects/project_6.png",
+            "img_avatar_big": "img/projects/project_6_big.png",
             "used_languges": "Html, CSS, JavaScript, Ajax, SASS",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -133,8 +133,8 @@
             "name": "JavaScript Ajax",
             "website_url": "https://daryan98.github.io/Click_show_JSON/",
             "github_url": "https://github.com/Daryan98/Click_show_JSON",
-            "img_avatar_small": "../img/projects/project_7.png",
-            "img_avatar_big": "../img/projects/project_7_big.png",
+            "img_avatar_small": "img/projects/project_7.png",
+            "img_avatar_big": "img/projects/project_7_big.png",
             "used_languges": "Html, CSS, JavaScript, Ajax, SASS",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -143,8 +143,8 @@
             "name": "JavaScript Ajax",
             "website_url": "https://daryan98.github.io/flex-HYF-JSON/",
             "github_url": "https://github.com/Daryan98/flex-HYF-JSON",
-            "img_avatar_small": "../img/projects/project_8.jpg",
-            "img_avatar_big": "../img/projects/project_8_big.jpg",
+            "img_avatar_small": "img/projects/project_8.jpg",
+            "img_avatar_big": "img/projects/project_8_big.jpg",
             "used_languges": "Html, CSS, BootStrap, JavaScript, Animation, Ajax, SASS",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -153,8 +153,8 @@
             "name": "Books",
             "website_url": "https://daryan98.github.io/js_book/",
             "github_url": "https://github.com/Daryan98/js_book",
-            "img_avatar_small": "../img/projects/project_9.png",
-            "img_avatar_big": "../img/projects/project_9_big.png",
+            "img_avatar_small": "img/projects/project_9.png",
+            "img_avatar_big": "img/projects/project_9_big.png",
             "used_languges": "Html, CSS, BootStrap, JavaScript, Ajax, SASS",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -163,8 +163,8 @@
             "name": "Pay Card",
             "website_url": "https://daryan98.github.io/Pay_with/",
             "github_url": "https://github.com/Daryan98/Pay_with",
-            "img_avatar_small": "../img/projects/project_10.png",
-            "img_avatar_big": "../img/projects/project_10.png",
+            "img_avatar_small": "img/projects/project_10.png",
+            "img_avatar_big": "img/projects/project_10.png",
             "used_languges": "Html, CSS, SASS, Responsive Design",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -173,8 +173,8 @@
             "name": "Cristiano Ronaldo",
             "website_url": "https://daryan98.github.io/c_ronaldo/",
             "github_url": "https://github.com/Daryan98/c_ronaldo",
-            "img_avatar_small": "../img/projects/project_11.png",
-            "img_avatar_big": "../img/projects/project_11.png",
+            "img_avatar_small": "img/projects/project_11.png",
+            "img_avatar_big": "img/projects/project_11.png",
             "used_languges": "Html, CSS, BootStrap, Responsive Design, Animation",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -183,8 +183,8 @@
             "name": "Buisness Sell",
             "website_url": "https://daryan98.github.io/selling_Page/",
             "github_url": "https://github.com/Daryan98/selling_Page",
-            "img_avatar_small": "../img/projects/project_12.png",
-            "img_avatar_big": "../img/projects/project_12.png",
+            "img_avatar_small": "img/projects/project_12.png",
+            "img_avatar_big": "img/projects/project_12.png",
             "used_languges": "Html, CSS, BootStrap, Responsive Design",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         }, {
@@ -192,8 +192,8 @@
             "name": "ToDo app",
             "website_url": "https://daryan98.github.io/todo_app/",
             "github_url": "https://github.com/Daryan98/todo_app",
-            "img_avatar_small": "../img/projects/project_13.png",
-            "img_avatar_big": "../img/projects/project_13.png",
+            "img_avatar_small": "img/projects/project_13.png",
+            "img_avatar_big": "img/projects/project_13.png",
             "used_languges": "Html, CSS, BootStrap, JavaScript, Dom",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -202,8 +202,8 @@
             "name": "Pig Game",
             "website_url": "https://daryan98.github.io/pigGame/",
             "github_url": "https://github.com/Daryan98/pigGame",
-            "img_avatar_small": "../img/projects/project_14.png",
-            "img_avatar_big": "../img/projects/project_14.png",
+            "img_avatar_small": "img/projects/project_14.png",
+            "img_avatar_big": "img/projects/project_14.png",
             "used_languges": "Html, CSS, JavaScript, Dom",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -212,8 +212,8 @@
             "name": "Cube CSS",
             "website_url": "https://daryan98.github.io/css3dCube/",
             "github_url": "https://github.com/Daryan98/css3dCube",
-            "img_avatar_small": "../img/projects/project_15.png",
-            "img_avatar_big": "../img/projects/project_15.png",
+            "img_avatar_small": "img/projects/project_15.png",
+            "img_avatar_big": "img/projects/project_15.png",
             "used_languges": "Html, CSS",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -222,8 +222,8 @@
             "name": "Calc Power Game",
             "website_url": "https://daryan98.github.io/powerGame/",
             "github_url": "https://github.com/Daryan98/powerGame",
-            "img_avatar_small": "../img/projects/project_16.png",
-            "img_avatar_big": "../img/projects/project_16.png",
+            "img_avatar_small": "img/projects/project_16.png",
+            "img_avatar_big": "img/projects/project_16.png",
             "used_languges": "Html, CSS, JavaScript, Dom",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -232,8 +232,8 @@
             "name": "Dom Project",
             "website_url": "https://daryan98.github.io/DOM_project/",
             "github_url": "https://github.com/Daryan98/DOM_project",
-            "img_avatar_small": "../img/projects/project_17.png",
-            "img_avatar_big": "../img/projects/project_17.png",
+            "img_avatar_small": "img/projects/project_17.png",
+            "img_avatar_big": "img/projects/project_17.png",
             "used_languges": "Html, CSS, BootStrap, JavaScript, Dom",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -242,8 +242,8 @@
             "name": "Working on Project(Kurdish Youtube)",
             "website_url": "https://daryan98.github.io/index.html",
             "github_url": "https://github.com/Daryan98/Daryan98.github.io",
-            "img_avatar_small": "../img/projects/project_18.png",
-            "img_avatar_big": "../img/projects/project_18_big.png",
+            "img_avatar_small": "img/projects/project_18.png",
+            "img_avatar_big": "img/projects/project_18_big.png",
             "used_languges": "Html, CSS, BootStrap, JavaScript, jquery, SASS",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -252,8 +252,8 @@
             "name": "Animation Starts",
             "website_url": "https://daryan98.github.io/cssAnimation/",
             "github_url": "https://github.com/Daryan98/cssAnimation",
-            "img_avatar_small": "../img/projects/project_19.png",
-            "img_avatar_big": "../img/projects/project_19.png",
+            "img_avatar_small": "img/projects/project_19.png",
+            "img_avatar_big": "img/projects/project_19.png",
             "used_languges": "Html, CSS, Animation",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -262,8 +262,8 @@
             "name": "Image Gallery",
             "website_url": "https://daryan98.github.io/image-gallery/",
             "github_url": "https://github.com/Daryan98/image-gallery",
-            "img_avatar_small": "../img/projects/project_20.png",
-            "img_avatar_big": "../img/projects/project_20_big.jpg",
+            "img_avatar_small": "img/projects/project_20.png",
+            "img_avatar_big": "img/projects/project_20_big.jpg",
             "used_languges": "Html, CSS, animation",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -272,8 +272,8 @@
             "name": "Play Music",
             "website_url": "https://daryan98.github.io/play-music/",
             "github_url": "https://github.com/Daryan98/play-music",
-            "img_avatar_small": "../img/projects/project_21.png",
-            "img_avatar_big": "../img/projects/project_21.png",
+            "img_avatar_small": "img/projects/project_21.png",
+            "img_avatar_big": "img/projects/project_21.png",
             "used_languges": "Html, CSS, BootStrap, JavaScript",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
@@ -282,8 +282,8 @@
             "name": "Omni Food Buisness Website",
             "website_url": "https://daryan98.github.io/Omni-Food/",
             "github_url": "https://github.com/Daryan98/Omni-Food",
-            "img_avatar_small": "../img/projects/project_22.jpg",
-            "img_avatar_big": "../img/projects/project_22_big.jpg",
+            "img_avatar_small": "img/projects/project_22.jpg",
+            "img_avatar_big": "img/projects/project_22_big.jpg",
             "used_languges": "Html, CSS, BootStrap, JavaScript",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         }
