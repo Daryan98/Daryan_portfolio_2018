@@ -891,7 +891,8 @@ section#projects_section {
               margin-top: -12px;
               width: 100%;
               height: 100%;
-              padding: 0; }
+              padding: 0;
+              margin-left: 1px; }
             section#projects_section div.container div.all_projects ul li .project div.show {
               border-radius: 4px;
               width: 103%;
