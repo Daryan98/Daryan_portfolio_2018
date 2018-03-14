@@ -34,6 +34,7 @@ function profiles_section(data) {
         const div_left = document.createElement("div");
         const div_right = document.createElement("div");
         const imgElement = document.createElement("img");
+        const aElement = document.createElement("a");
         const h2Element = document.createElement("h2");
         const pElement = document.createElement("p")
 
@@ -42,6 +43,7 @@ function profiles_section(data) {
         addClass(div_right, "right_box");
 
         imgElement.src = profile.img_avatar;
+        aElement.href = profile.profile_url;
         h2Element.innerHTML = profile.name;
         pElement.innerHTML = profile.paragraph;
 
@@ -49,7 +51,8 @@ function profiles_section(data) {
         divElement.appendChild(div_left);
         divElement.appendChild(div_right);
         div_left.appendChild(imgElement);
-        div_right.appendChild(h2Element);
+        aElement.appendChild(h2Element);
+        div_right.appendChild(aElement);
         div_right.appendChild(pElement);
         
     });
@@ -63,13 +66,13 @@ function project_section(data) {
 
     let i = 0;
     data.projects.forEach(project => {
-        i++;
-
         const liElement = document.createElement("li");
         const divElement = document.createElement("div");
         const imgElement = document.createElement("img");
         const div_1Element = document.createElement("div");
         const aElement = document.createElement("a");
+
+        i++;
 
         addClass(liElement, `p${i}`);
         addClass(divElement, "project");
@@ -79,7 +82,6 @@ function project_section(data) {
         imgElement.src = project.img_avatar_small;
         aElement.innerHTML = "Show More";
 
-
         // imgElement.src = element.img_avatar_small
         ulElement.appendChild(liElement);
         liElement.appendChild(divElement);
@@ -87,67 +89,72 @@ function project_section(data) {
         divElement.appendChild(div_1Element);
         div_1Element.appendChild(aElement);
 
-        project_section_popup(liElement, project);
+        liElement.appendChild(project_section_popup(project));
+        
     });
 }
 
 
-function project_section_popup(liElement, data) {
-    const divElement = document.createElement("div");
-    const div_1Element = document.createElement("div");
-    const div_2Element = document.createElement("div");
-    const div_3Element = document.createElement("div");
-    const div_4Element = document.createElement("div");
-
-    const imgElement = document.createElement("img");
-
-    const h2Element = document.createElement("h2");
-    const h3Element = document.createElement("h3");
-    const pElement = document.createElement("p");
-
-    const aElement = document.createElement("a");
-    const a_1Element = document.createElement("a");
-    const a_2Element = document.createElement("a");
-
-    //Adding Class
-    addClass(divElement, "popup");
-    addClass(divElement, "close");
-    addClass(div_1Element, "popup__content");
-    addClass(div_2Element, "popup__left");
-    addClass(div_3Element, "popup__right");
-    addClass(imgElement, "popup__img");
-    addClass(pElement, "popup__text")
-    addClass(aElement, "popup__close");
-    addClass(div_4Element, "urls");
-    addClass(a_1Element, "btn");
-    addClass(a_2Element, "btn");
+function project_section_popup( data) {
+    // data.forEach(project => {
+        const divElement = document.createElement("div");
+        const div_1Element = document.createElement("div");
+        const div_2Element = document.createElement("div");
+        const div_3Element = document.createElement("div");
+        const div_4Element = document.createElement("div");
     
-
-    imgElement.src = data.img_avatar_big;
-    h2Element.innerHTML = data.name;
-    h3Element.innerHTML = data.used_languges;
-    pElement.innerHTML = data.paragraph;
-    aElement.innerHTML = "&times;";
-    aElement.href = "#projects_section"
-    a_1Element.innerHTML = "Website Url";
-    a_2Element.innerHTML = "GitHub Url";
-
-    a_1Element.href = data.website_url;
-    a_2Element.href = data.github_url;
+        const imgElement = document.createElement("img");
     
+        const h2Element = document.createElement("h2");
+        const h3Element = document.createElement("h3");
+        const pElement = document.createElement("p");
+    
+        const aElement = document.createElement("a");
+        const a_1Element = document.createElement("a");
+        const a_2Element = document.createElement("a");
+    
+        //Adding Class
+        addClass(divElement, "popup");
+        addClass(divElement, "close");
+        addClass(div_1Element, "popup__content");
+        addClass(div_2Element, "popup__left");
+        addClass(div_3Element, "popup__right");
+        addClass(imgElement, "popup__img");
+        addClass(pElement, "popup__text")
+        addClass(aElement, "popup__close");
+        addClass(div_4Element, "urls");
+        addClass(a_1Element, "btn");
+        addClass(a_2Element, "btn");
+        
+    
+        imgElement.src = data.img_avatar_big;
+        h2Element.innerHTML = data.name;
+        h3Element.innerHTML = data.used_languges;
+        pElement.innerHTML = data.paragraph;
+        aElement.innerHTML = "&times;";
+        aElement.href = "#projects_section"
+        a_1Element.innerHTML = "Website Url";
+        a_2Element.innerHTML = "GitHub Url";
+    
+        a_1Element.href = data.website_url;
+        a_2Element.href = data.github_url;
+        
 
-    liElement.appendChild(divElement);
-    divElement.appendChild(div_1Element);
-    div_1Element.appendChild(div_2Element);
-    div_1Element.appendChild(div_3Element);
-    div_2Element.appendChild(imgElement);
-    div_3Element.appendChild(aElement)
-    div_3Element.appendChild(h2Element);
-    div_3Element.appendChild(h3Element)
-    div_3Element.appendChild(pElement)
-    div_3Element.appendChild(div_4Element);
-    div_4Element.appendChild(a_1Element);
-    div_4Element.appendChild(a_2Element);
+        divElement.appendChild(div_1Element);
+        div_1Element.appendChild(div_2Element);
+        div_1Element.appendChild(div_3Element);
+        div_2Element.appendChild(imgElement);
+        div_3Element.appendChild(aElement)
+        div_3Element.appendChild(h2Element);
+        div_3Element.appendChild(h3Element)
+        div_3Element.appendChild(pElement)
+        div_3Element.appendChild(div_4Element);
+        div_4Element.appendChild(a_1Element);
+        div_4Element.appendChild(a_2Element);
+
+    // })
+    return divElement;
+
 }
 
 

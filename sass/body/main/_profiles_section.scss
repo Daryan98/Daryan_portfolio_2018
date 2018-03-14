@@ -12,11 +12,12 @@ section#profiles_section {
         flex-flow: row wrap;
         justify-content: space-around;
         div.box {
-            width: 70%;
+            width: 85%;
+            height: 170px;
             background: rgba($white-color, .7);
             display: block;
             padding: 20px;
-            padding-right: 70px;
+            padding-right: 100px;
             -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
             clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
             margin-bottom: 50px;
@@ -24,6 +25,7 @@ section#profiles_section {
             &:last-child {
                 margin-bottom: 0;
             }
+            &:hover {}
             div.left_box {
                 width: 30%;
                 height: 100%;
@@ -34,24 +36,48 @@ section#profiles_section {
                     height: 80px;
                     border-radius: 50%;
                     display: inline-block;
-                    float: left; 
+                    float: left;
+                    position: relative;
+                    transition: all .2s;
                     @include absCenter;
+                    @include box_shadow;
                 }
             }
-            h2 {
-                margin-top: 15px;
-                color: $font-color-dark;
-                display: inline-block;
-                text-align: left;
-                font-size: 20px;
-            }
-            p {
-                // display: inline-block;
-                // float: left;
+            div.right_box {
+                width: 70%;
+                height: 100%;
+                display: inline;
+                float: left;
+                position: relative;
+                a {
+                    &:hover {
+                        h2 {
+                            // color: $primary-color;
+                            @include header_white_background;
+                            margin-top: 15px;
+                            margin-bottom: 10px;
+                    font-weight: 500;
+                            
+                        }
+                    }
+                }
+                h2 {
+                    margin-top: 15px;
+                    color: $font-color-dark;
+                    display: inline-block;
+                    text-align: left;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                p {
+                    // display: inline-block;
+                    // float: left;
+                }
             }
         }
     }
 }
+
 #profiles_section>* {
     -webkit-transform: skewY(4deg);
     transform: skewY(4deg);

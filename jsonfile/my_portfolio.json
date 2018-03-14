@@ -38,31 +38,37 @@
     "profiles": [{
             "name": "TreeHouse",
             "img_avatar": "img/profiles/treehouse.png",
+            "profile_url": "https://teamtreehouse.com/hosseinkamalifar",
             "paragraph": "I used treehouse in start of my career I finished design and front end track after that I stop treehouse for personal reason then after that I took other courses in Udemy and I started to practice and build websites. Now I started with JavaScript course."
         },
         {
             "name": "Udemy",
             "img_avatar": "img/profiles/udemy.jpg",
+            "profile_url": "https://www.udemy.com/#",
             "paragraph": "I have completed some jQuery and sass courses in Udemy, and while I took these course I build website with them."
         },
         {
             "name": "CodeCademy",
             "img_avatar": "img/profiles/codecademy.png",
+            "profile_url": "https://www.codecademy.com/methodJumper90197",
             "paragraph": "I have finished more than 5 course in codecademy I used when I started to learn about programing. i started with python in start but it was little difficult for me and I choose to start from front end and grow from there."
         },
         {
             "name": "FreeCodeCamp",
             "img_avatar": "img/profiles/freecodecamp.png",
+            "profile_url": "https://www.freecodecamp.org/daryan98",
             "paragraph": "Now that I have started with JavaScript track in treehouse I have started freecodecamp JavaScript part from start and also use the w3Reasourses exercise to learn coding and learn to solve problem."
         },
         {
             "name": "KhanAcademy",
             "img_avatar": "img/profiles/khanacademy.jpg",
+            "profile_url": "https://da.khanacademy.org/profile/kaid_550820712175822913973917/",
             "paragraph": "khanacademy before I used it to learn programming i used it to earn mathematics. it was for 8 months ago I learned some basic HTML and css in it and some animation with CSS"
         },
         {
             "name": "Github",
             "img_avatar": "img/profiles/github.png",
+            "profile_url": "https://github.com/Daryan98",
             "paragraph": "This is my Github With all my respositorys, click her if you want to see all the Websites that i have created"
         }
 
