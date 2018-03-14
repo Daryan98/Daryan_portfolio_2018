@@ -1,50 +1,58 @@
 section#profiles_section {
     width: 100%;
     background: linear-gradient(to right bottom, rgba($primary-color, .8), rgba($secondary-color, .8));
-    padding: 140px 70px;
-    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
-        h1{
-            @include header_blue_background ;
-        }
-        div.all_boxes {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-
-            div.box {
-                width: 48%;
-                height: 160px;
-                background:rgba($white-color, .7);
-                padding: 20px 70px 20px 70px;
-                display: block;
-                -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-                clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-                margin-bottom: 50px;
-                border-radius: 5px;
-                &:last-child {
-                    margin-bottom: 0;
-                }
+    padding: 120px 70px;
+    -webkit-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+    h1 {
+        @include header_blue_background;
+    }
+    div.all_boxes {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        div.box {
+            width: 70%;
+            background: rgba($white-color, .7);
+            display: block;
+            padding: 20px;
+            padding-right: 70px;
+            -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+            margin-bottom: 50px;
+            border-radius: 5px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            div.left_box {
+                width: 30%;
+                height: 100%;
+                display: inline;
+                float: left;
+                position: relative;
                 img {
                     height: 80px;
                     border-radius: 50%;
                     display: inline-block;
-                    float: left;
-                    margin-top: 15px;
-                    margin-right: 25px;
-
+                    float: left; 
+                    @include absCenter;
                 }
-                h2 {
-                    margin-top: 15px;
-                    color: $font-color-dark;
-                    display: inline-block;
-                    text-align: left;
-                    font-size: 20px;
-                }
-                p {
-                    // display: inline-block;
-                    // float: left;
-                }
+            }
+            h2 {
+                margin-top: 15px;
+                color: $font-color-dark;
+                display: inline-block;
+                text-align: left;
+                font-size: 20px;
+            }
+            p {
+                // display: inline-block;
+                // float: left;
             }
         }
     }
+}
+#profiles_section>* {
+    -webkit-transform: skewY(4deg);
+    transform: skewY(4deg);
+}

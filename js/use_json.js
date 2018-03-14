@@ -31,20 +31,26 @@ function profiles_section(data) {
     div_all_profiles.innerHTML ="";
     data.profiles.forEach(profile => {
         const divElement = document.createElement("div");
+        const div_left = document.createElement("div");
+        const div_right = document.createElement("div");
         const imgElement = document.createElement("img");
         const h2Element = document.createElement("h2");
         const pElement = document.createElement("p")
 
         addClass(divElement, "box");
+        addClass(div_left, "left_box");
+        addClass(div_right, "right_box");
 
         imgElement.src = profile.img_avatar;
         h2Element.innerHTML = profile.name;
         pElement.innerHTML = profile.paragraph;
 
         div_all_profiles.appendChild(divElement);
-        divElement.appendChild(imgElement);
-        divElement.appendChild(h2Element);
-        divElement.appendChild(pElement);
+        divElement.appendChild(div_left);
+        divElement.appendChild(div_right);
+        div_left.appendChild(imgElement);
+        div_right.appendChild(h2Element);
+        div_right.appendChild(pElement);
         
     });
 }
