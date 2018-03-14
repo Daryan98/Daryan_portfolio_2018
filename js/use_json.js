@@ -22,7 +22,33 @@ function fetchJsonData(url) {
 
 fetchJsonData(imdbMovieUrl).then(data => {
     project_section(data);
-});
+    profiles_section(data);
+}).catch(err => console.log(err));
+
+
+function profiles_section(data) {
+    const div_all_profiles = document.querySelector(".all_boxes");
+    div_all_profiles.innerHTML ="";
+    data.profiles.forEach(profile => {
+        const divElement = document.createElement("div");
+        const imgElement = document.createElement("img");
+        const h2Element = document.createElement("h2");
+        const pElement = document.createElement("p")
+
+        addClass(divElement, "box");
+
+        imgElement.src = profile.img_avatar;
+        h2Element.innerHTML = profile.name;
+        pElement.innerHTML = profile.paragraph;
+
+        div_all_profiles.appendChild(divElement);
+        divElement.appendChild(imgElement);
+        divElement.appendChild(h2Element);
+        divElement.appendChild(pElement);
+        
+    });
+}
+
 
 function project_section(data) {
     // Already exsist
@@ -116,7 +142,6 @@ function project_section_popup(liElement, data) {
     div_3Element.appendChild(div_4Element);
     div_4Element.appendChild(a_1Element);
     div_4Element.appendChild(a_2Element);
-
-
-
 }
+
+

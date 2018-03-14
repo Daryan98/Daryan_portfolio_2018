@@ -22,7 +22,8 @@ section#scheduel_section {
         }
     }
     #development-colum {
-
+        margin-top: 15px;
+        
         ul {
             float: right;
             li:first-child{
@@ -51,13 +52,14 @@ section#scheduel_section {
     }
     #scheduel_pic {
         img {
-
+            margin-top: 0;
             margin-left:50%;
             transform: translateX(-50%);
             height: 300px;
         }
     }
     #design-colum {
+        margin-top: 15px;
         ul {
             float: left;
             li:first-child{

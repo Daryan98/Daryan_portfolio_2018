@@ -42,7 +42,7 @@
         },
         {
             "name": "Udemy",
-            "img_avatar": "../img/profiles/udemy.png",
+            "img_avatar": "../img/profiles/udemy.jpg",
             "paragraph": "I have completed some jQuery and sass courses in Udemy, and while I took these course I build website with them."
         },
         {
@@ -263,7 +263,7 @@
             "website_url": "https://daryan98.github.io/image-gallery/",
             "github_url": "https://github.com/Daryan98/image-gallery",
             "img_avatar_small": "../img/projects/project_20.png",
-            "img_avatar_big": "../img/projects/project_20_big.png",
+            "img_avatar_big": "../img/projects/project_20_big.jpg",
             "used_languges": "Html, CSS, animation",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
