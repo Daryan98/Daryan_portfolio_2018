@@ -3,7 +3,7 @@ function addClass(el, clas) {
     return el.classList.add(clas);
 }
 
-const imdbMovieUrl = "../jsonfile/my_portfolio.json";
+const imdbMovieUrl = "./jsonfile/my_portfolio.json";
 
 
 function fetchJsonData(url) {
