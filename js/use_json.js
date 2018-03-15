@@ -89,13 +89,13 @@ function project_section(data) {
         divElement.appendChild(div_1Element);
         div_1Element.appendChild(aElement);
 
-        liElement.appendChild(project_section_popup(project));
+      project_section_popup(liElement, project);
         
     });
 }
 
 
-function project_section_popup( data) {
+function project_section_popup(liElement,data) {
     // data.forEach(project => {
         const divElement = document.createElement("div");
         const div_1Element = document.createElement("div");
@@ -139,7 +139,7 @@ function project_section_popup( data) {
         a_1Element.href = data.website_url;
         a_2Element.href = data.github_url;
         
-
+liElement.appendChild(divElement)
         divElement.appendChild(div_1Element);
         div_1Element.appendChild(div_2Element);
         div_1Element.appendChild(div_3Element);

@@ -776,8 +776,6 @@ section#skills_section {
         line-height: 150px; }
       section#skills_section div.all_content div.circles div.skills ul.developemnt_skill {
         display: none; }
-      section#skills_section div.all_content div.circles div.skills ul.design_skill {
-        display: none; }
     section#skills_section div.all_content div.skills_about {
       margin-top: 70px; }
       section#skills_section div.all_content div.skills_about ul li {
@@ -835,6 +833,7 @@ section#profiles_section {
           border-radius: 50%;
           display: inline-block;
           float: left;
+          margin-left: 10px;
           position: relative;
           transition: all .2s;
           position: absolute;
@@ -966,17 +965,24 @@ section#projects_section {
     z-index: 1000;
     overflow: hidden;
     opacity: 0;
-    -webkit-transition: all .5s .2s;
-    transition: all .5s .2s; }
+    -webkit-transition: all .3s;
+    transition: all .3s; }
     section#projects_section .popup.open {
       opacity: 1;
-      visibility: visible;
-      -webkit-transform: scale(1);
-      transform: scale(1); }
+      visibility: visible; }
+      section#projects_section .popup.open .popup__content {
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
     section#projects_section .popup.close {
-      visibility: hidden;
-      -webkit-transform: scale(0.25);
-      transform: scale(0.25); }
+      visibility: hidden; }
+      section#projects_section .popup.close .popup__content {
+        -webkit-transform: translate(-50%, -100%);
+        transform: translate(-50%, -100%); }
+    @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+      section#projects_section .popup .popup {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.3); } }
     section#projects_section .popup__content {
       position: absolute;
       top: 50%;
@@ -984,12 +990,18 @@ section#projects_section {
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50% -50%);
       width: 75%;
+      height: 500px;
       background-color: #FFF;
-      -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0px 3px 30px -5px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 3px 30px -5px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 3px 30px -5px rgba(0, 0, 0, 0.15);
       border-radius: 3px;
       display: table;
-      text-align: left; }
+      text-align: left;
+      -webkit-transform: translate(-50%, -50%) scale(0.25);
+      transform: translate(-50%, -50%) scale(0.25);
+      -webkit-transition: all .5s .2s;
+      transition: all .5s .2s; }
     section#projects_section .popup__left {
       width: 33.333333%;
       height: 100%;
@@ -999,9 +1011,9 @@ section#projects_section {
       width: 66.6666667%;
       display: table-cell;
       vertical-align: middle;
-      padding: 3rem 5rem; }
+      padding: 2em; }
       section#projects_section .popup__right h3 {
-        font-size: .9em;
+        font-size: 1em;
         margin: 0 0 25px 0;
         font-weight: 500; }
       section#projects_section .popup__right div.urls {
@@ -1017,9 +1029,11 @@ section#projects_section {
             background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)); }
     section#projects_section .popup__img {
       display: block;
-      width: 35%; }
+      width: 35%;
+      margin-bottom: 0;
+      padding-bottom: 0; }
     section#projects_section .popup__text {
-      font-size: .8em;
+      font-size: 1em;
       margin-bottom: 4rem;
       font-weight: 400;
       -moz-column-count: 2;
@@ -1049,11 +1063,11 @@ section#projects_section {
       line-height: 1; }
     section#projects_section .popup__close:hover {
       color: #2998ff; }
-  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
-    section#projects_section .popup {
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
-      background-color: rgba(0, 0, 0, 0.3); } }
+
+.popup.open .popup__content {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1); }
 
 section#conatct_section {
   padding: 70px 0;
