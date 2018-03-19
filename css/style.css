@@ -707,7 +707,7 @@ section#skills_section {
             section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin,
             section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin {
               position: absolute;
-              left: -15px;
+              left: -16px;
               top: -15px;
               width: 220px;
               height: 220px; }
@@ -763,7 +763,7 @@ section#skills_section {
         section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin {
           width: 174px;
           height: 174px;
-          left: -16px;
+          left: -17px;
           top: -16px; }
           section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin circle,
           section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin circle {
@@ -774,21 +774,19 @@ section#skills_section {
       section#skills_section div.all_content div.circles ul.developemnt_skill h2,
       section#skills_section div.all_content div.circles ul.design_skill h2 {
         line-height: 150px; }
-      section#skills_section div.all_content div.circles div.skills ul.developemnt_skill {
-        display: none; }
-    section#skills_section div.all_content div.skills_about {
+    section#skills_section div.all_content div.skills_content {
       margin-top: 70px; }
-      section#skills_section div.all_content div.skills_about ul li {
+      section#skills_section div.all_content div.skills_content ul li {
         list-style: none; }
-        section#skills_section div.all_content div.skills_about ul li h2 {
+        section#skills_section div.all_content div.skills_content ul li h2 {
           text-align: center;
           margin-bottom: 30px;
           color: #FF0033; }
-        section#skills_section div.all_content div.skills_about ul li p {
+        section#skills_section div.all_content div.skills_content ul li p {
           display: inline-block;
           margin-left: 10%;
           width: 80%; }
-          section#skills_section div.all_content div.skills_about ul li p strong {
+          section#skills_section div.all_content div.skills_content ul li p strong {
             color: #FF0033; }
 
 section#profiles_section {
@@ -796,7 +794,34 @@ section#profiles_section {
   background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8));
   padding: 120px 70px;
   -webkit-transform: skewY(-4deg);
-  transform: skewY(-4deg); }
+  transform: skewY(-4deg);
+  position: relative; }
+  section#profiles_section .left {
+    background: #FFF;
+    padding: 14px 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    text-decoration: none;
+    color: #2998ff;
+    font-size: 16px;
+    cursor: pointer; }
+    section#profiles_section .left:hover {
+      color: #5643fa; }
+  section#profiles_section .right {
+    background: #FFF;
+    padding: 14px 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    text-decoration: none;
+    color: #2998ff;
+    font-size: 16px;
+    cursor: pointer; }
+    section#profiles_section .right:hover {
+      color: #5643fa; }
   section#profiles_section h1 {
     margin-top: 0;
     padding-top: 0;
@@ -805,30 +830,24 @@ section#profiles_section {
     margin-bottom: 70px;
     color: #FFF;
     font-weight: 600; }
-  section#profiles_section div.all_boxes {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around; }
-    section#profiles_section div.all_boxes div.box {
-      width: 85%;
+  section#profiles_section ul.all_boxes {
+    width: 100%;
+    margin-left: 15%; }
+    section#profiles_section ul.all_boxes li.box {
       height: 170px;
       background: rgba(255, 255, 255, 0.7);
-      display: block;
       padding: 20px;
       padding-right: 100px;
       -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
       clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-      margin-bottom: 50px;
       border-radius: 5px; }
-      section#profiles_section div.all_boxes div.box:last-child {
-        margin-bottom: 0; }
-      section#profiles_section div.all_boxes div.box div.left_box {
+      section#profiles_section ul.all_boxes li.box div.left_box {
         width: 30%;
         height: 100%;
         display: inline;
         float: left;
         position: relative; }
-        section#profiles_section div.all_boxes div.box div.left_box img {
+        section#profiles_section ul.all_boxes li.box div.left_box img {
           height: 80px;
           border-radius: 50%;
           display: inline-block;
@@ -844,13 +863,13 @@ section#profiles_section {
           -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
           -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); }
-      section#profiles_section div.all_boxes div.box div.right_box {
+      section#profiles_section ul.all_boxes li.box div.right_box {
         width: 70%;
         height: 100%;
         display: inline;
         float: left;
         position: relative; }
-        section#profiles_section div.all_boxes div.box div.right_box a:hover h2 {
+        section#profiles_section ul.all_boxes li.box div.right_box a:hover h2 {
           margin-top: 0;
           padding-top: 0;
           text-align: center;
@@ -863,13 +882,32 @@ section#profiles_section {
           margin-top: 15px;
           margin-bottom: 10px;
           font-weight: 500; }
-        section#profiles_section div.all_boxes div.box div.right_box h2 {
+        section#profiles_section ul.all_boxes li.box div.right_box h2 {
           margin-top: 15px;
           color: #3a3a3a;
           display: inline-block;
           text-align: left;
           font-size: 20px;
           font-weight: 500; }
+  section#profiles_section ul.slider_images {
+    display: block;
+    margin-left: 55%;
+    transform: translateX(-50%);
+    margin-top: 20px; }
+    section#profiles_section ul.slider_images li {
+      width: 40px;
+      height: 60px;
+      border-radius: 50%;
+      padding: 3px;
+      list-style: none;
+      display: inline;
+      margin: 10px; }
+      section#profiles_section ul.slider_images li img {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        padding: 1px;
+        background: #FFF; }
 
 #profiles_section > * {
   -webkit-transform: skewY(4deg);

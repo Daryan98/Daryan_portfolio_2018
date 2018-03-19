@@ -368,8 +368,8 @@
                         </div>
 
                     </div>
-                    <div class="skills_about">
-                        <ul>
+                    <div class="skills_content">
+                        <ul id="development_skills_content">
                             <li>
                                 <h2>HTML</h2>
                                 <p>Lorem ipsum dolor sit amet
@@ -381,6 +381,10 @@
                                     recusandae id in.</p>
                             </li>
                         </ul>
+                        <ul id="design_skills_content">
+
+
+                        </ul>
                     </div>
                 </div>
 
@@ -390,8 +394,20 @@
         <section id="profiles_section">
             <h1>My Profiles</h1>
             <div class="container">
-                <div class="all_boxes">
-                </div>
+                    <a id="prev" class="left">&#10094;</a>
+                    <a id="next" class="right">&#10095;</a>
+                <ul class="all_boxes">
+                      
+                </ul>
+                <ul class="slider_images">
+                    <li><img src="img/profiles/treehouse.png" alt=""></li>
+                    <li><img src="img/profiles/udemy.jpg" alt=""></li>
+                    <li><img src="img/profiles/codecademy.png" alt=""></li>
+                    <li><img src="img/profiles/freecodecamp.png" alt=""></li>
+                    <li><img src="img/profiles/khanacademy.jpg" alt=""></li>
+                    <li><img src="img/profiles/github.png" alt=""></li>
+                    
+                </ul>
             </div>
 
         </section>
@@ -399,8 +415,9 @@
             <div class="container">
                 <h1>My Projects</h1>
                 <div class="all_projects">
-                    <ul class="project_lis">
-<!-- 
+
+                    <ul class="project_list">
+                        <!-- 
                         <li>
                             <div class="project">
                                 <img src="img/random.jpg" alt="">
@@ -428,9 +445,9 @@
                                 </div>
                             </div>
                         </li> -->
-                    <!-- </ul>
+                    </ul>
                 </div>
-            </div> -->
+            </div>
         </section>
         <section id="conatct_section">
             <div class="container">
@@ -498,10 +515,14 @@
 
     <!-- Javascript Files -->
     <script src="cdns/fontawesome/svg-with-js/js/fontawesome-all.js"></script>
+    <!-- CDNS -->
+    <script src="js/cdns/jquery-3.3.1.min.js"></script>
+    <script src="js/cdns/caroufredsel.js"></script>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
+
+
     <script src="js/jquery.js"></script>
-    
+
     <script src="js/node.js"></script>
 
     <script src="js/use_json.js"></script>

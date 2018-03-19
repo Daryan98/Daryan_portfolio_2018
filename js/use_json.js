@@ -27,10 +27,10 @@ fetchJsonData(imdbMovieUrl).then(data => {
 
 
 function profiles_section(data) {
-    const div_all_profiles = document.querySelector(".all_boxes");
-    div_all_profiles.innerHTML ="";
+    const ulElement = document.querySelector(".all_boxes");
+    ulElement.innerHTML ="";
     data.profiles.forEach(profile => {
-        const divElement = document.createElement("div");
+        const liElement = document.createElement("li");
         const div_left = document.createElement("div");
         const div_right = document.createElement("div");
         const imgElement = document.createElement("img");
@@ -38,7 +38,7 @@ function profiles_section(data) {
         const h2Element = document.createElement("h2");
         const pElement = document.createElement("p")
 
-        addClass(divElement, "box");
+        addClass(liElement, "box");
         addClass(div_left, "left_box");
         addClass(div_right, "right_box");
 
@@ -47,9 +47,9 @@ function profiles_section(data) {
         h2Element.innerHTML = profile.name;
         pElement.innerHTML = profile.paragraph;
 
-        div_all_profiles.appendChild(divElement);
-        divElement.appendChild(div_left);
-        divElement.appendChild(div_right);
+        ulElement.appendChild(liElement);
+        liElement.appendChild(div_left);
+        liElement.appendChild(div_right);
         div_left.appendChild(imgElement);
         aElement.appendChild(h2Element);
         div_right.appendChild(aElement);
@@ -61,7 +61,7 @@ function profiles_section(data) {
 
 function project_section(data) {
     // Already exsist
-    const ulElement = document.querySelector("ul.project_lis");
+    const ulElement = document.querySelector("ul.project_list");
     ulElement.innerHTML = "";
 
     let i = 0;
@@ -153,7 +153,7 @@ liElement.appendChild(divElement)
         div_4Element.appendChild(a_2Element);
 
     // })
-    return divElement;
+
 
 }
 
