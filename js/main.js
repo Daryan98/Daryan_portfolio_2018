@@ -50,9 +50,9 @@ $('ul.all_boxes').carouFredSel({
     scroll: {
         items: 1,
         duration: 400,
-        timeoutDuration: 5000,
         easing: "linear",
       },
+      auto:false,
     items: {
         visible: 1,
         minimum: 1,

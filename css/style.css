@@ -798,7 +798,7 @@ section#profiles_section {
   position: relative; }
   section#profiles_section .left {
     background: #FFF;
-    padding: 14px 20px;
+    padding: 12px 20px;
     border-radius: 50%;
     position: absolute;
     left: 0;
@@ -811,7 +811,7 @@ section#profiles_section {
       color: #5643fa; }
   section#profiles_section .right {
     background: #FFF;
-    padding: 14px 20px;
+    padding: 12px 20px;
     border-radius: 50%;
     position: absolute;
     right: 0;
