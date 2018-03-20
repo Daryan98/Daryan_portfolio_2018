@@ -23,7 +23,6 @@ function fetchJsonData(url) {
 fetchJsonData(imdbMovieUrl).then(data => {
     project_section(data);
     profiles_section(data);
-    console.log(data);
 }).catch(err => console.log(err));
 
 
@@ -49,12 +48,12 @@ function profiles_section(data) {
         pElement.innerHTML = profile.paragraph;
 
         ulElement.appendChild(liElement);
-        // liElement.appendChild(div_left);
-        // liElement.appendChild(div_right);
-        // div_left.appendChild(imgElement);
-        // aElement.appendChild(h2Element);
-        // div_right.appendChild(aElement);
-        // div_right.appendChild(pElement);
+        liElement.appendChild(div_left);
+        liElement.appendChild(div_right);
+        div_left.appendChild(imgElement);
+        aElement.appendChild(h2Element);
+        div_right.appendChild(aElement);
+        div_right.appendChild(pElement);
 
     });
 }
@@ -83,15 +82,6 @@ function project_section(data) {
         imgElement.src = project.img_avatar_small;
         aElement.innerHTML = "Show More";
 
-
-        aElement.addEventListener('click', () => {
-            let popup = document.querySelector(".popup");
-            popup.classList.remove("close");
-            popup.classList.toggle('open');
-            console.log(popup);
-            console.log(this);
-            
-        })
         // imgElement.src = element.img_avatar_small
         ulElement.appendChild(liElement);
         liElement.appendChild(divElement);
@@ -102,6 +92,17 @@ function project_section(data) {
         project_section_popup(liElement, project);
     });
 }
+
+let aElement = document.createElement("a");
+
+aElement.addEventListener('click', () => {
+    let popup = document.querySelector(".popup");
+    // popup.classList.remove("close");
+    // popup.classList.toggle('open');
+    // console.log(popup);
+    // console.log(this);
+    
+})
 
 
 function project_section_popup(liElement, data) {
