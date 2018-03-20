@@ -49,12 +49,12 @@ function profiles_section(data) {
         pElement.innerHTML = profile.paragraph;
 
         ulElement.appendChild(liElement);
-        liElement.appendChild(div_left);
-        liElement.appendChild(div_right);
-        div_left.appendChild(imgElement);
-        aElement.appendChild(h2Element);
-        div_right.appendChild(aElement);
-        div_right.appendChild(pElement);
+        // liElement.appendChild(div_left);
+        // liElement.appendChild(div_right);
+        // div_left.appendChild(imgElement);
+        // aElement.appendChild(h2Element);
+        // div_right.appendChild(aElement);
+        // div_right.appendChild(pElement);
 
     });
 }

@@ -826,6 +826,7 @@ section#profiles_section {
     color: #FFF;
     font-weight: 600; }
   section#profiles_section ul.all_boxes {
+    width: 100%;
     margin-left: 15%; }
     section#profiles_section ul.all_boxes li.box {
       height: 170px;
