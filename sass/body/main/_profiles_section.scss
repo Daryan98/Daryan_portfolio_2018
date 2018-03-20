@@ -5,42 +5,34 @@ section#profiles_section {
     -webkit-transform: skewY(-4deg);
     transform: skewY(-4deg);
     position: relative;
-    .left {
+    a.right,
+    a.left {
         background: #FFF;
-        padding: 12px 20px;
+        padding: 10px 17px;
         border-radius: 50%;
         position: absolute;
-        left: 0;
         top: 60px;
         text-decoration: none;
         color: $primary-color;
-        font-size: 16px;
-cursor: pointer;        
+        font-size: 18px;
+        cursor: pointer;
         &:hover {
             color: $secondary-color;
+            @include box_shadow;
         }
     }
-    .right {
-        background: #FFF;
-        padding: 12px 20px;
-        border-radius: 50%;
-        position: absolute;
-        right: 0;
-        top: 60px;
-        text-decoration: none;
-        color: $primary-color;
-        font-size: 16px;
-        cursor: pointer;       
-        &:hover {
-            color: $secondary-color;
-        }
+    a.left {
+        left: 11%;
+    }
+    a.right {
+        right: 11%;
+    }
 
-    }
     h1 {
         @include header_blue_background;
     }
     ul.all_boxes {
-        width: 100%;
+        // width: 100%;
         margin-left: 15%;
         li.box {
             // width: 100%;
@@ -51,6 +43,9 @@ cursor: pointer;
             -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
             clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
             border-radius: 5px;
+            display: inline;
+            float: left;
+            transition: all .3s;
             div.left_box {
                 width: 30%;
                 height: 100%;
@@ -99,6 +94,9 @@ cursor: pointer;
                     // float: left;
                 }
             }
+            &:hover {
+                background: rgba($white-color, .85);
+            }
         }
     }
     ul.slider_images {
@@ -115,12 +113,17 @@ cursor: pointer;
             display: inline;
             margin: 10px;
             img {
+                opacity: .8;
                 width: 34px;
                 height: 34px;
                 border-radius: 50%;
-                padding: 1px;
-        background: #FFF;
-                
+                background: #FFF;
+                transition: all .2s;
+                &:hover {
+                    transform: scale(1.1);
+                    opacity: 1;
+                    @include box_shadow;
+                }
             }
         }
     }

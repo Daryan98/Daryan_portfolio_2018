@@ -6,6 +6,9 @@ $(document).ready(() => {
 });
 
 
+  //////////////////////////////////////////////////////////
+  ///////////// Navbar
+  //////////////////////////////////////////////////////////
 // Navbar Position Fix on scroll
 var num = 50; //number of pixels before modifying styles
 
@@ -18,7 +21,9 @@ $(window).bind('scroll', function () {
 });
 
 
-// Nav Item click Scroll to section
+
+// Navbar On click Animation to the sectiion
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -56,17 +61,51 @@ $('a[href*="#"]')
   });
 
 
+  //////////////////////////////////////////////////////////
+  ///////////// Profiles Section Croufredsel
+  //////////////////////////////////////////////////////////
+///Profiles Section
+$('ul.all_boxes').carouFredSel({
+  responsive: true,
+  width: '70%',
+  prev: "#prev",
+  next: "#next",
+  direction: "left", 
+  scroll: {
+      items: 1,
+      duration: 500,
+      easing: "linear",
+    },
+    auto:false,
+  items: {
+      visible: 1,
+      minimum: 2,
+  },
+  pagination: {
+      container: ".slider_images",
+      anchorBuilder: false
+    }
+})
+
+
+
+  //////////////////////////////////////////////////////////
+  ///////////// Project Section PopUps
+  //////////////////////////////////////////////////////////
   //Peoject Section
-  $(document).ready(() => {
-    $(".project div.show a").on("click", ()=> {
-      $(".popup").removeClass("close");
-      $(".popup").addClass("open");
-    })
-  })
+
+//   let aElements = document.querySelectorAll(".project > div.show > a");
 
   $(document).ready(() => {
+//     $(".project div.show a").on("click", ()=> {
+//       $(".popup").removeClass("close");
+//       $(".popup").addClass("open");
+//     })
+
     $(".popup__close").on("click", ()=> {
       $(".popup").removeClass("open");
       $(".popup").addClass("close");
     })
   })
+
+// console.log(aElements);
