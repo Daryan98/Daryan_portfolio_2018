@@ -132,7 +132,6 @@ section#skills_section {
             }
             ul.developemnt_skill,
             ul.design_skill {
-                // display: none;
                 li .circle {
                     width: 150px;
                     height: 150px;
@@ -155,32 +154,36 @@ section#skills_section {
                 }
             }
             div.skills {
+                width: 100%;
                 ul.developemnt_skill {
-                    // display: none;
+                    width: 100%;
+                    opacity: 1;
+                    transition: all .3s;
                 }
                 ul.design_skill {
-                    // display: none;
+                    display: none;
+                    opacity: 0;
+                    transition: all .3s;
                 }
             }
         }
-        div.skills_content {
+        div.skill_content {
+            width: 100%;
             margin-top: 70px;
-            ul {
-                li {
-                    list-style: none;
-                    h2 {
-                        text-align: center;
-                        margin-bottom: 30px;
-                        color: $color_1;
-                    }
-                    p {
-                        display: inline-block;
-                        margin-left: 10%;
-                        width: 80%;
-                        strong {
-                            color: $color_1;
-                        }
-                    }
+            display: block;
+            h2 {
+                display: block;
+                text-align: center;
+                margin-bottom: 30px;
+                color: $color_1;
+            }
+            p {
+                text-align: left;
+                display: inline-block;
+                margin-left: 10%;
+                width: 80%;
+                strong {
+                    color: $color_1;
                 }
             }
         }

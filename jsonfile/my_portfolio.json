@@ -1,6 +1,5 @@
 {
-    "skills": {
-        "development": [{
+    "skills": [{
                 "name": "HTML",
                 "paragraph": "kjsdgbofridvn,werbnf"
             },
@@ -19,22 +18,20 @@
             {
                 "name": "Node",
                 "paragraph": "kjsdgbofridvn,werbnf"
-            }
-        ],
-        "design": [{
+            },{
                 "name": "Adobe",
                 "paragraph": "aaaaaaaaaaaaaaaaaaaaaaaaa"
             },
             {
-                "name": "Logo Design",
+                "name": "LogoDesign",
                 "paragraph": "aaaaaaaaaaaaaaaaaaaaaaaaa"
             },
             {
-                "name": "Design website",
+                "name": "Designwebsite",
                 "paragraph": "aaaaaaaaaaaaaaaaaaaaaaaaa"
             }
-        ]
-    },
+        ],
+        
     "profiles": [{
             "name": "TreeHouse",
             "img_avatar": "img/profiles/treehouse.png",

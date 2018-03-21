@@ -5,6 +5,7 @@ section#profiles_section {
     -webkit-transform: skewY(-4deg);
     transform: skewY(-4deg);
     position: relative;
+    display: block;
     h1 {
         @include header_blue_background;
     }

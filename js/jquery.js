@@ -96,16 +96,16 @@ $('ul.all_boxes').carouFredSel({
 
 //   let aElements = document.querySelectorAll(".project > div.show > a");
 
-  $(document).ready(() => {
-//     $(".project div.show a").on("click", ()=> {
-//       $(".popup").removeClass("close");
-//       $(".popup").addClass("open");
-//     })
+  // $(document).ready(() => {
+  //   $(".project div.show a").on("click", ()=> {
+  //     $(".popup").removeClass("close");
+  //     $(".popup").addClass("open");
+  //   })
 
-    $(".popup__close").on("click", ()=> {
-      $(".popup").removeClass("open");
-      $(".popup").addClass("close");
-    })
-  })
+    // $(".popup__close").on("click", ()=> {
+    //   $(".popup").removeClass("open");
+    //   $(".popup").addClass("close");
+    // })
+  // })
 
 // console.log(aElements);

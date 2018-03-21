@@ -96,7 +96,7 @@ section#projects_section {
         transition: all .3s;
         &.open {
             opacity: 1;
-            visibility: visible;
+            z-index: 1000;
             .popup__content {
                 -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
