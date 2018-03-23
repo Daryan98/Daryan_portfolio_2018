@@ -2,7 +2,7 @@ section#random_section {
     margin-top: 60px;
     padding: 120px 70px;
     background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($primary-color, 0.8)), to(rgba($secondary-color, 0.8))), url(../img/random.jpg);
-    background-image: linear-gradient(to bottom, rgba($primary-color, 0.8), rgba($secondary-color, 0.8)), url(../img/random.jpg);
+    background-image: linear-gradient(to right bottom, rgba($primary-color, 0.8), rgba($secondary-color, 0.8)), url(../img/random.jpg);
     background-size: cover;
     -webkit-transform: skewY(-4deg);
     transform: skewY(-4deg);

@@ -132,6 +132,8 @@ section#skills_section {
             }
             ul.developemnt_skill,
             ul.design_skill {
+                margin-left: 50%;
+                transform: translateX(-50%);
                 li .circle {
                     width: 150px;
                     height: 150px;
