@@ -164,7 +164,7 @@ header {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
   header div.container {
     padding: 0;
-    margin-top: 70px; }
+    margin-top: 100px; }
   header div#header-aboutme {
     padding: 70px 0 70px;
     width: 100%;
@@ -532,7 +532,7 @@ section#random_section {
   margin-top: 60px;
   padding: 120px 70px;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(41, 152, 255, 0.8)), to(rgba(86, 67, 250, 0.8))), url(../img/random.jpg);
-  background-image: linear-gradient(to bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/random.jpg);
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/random.jpg);
   background-size: cover;
   -webkit-transform: skewY(-4deg);
   transform: skewY(-4deg); }
@@ -1061,12 +1061,14 @@ section#projects_section {
       -webkit-transition: all .5s .2s;
       transition: all .5s .2s; }
     section#projects_section .popup__left {
-      width: 33.333333%;
+      width: 40%;
       height: 100%;
       display: table-cell;
-      position: relative; }
+      position: relative;
+      padding: 20px; }
     section#projects_section .popup__right {
-      width: 66.6666667%;
+      width: 60%;
+      margin-left: 10%;
       display: table-cell;
       vertical-align: middle;
       padding: 2em; }
@@ -1087,9 +1089,11 @@ section#projects_section {
             background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)); }
     section#projects_section .popup__img {
       display: block;
-      width: 35%;
+      width: 100%;
       margin-bottom: 0;
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 5px; }
     section#projects_section .popup__text {
       font-size: 1em;
       margin-bottom: 4rem;
@@ -1111,8 +1115,8 @@ section#projects_section {
       text-decoration: none;
       color: #777;
       position: absolute;
-      top: 2.5rem;
-      right: 2.5rem;
+      top: 14px;
+      right: 20px;
       font-size: 3rem;
       text-decoration: none;
       display: inline-block;
