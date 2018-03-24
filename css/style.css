@@ -754,26 +754,30 @@ section#skills_section {
                 margin-top: 10px;
                 font-weight: 500;
                 color: #FFF; }
-      section#skills_section div.all_content div.circles ul.developemnt_skill li .circle,
-      section#skills_section div.all_content div.circles ul.design_skill li .circle {
-        width: 150px;
-        height: 150px;
-        opacity: .9; }
-        section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin,
-        section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin {
-          width: 174px;
-          height: 174px;
-          left: -17px;
-          top: -16px; }
-          section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin circle,
-          section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin circle {
-            stroke-width: 3;
-            stroke-dasharray: 0, 8;
-            stroke-linecap: round;
-            fill: none; }
-      section#skills_section div.all_content div.circles ul.developemnt_skill h2,
-      section#skills_section div.all_content div.circles ul.design_skill h2 {
-        line-height: 150px; }
+      section#skills_section div.all_content div.circles ul.developemnt_skill,
+      section#skills_section div.all_content div.circles ul.design_skill {
+        margin-left: 50%;
+        transform: translateX(-50%); }
+        section#skills_section div.all_content div.circles ul.developemnt_skill li .circle,
+        section#skills_section div.all_content div.circles ul.design_skill li .circle {
+          width: 150px;
+          height: 150px;
+          opacity: .9; }
+          section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin,
+          section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin {
+            width: 174px;
+            height: 174px;
+            left: -17px;
+            top: -16px; }
+            section#skills_section div.all_content div.circles ul.developemnt_skill li .circle .circle__spin circle,
+            section#skills_section div.all_content div.circles ul.design_skill li .circle .circle__spin circle {
+              stroke-width: 3;
+              stroke-dasharray: 0, 8;
+              stroke-linecap: round;
+              fill: none; }
+        section#skills_section div.all_content div.circles ul.developemnt_skill h2,
+        section#skills_section div.all_content div.circles ul.design_skill h2 {
+          line-height: 150px; }
       section#skills_section div.all_content div.circles div.skills {
         width: 100%; }
         section#skills_section div.all_content div.circles div.skills ul.developemnt_skill {

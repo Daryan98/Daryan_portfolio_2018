@@ -175,7 +175,7 @@ function project_section_popup(projectsJsonData) {
                 addClass(a_2Element, "btn");
 
 
-                imgElement.src = data.img_avatar_big;
+                imgElement.src = data.img_avatar_small;
                 h2Element.innerHTML = data.name;
                 h3Element.innerHTML = data.used_languges;
                 pElement.innerHTML = data.paragraph;
