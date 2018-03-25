@@ -178,6 +178,18 @@ section#skills_section {
                 text-align: center;
                 margin-bottom: 30px;
                 color: $color_1;
+                &.color2 {
+                    color: $color_2;
+                }
+                &.color3 {
+                    color: $color_3;
+                }
+                &.color4 {
+                    color: $color_4;
+                }
+                &.color5 {
+                    color: $color_5;
+                }
             }
             p {
                 text-align: left;
@@ -186,6 +198,18 @@ section#skills_section {
                 width: 80%;
                 strong {
                     color: $color_1;
+                    &.color2 {
+                        color: $color_2;
+                    }
+                    &.color3 {
+                        color: $color_3;
+                    }
+                    &.color4 {
+                        color: $color_4;
+                    }
+                    &.color5 {
+                        color: $color_5;
+                    }
                 }
             }
         }

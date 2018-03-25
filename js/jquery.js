@@ -1,9 +1,9 @@
-// //Preloader Prinner
-$(document).ready(() => {
-  setTimeout(() => {
-    $('div#loader-wrapper').addClass('loaded');
-  }, 1000);
-});
+// // //Preloader Prinner
+// $(document).ready(() => {
+//   setTimeout(() => {
+//     $('div#loader-wrapper').addClass('loaded');
+//   }, 1000);
+// });
 
 
   //////////////////////////////////////////////////////////

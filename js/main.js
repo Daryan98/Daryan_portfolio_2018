@@ -1,3 +1,11 @@
+  // Preloader on window load
+
+window.addEventListener("load", ()=> {
+    const loader = document.querySelector("div#loader-wrapper");
+    loader.classList.add("loaded")
+})
+  
+  
   ////////////////////////////////////////////////////////
   /////////// Skills Section Add Active class to every circle when ever i click
   ////////////////////////////////////////////////////////
@@ -52,3 +60,6 @@
 
   //RUN Function 
   showSkills();
+
+  
+
