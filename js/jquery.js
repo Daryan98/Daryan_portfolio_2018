@@ -65,47 +65,53 @@ $('a[href*="#"]')
   ///////////// Profiles Section Croufredsel
   //////////////////////////////////////////////////////////
 ///Profiles Section
-$('ul.all_boxes').carouFredSel({
-  responsive: true,
-  width: '70%',
-  prev: "#prev",
-  next: "#next",
-  direction: "left", 
-  scroll: {
-      items: 1,
-      duration: 500,
-      easing: "linear",
-    },
-    auto:false,
-  items: {
-      visible: 1,
-      minimum: 2,
-  },
-  pagination: {
-      container: ".slider_images",
-      anchorBuilder: false
-    }
-})
+// $('ul.all_boxes.slider').carouFredSel({
+
+//   width: "100%",
+//   responsive: true,
+//   width: '70%',
+//   prev: "#prev",
+//   next: "#next",
+//   // direction: "left", 
+//   scroll: {
+//       items: 1,
+//       duration: 300,
+//       easing: "linear",
+//     },
+// 		auto: false,
+//   items: {
+//       visible: 1,
+//       minimum: 1,
+//   },
+//   pagination: {
+//       container: ".slider_images",
+//       anchorBuilder: false
+//     }
+// })
 
 
+//////////////////////////////////////////////
+//Contact Form 
+//////////////////////////////////////////////
+// $(document).ready(function() {
+//   $('#contact-form').submit(function(e) {
+//     var name    = document.getElementById('input-name')
+//     var email   = document.getElementById('input-email')
+//     var message = document.getElementById('input-message')
 
-  //////////////////////////////////////////////////////////
-  ///////////// Project Section PopUps
-  //////////////////////////////////////////////////////////
-  //Peoject Section
-
-//   let aElements = document.querySelectorAll(".project > div.show > a");
-
-  // $(document).ready(() => {
-  //   $(".project div.show a").on("click", ()=> {
-  //     $(".popup").removeClass("close");
-  //     $(".popup").addClass("open");
-  //   })
-
-    // $(".popup__close").on("click", ()=> {
-    //   $(".popup").removeClass("open");
-    //   $(".popup").addClass("close");
-    // })
-  // })
-
-// console.log(aElements);
+//     if (!name.value || !email.value || !message.value) {
+//       alertify.error("Please check your entries");
+//       return false;
+//     } else {
+//       $.ajax({
+//         method: 'POST',
+//         url: 'https://formspree.io/daryankf@outlook.dk',
+//         data: $('#contact-form').serialize(),
+//         datatype: 'json'
+//       });
+//       e.preventDefault();
+//       $(this).get(0).reset();
+//       alertify.success("Message sent");
+//     }
+//   });
+// });

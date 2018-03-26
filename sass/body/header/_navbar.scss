@@ -1,6 +1,7 @@
 
 div.navigation_small{
     display: none;
+    position: relative;
 }
 .navigation__checkbox {
     display: none;
@@ -91,7 +92,6 @@ div.navigation_small{
 .navigation__item {
     margin: 1rem
 }
-
 .navigation__link:link,
 .navigation__link:visited {
     display: inline-block;

@@ -28,44 +28,40 @@ section#conatct_section {
                     text-align: left;
                 }
                 form.form {
-                    div.input_elments {
-                        input,
-                        textarea {
-                            font-size: 1.5rem;
-                            font-family: inherit;
-                            color: inherit;
-                            padding: 1.5rem 2rem;
-                            border-radius: 2px;
-                            background-color: rbga($white-color, .5);
-                            border: none;
-                            border-bottom: 3px solid transparent;
-                            width: 80%;
-                            display: block;
-                            transition: all .3s;
-                            margin-bottom: 30px;
+                    input,
+                    textarea {
+                        font-size: 1.5rem;
+                        font-family: inherit;
+                        color: inherit;
+                        padding: 1.5rem 2rem;
+                        border-radius: 2px;
+                        background-color: rbga($white-color, .5);
+                        border: none;
+                        border-bottom: 3px solid transparent;
+                        width: 80%;
+                        display: block;
+                        transition: all .3s;
+                        margin-bottom: 30px;
+                        outline: none;
+                        &:focus {
                             outline: none;
-                            &:focus {
-                                outline: none;
-                                box-shadow: 0 1rem 2rem rgba($black-color, .1);
-                                border-bottom: 3px solid $color-secondary-dark;
-                            }
-                            &:focus:invalid {
-                                border-bottom: 3px solid $color-secondary-dark;
-                            }
-                            &::-webkit-input-placeholder {
-                                color: $font-color-light;
-                            }
+                            box-shadow: 0 1rem 2rem rgba($black-color, .1);
+                            border-bottom: 3px solid $color-secondary-dark;
+                        }
+                        &:focus:invalid {
+                            border-bottom: 3px solid $color-secondary-dark;
+                        }
+                        &::-webkit-input-placeholder {
+                            color: $font-color-light;
                         }
                     }
-                    div.form_button {
-                        button.contact_btn {
-                            outline: none;
+                    button.contact_btn {
+                        outline: none;
+                        background: linear-gradient(to right bottom, rgba($primary-color, .8), rgba($secondary-color, .8));
+                        color: $white-color;
+                        font-weight: 600;
+                        &::after {
                             background: linear-gradient(to right bottom, rgba($primary-color, .8), rgba($secondary-color, .8));
-                            color: $white-color;
-                            font-weight: 600;
-                            &::after {
-                                background: linear-gradient(to right bottom, rgba($primary-color, .8), rgba($secondary-color, .8));
-                            }
                         }
                     }
                 }

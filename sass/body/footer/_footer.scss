@@ -28,6 +28,11 @@ footer {
 
         }
     }
+    div.container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+   
     h1 {
         @include header_white_background;
         text-align: center;
@@ -70,4 +75,5 @@ footer {
             line-height: 28px;
         }
     }
+}
 }

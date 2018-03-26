@@ -146,7 +146,7 @@ section#projects_section {
             margin-left: 10%;
             display: table-cell;
             vertical-align: middle;
-            // padding: 2em ;
+            padding:0 50px  0 0;
             h2 {
                 margin-top: -20px;
                 background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
@@ -162,7 +162,7 @@ section#projects_section {
             }
             div.urls {
                 margin: 10px;
-                a {
+                a.btn {
                     outline: none;
                     background: linear-gradient(to right bottom, rgba($primary-color, .8), rgba($secondary-color, .8));
                     color: $white-color;

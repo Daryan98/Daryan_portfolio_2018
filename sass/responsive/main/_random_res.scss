@@ -1,0 +1,47 @@
+@media only screen and (max-width: 1100px) {
+section#random_section {
+    margin-top: 60px;
+    padding: 120px 10%;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($primary-color, 0.8)), to(rgba($secondary-color, 0.8))), url(../img/random.jpg);
+    background-image: linear-gradient(to right bottom, rgba($primary-color, 0.8), rgba($secondary-color, 0.8)), url(../img/random.jpg);
+    background-size: cover;
+    -webkit-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+    position: relative;
+    div.all_cards {
+        position: relative; 
+        div.card {
+            width: 33.3%;
+            padding: 0 1%;
+            &.card_1 {
+                top: 0;
+                left: 0%;
+            }
+            &.card_2 {
+                top: 0;
+                left:22.2%;
+            }
+            &.card_3 {
+                top: 0;
+                left: 44.4%;
+            }
+            &.card_4 {
+                // top: 300px;
+                left:66.6%;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 900px) {
+    section#random_section div.all_cards {
+        height: 350px
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    section#random_section div.all_cards {
+        height: 400px
+    }
+}

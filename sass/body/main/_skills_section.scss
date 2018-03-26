@@ -159,13 +159,19 @@ section#skills_section {
                 width: 100%;
                 ul.developemnt_skill {
                     width: 100%;
-                    opacity: 1;
                     transition: all .3s;
+                    &.remove {
+                        display: none;
+                        opacity: 0;
+                    }
                 }
                 ul.design_skill {
-                    display: none;
-                    opacity: 0;
+                    // display: none;
                     transition: all .3s;
+                    &.remove {
+                        display: none;
+                        opacity: 0;
+                    }
                 }
             }
         }
@@ -177,19 +183,10 @@ section#skills_section {
                 display: block;
                 text-align: center;
                 margin-bottom: 30px;
-                color: $color_1;
-                &.color2 {
-                    color: $color_2;
-                }
-                &.color3 {
-                    color: $color_3;
-                }
-                &.color4 {
-                    color: $color_4;
-                }
-                &.color5 {
-                    color: $color_5;
-                }
+                background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: 600;
             }
             p {
                 text-align: left;
@@ -197,19 +194,10 @@ section#skills_section {
                 margin-left: 10%;
                 width: 80%;
                 strong {
-                    color: $color_1;
-                    &.color2 {
-                        color: $color_2;
-                    }
-                    &.color3 {
-                        color: $color_3;
-                    }
-                    &.color4 {
-                        color: $color_4;
-                    }
-                    &.color5 {
-                        color: $color_5;
-                    }
+                    background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 600;
                 }
             }
         }

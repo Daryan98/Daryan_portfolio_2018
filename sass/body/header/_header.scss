@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    height: 95vh;
+   height: 95vh;
     color: $white-color;
     background-size: 100% 100%; // background-repeat: no-repeat;
     background-image: linear-gradient(to right bottom, rgba($primary-color, .8), rgba($secondary-color, .8)), url(../img/hero.jpg);
@@ -64,11 +64,19 @@ header {
         }
         div#about-me {
             margin-top: 100px;
-            h1 {}
+            h1 {
+                color: $white_color;
+                font-weight: 600;
+            }
             p {
                 line-height: 25px;
                 word-spacing: 1px;
-                font-weight: 400;
+                font-weight: 500;
+                opacity: .8;
+                display: block;
+                strong {
+                    display: block;
+                }
             }
         }
     }

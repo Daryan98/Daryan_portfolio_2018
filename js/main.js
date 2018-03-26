@@ -41,25 +41,40 @@ window.addEventListener("load", ()=> {
       const designSkills = document.querySelector("div.skills ul.design_skill");
 
 
-      development.addEventListener("click", () => {
-          designSkills.style.display = "none";
 
-          developmentSkils.style.display = "inline-block";
+      development.addEventListener("click", () => {
+          designSkills.classList.add("remove");
+
+          developmentSkils.classList.remove("remove");
           developmentSkils.style.opacity = 1;
 
       })
       design.addEventListener("click", () => {
-          developmentSkils.style.display = "none";
+          developmentSkils.classList.add("remove");
 
-          designSkills.style.display = "inline-block";
+          designSkills.classList.remove("remove");
           designSkills.style.opacity = 1;
 
       })
   }
-
 
   //RUN Function 
   showSkills();
 
   
 
+// Slider
+
+function myFunction(x) {
+    const ulElement = document.querySelector(".all_boxes");
+    
+    if (x.matches) { // If media query matches
+        ulElement.classList.add("slider");
+    } else {
+        ulElement.classList.remove("slider");
+    }
+}
+
+var x = window.matchMedia("(max-width: 1300px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
