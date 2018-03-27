@@ -1,34 +1,34 @@
 {
     "skills": [{
                 "name": "HTML",
-                "paragraph": "kjsdgbofridvn,werbnf"
+                "paragraph": "I have a lot experience working with HTML. I am very good at writing correct tag for every part of my code and also when I should give the elements an id or class, fx when single tag should give it an id or more than one tag at the same give them a class. I am trying to use <strong> Bootstrap </strong> for all of my websites and make them more responsive."
             },
             {
                 "name": "CSS",
-                "paragraph": "kjsdgbofridvn,werbnf"
+                "paragraph": "in CSS I have experience working with <strong>SASS/SCSS</strong>,<strong> flexbox </strong>, <strong>animation </strong>, and also how to create <strong>variable and mixing</strong> in sass.I have used CSS in mostly all of my project, but most of them are written in sass and I compiles them to CSS.I use flexbox because of how easy it is and it is automatically responsive."
             },
             {
                 "name": "JavaScript",
-                "paragraph": "kjsdgbofridvn,werbnf"
+                "paragraph": "in javascript programing language I have experience, with building apps like <strong>todo app </strong>, <strong>working with JSON files</strong>, <strong>ajax</strong>,<strong>promises</strong> and also using <strong>ES2015/ES6</strong> that is a new future in Javascript.I have learned all of these in HackyourFuture that is a programming school in Denmark Copenhagen.HYF in future class we will learn Node, react, express, and databases."
             },
             {
                 "name": "C#",
-                "paragraph": "kjsdgbofridvn,werbnf"
+                "paragraph": "my experience with C# is that I have completed some exercises that I get from my school(TEC), and because of I new javascript and how to program the excesses I completed them so faster than the other."
             },
             {
                 "name": "Node",
-                "paragraph": "kjsdgbofridvn,werbnf"
+                "paragraph": "node, I know how to create a server and use switch statement or express to <strong>combine many HTML pages together</strong> and also how to get querySelector.I have also learned how to use<strong> JSON files and promises</strong> within node js.in my GitHub account, you can have a look at my node projects.now that is 27/3/2018 we have one week left with node class in Hack Your Future after that we will learn about databases."
             },{
-                "name": "Adobe",
-                "paragraph": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+                "name": "adobe",
+                "paragraph": "my experience with Photoshop CC is designing websites. the first portfolio that I built for like 6 month ago I designed it first in adobe and then I started to build it, in that way I knew what I want to build already and also maybe I find something that was better than the design so I used it."
             },
             {
                 "name": "LogoDesign",
-                "paragraph": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+                "paragraph": "I designed a logo for my first portfolio and learned how to use Adobe Illustrator and also how to create a pie chart in Adobe Illustrator."
             },
             {
                 "name": "Designwebsite",
-                "paragraph": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+                "paragraph": "when I create a website I use both Adobe Photoshop cc and Illustrator for designing the website the best way that's possible."
             }
         ],
         

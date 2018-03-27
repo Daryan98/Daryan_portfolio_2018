@@ -810,9 +810,7 @@ section#skills_section {
         margin-left: 10%;
         width: 80%; }
         section#skills_section div.all_content div.skill_content p strong {
-          background: linear-gradient(to right, #2998ff 0%, #5643fa 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: #ff7730;
           font-weight: 600; }
 
 section#profiles_section {
@@ -963,8 +961,21 @@ section#projects_section {
       background: linear-gradient(to right, #2998ff 0%, #5643fa 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-weight: 600; }
+      font-weight: 600;
+      margin-bottom: 0; }
+    section#projects_section div.container p {
+      text-align: center;
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 20px; }
+      section#projects_section div.container p a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #2998ff; }
+        section#projects_section div.container p a:hover {
+          color: #5643fa; }
     section#projects_section div.container div.all_projects {
+      margin-top: 60px;
       width: 100%; }
       section#projects_section div.container div.all_projects ul {
         display: flex;
@@ -1088,7 +1099,6 @@ section#projects_section {
       vertical-align: middle;
       padding: 0 50px  0 0; }
       section#projects_section .popup__right h2 {
-        margin-top: -20px;
         background: linear-gradient(to right, #2998ff 0%, #5643fa 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

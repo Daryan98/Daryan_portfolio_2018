@@ -194,9 +194,7 @@ section#skills_section {
                 margin-left: 10%;
                 width: 80%;
                 strong {
-                    background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    color: $color-secondary-dark;
                     font-weight: 600;
                 }
             }

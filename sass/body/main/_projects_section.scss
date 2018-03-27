@@ -6,8 +6,26 @@ section#projects_section {
         padding: 0;
         h1 {
             @include header_white_background;
+            margin-bottom: 0;
+
+        }
+        p {
+            text-align: center;
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 20px;
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color: $primary-color;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
         }
         div.all_projects {
+            margin-top: 60px;
             width: 100%;
             ul {
                 display: flex;
@@ -148,7 +166,6 @@ section#projects_section {
             vertical-align: middle;
             padding:0 50px  0 0;
             h2 {
-                margin-top: -20px;
                 background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
