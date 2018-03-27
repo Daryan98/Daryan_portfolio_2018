@@ -60,21 +60,3 @@ window.addEventListener("load", ()=> {
 
   //RUN Function 
   showSkills();
-
-  
-
-// Slider
-
-function myFunction(x) {
-    const ulElement = document.querySelector(".all_boxes");
-    
-    if (x.matches) { // If media query matches
-        ulElement.classList.add("slider");
-    } else {
-        ulElement.classList.remove("slider");
-    }
-}
-
-var x = window.matchMedia("(max-width: 1300px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
