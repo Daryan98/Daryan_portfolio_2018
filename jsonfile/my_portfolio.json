@@ -36,37 +36,37 @@
             "name": "TreeHouse",
             "img_avatar": "img/profiles/treehouse.png",
             "profile_url": "https://teamtreehouse.com/hosseinkamalifar",
-            "paragraph": "I used treehouse in start of my career I finished design and front end track after that I stop treehouse for personal reason then after that I took other courses in Udemy and I started to practice and build websites."
+            "paragraph": "treehouse has helped me so much in understanding javascript and node. now that I take the full-stack Javascript course I learn so much from it and every day I become learn new concepts."
         },
         {
             "name": "Udemy",
             "img_avatar": "img/profiles/udemy.jpg",
             "profile_url": "https://www.udemy.com/#",
-            "paragraph": "I have completed some jQuery and sass courses in Udemy, and while I took these course I build website with them."
+            "paragraph": "udemy was also a very good learning resource for me, I always took the free courses like jquery or sass. also, I took those courses that I couldn't find in a treehouse like more advanced jquery or SVG courses."
         },
         {
             "name": "CodeCademy",
             "img_avatar": "img/profiles/codecademy.png",
             "profile_url": "https://www.codecademy.com/methodJumper90197",
-            "paragraph": "I have finished more than 5 course in codecademy I used when I started to learn about programing. i started with python in start but it was little difficult for me and I choose to start from front end and grow from there."
+            "paragraph": "in the start of my learning progress, I used mostly CodeCademy to learn HTML CSS and designing webs.you can see that I have completed most of the free courses on CodeCademy."
         },
         {
             "name": "FreeCodeCamp",
             "img_avatar": "img/profiles/freecodecamp.png",
             "profile_url": "https://www.freecodecamp.org/daryan98",
-            "paragraph": "Now that I have started with JavaScript track in treehouse I have started freecodecamp JavaScript part from start and also use the w3Reasourses exercise to learn coding and learn to solve problem."
+            "paragraph": "FreeCodeCamp helps me to understand coding and also I learn about algorithms and the way that I can code correctly.and when a complete an excessive I get a very good feeling that I can ever describe."
         },
         {
             "name": "KhanAcademy",
             "img_avatar": "img/profiles/khanacademy.jpg",
             "profile_url": "https://da.khanacademy.org/profile/kaid_550820712175822913973917/",
-            "paragraph": "khanacademy before I used it to learn programming i used it to earn mathematics. it was for 8 months ago I learned some basic HTML and css in it and some animation with CSS"
+            "paragraph": "from KhanAcademy I learned some basic HTML and CSS and also a little about CSS Animation."
         },
         {
             "name": "Github",
             "img_avatar": "img/profiles/github.png",
             "profile_url": "https://github.com/Daryan98",
-            "paragraph": "This is my Github With all my respositorys, click her if you want to see all the Websites that i have created"
+            "paragraph": "GitHub page includes most of my projects and it includes HTML/CSS, C#, javascript and node projects.there are more websites in my GitHub profile because I love development."
         }
 
     ],
