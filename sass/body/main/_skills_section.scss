@@ -178,7 +178,13 @@ section#skills_section {
         div.skill_content {
             width: 100%;
             margin-top: 70px;
+            opacity: 0;
             display: block;
+            transition: opacity 2s;
+            &.animate-to-top {
+                opacity: 1;
+                transition: opacity .3s;
+            }
             h2 {
                 display: block;
                 text-align: center;

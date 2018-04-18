@@ -6,9 +6,9 @@
 // });
 
 
-  //////////////////////////////////////////////////////////
-  ///////////// Navbar
-  //////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+///////////// Navbar
+//////////////////////////////////////////////////////////
 // Navbar Position Fix on scroll
 var num = 50; //number of pixels before modifying styles
 
@@ -59,3 +59,59 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+
+////////////////////////////
+// SKills section content text
+
+$(window).scroll(function () {
+  let scroll = $(window).scrollTop();
+  if (scroll >= 1700) {
+    $("div.skill_content").addClass("animate-to-top");
+  } else {
+    $("div.skill_content").removeClass("animate-to-top");
+
+  }
+});
+
+///////////////////////////////////////////
+// Random Section
+////////////////////////////////////////
+
+
+
+$(function () {
+  $('.slider').carouFredSel({
+    responsive: true,
+    width: '100%',
+    align: false,
+    pagination: {
+      container: "#pager2",
+			// scroll: {
+        
+			// 	duration: 400,
+			// 	timeoutDuration: 2000
+      // }
+    },
+    items: {
+      width: 640,
+      visible: 4,
+      minimum: 4
+    },
+    easing: "elastic", 
+    scroll: {
+      items: 1,
+      timeoutDuration: 4000,
+      
+    },
+		swipe: {
+			onMouse: false,
+			onTouch: true
+		},
+  });
+});
+
+$('.pager').on("click", ()=> {
+  console.log($('.pager a'));
+})

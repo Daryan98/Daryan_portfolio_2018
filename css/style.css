@@ -515,6 +515,10 @@ section#scheduel_section {
         margin: 0;
         padding: 0; }
 
+#random_section > * {
+  -webkit-transform: skewY(4deg);
+  transform: skewY(4deg); }
+
 section#random_section {
   margin-top: 60px;
   padding: 120px 10%;
@@ -524,82 +528,61 @@ section#random_section {
   -webkit-transform: skewY(-4deg);
   transform: skewY(-4deg);
   position: relative; }
-  section#random_section div.all_cards {
+  section#random_section div.slider_wrap div.all_cards {
+    width: 50%;
     height: 300px;
-    position: relative; }
-    section#random_section div.all_cards div.card {
-      width: 23%;
-      padding: 0 1%;
-      display: inline-block; }
-      section#random_section div.all_cards div.card.card_1 {
-        position: absolute;
-        top: 0;
-        left: 0%; }
-      section#random_section div.all_cards div.card.card_2 {
-        position: absolute;
-        top: 0;
-        left: 25%; }
-      section#random_section div.all_cards div.card.card_3 {
-        position: absolute;
-        top: 0;
-        left: 50%; }
-      section#random_section div.all_cards div.card.card_4 {
-        position: absolute;
-        top: 0;
-        left: 75%; }
-  section#random_section h1 {
-    margin-top: 0;
-    padding-top: 0;
-    display: block;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; }
+    section#random_section div.slider_wrap div.all_cards div.card {
+      margin: 0 10px; }
+      section#random_section div.slider_wrap div.all_cards div.card .feature-box {
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: 1.5rem;
+        padding: 2.5rem;
+        text-align: center;
+        border-radius: 3px;
+        width: 100%;
+        min-height: 300px;
+        -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        -webkit-transition: -webkit-transform .3s;
+        transition: -webkit-transform .3s;
+        transition: transform .3s;
+        transition: transform .3s, -webkit-transform .3s; }
+        section#random_section div.slider_wrap div.all_cards div.card .feature-box:hover {
+          -webkit-transform: translateY(-1.5rem) scale(1.03);
+          transform: translateY(-1.5rem) scale(1.03);
+          z-index: 100;
+          background-color: white; }
+        section#random_section div.slider_wrap div.all_cards div.card .feature-box i {
+          font-size: 50px;
+          color: #2998ff; }
+        section#random_section div.slider_wrap div.all_cards div.card .feature-box h3 {
+          color: #3a3a3a;
+          margin-top: 15px;
+          font-size: 20px; }
+        section#random_section div.slider_wrap div.all_cards div.card .feature-box p {
+          word-spacing: 1px;
+          text-align: left;
+          font-weight: 500;
+          color: #3a3a3a; }
+  section#random_section div.slider_wrap div.pager {
+    display: inline !important;
+    visibility: visible;
+    position: absolute;
+    float: center;
+    width: 100%;
     text-align: center;
-    margin-bottom: 70px;
-    color: #FFF;
-    font-weight: 600; }
-  section#random_section i {
-    font-size: 50px;
-    color: #2998ff; }
-  section#random_section h3 {
-    color: #3a3a3a;
-    margin-top: 15px;
-    font-size: 20px; }
-  section#random_section p {
-    word-spacing: 1px;
-    text-align: left;
-    font-weight: 500;
-    color: #3a3a3a; }
-
-#random_section > * {
-  -webkit-transform: skewY(4deg);
-  transform: skewY(4deg); }
-
-.feature-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
-  padding: 2.5rem;
-  text-align: center;
-  border-radius: 3px;
-  width: 100%;
-  min-height: 300px;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s; }
-
-.feature-box__icon {
-  font-size: 6rem;
-  margin-bottom: .5rem;
-  background: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
-  background: linear-gradient(to right, #7ed56f, #28b485);
-  -webkit-background-clip: text;
-  color: transparent; }
-
-.feature-box:hover {
-  -webkit-transform: translateY(-1.5rem) scale(1.03);
-  transform: translateY(-1.5rem) scale(1.03);
-  z-index: 10;
-  background-color: white; }
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: 'roboto'; }
+  section#random_section div.slider_wrap a {
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 4px; }
+    section#random_section div.slider_wrap a.selected, section#random_section div.slider_wrap a:hover {
+      color: #FFF; }
 
 section#skills_section {
   padding: 70px; }
@@ -795,7 +778,12 @@ section#skills_section {
     section#skills_section div.all_content div.skill_content {
       width: 100%;
       margin-top: 70px;
-      display: block; }
+      opacity: 0;
+      display: block;
+      transition: opacity 2s; }
+      section#skills_section div.all_content div.skill_content.animate-to-top {
+        opacity: 1;
+        transition: opacity .3s; }
       section#skills_section div.all_content div.skill_content h2 {
         display: block;
         text-align: center;
@@ -1357,37 +1345,14 @@ footer {
   section#scheduel_section #development-colum {
     margin-right: 35px; } }
 
-@media only screen and (max-width: 1100px) {
-  section#random_section {
-    margin-top: 60px;
-    padding: 120px 10%;
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(41, 152, 255, 0.8)), to(rgba(86, 67, 250, 0.8))), url(../img/random.jpg);
-    background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/random.jpg);
-    background-size: cover;
-    -webkit-transform: skewY(-4deg);
-    transform: skewY(-4deg);
-    position: relative; }
-    section#random_section div.all_cards {
-      position: relative; }
-      section#random_section div.all_cards div.card {
-        width: 33.3%;
-        padding: 0 1%; }
-        section#random_section div.all_cards div.card.card_1 {
-          top: 0;
-          left: 0%; }
-        section#random_section div.all_cards div.card.card_2 {
-          top: 0;
-          left: 22.2%; }
-        section#random_section div.all_cards div.card.card_3 {
-          top: 0;
-          left: 44.4%; }
-        section#random_section div.all_cards div.card.card_4 {
-          left: 66.6%; } }
+@media only screen and (max-width: 1160px) {
+  section#random_section div.all_cards div.card {
+    flex-grow: .040; } }
 
-@media only screen and (max-width: 900px) {
-  section#random_section div.all_cards {
-    height: 350px; } }
+@media only screen and (max-width: 800px) {
+  section#random_section div.all_cards div.card {
+    flex-grow: .125; } }
 
-@media only screen and (max-width: 650px) {
-  section#random_section div.all_cards {
-    height: 400px; } }
+@media only screen and (max-width: 535px) {
+  section#random_section div.all_cards div.card {
+    flex-grow: 10; } }
