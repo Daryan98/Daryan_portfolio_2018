@@ -1,6 +1,16 @@
 @media only screen and (max-width: 1160px) {
-    section#random_section div.all_cards div.card{
+    section#random_section 
+    {
+        div.all_cards div.card{
         flex-grow: .040;
+        }
+        div.pager {
+            display: inline !important;     
+            a {
+                display: inline;
+                opacity: 1;
+            }       
+        }
     }
 }
 

@@ -568,8 +568,6 @@ section#random_section {
           font-weight: 500;
           color: #3a3a3a; }
   section#random_section div.slider_wrap div.pager {
-    display: inline !important;
-    visibility: visible;
     position: absolute;
     float: center;
     width: 100%;
@@ -578,9 +576,12 @@ section#random_section {
     font-size: 2em;
     font-family: 'roboto'; }
   section#random_section div.slider_wrap a {
+    display: none;
+    opacity: 0;
     text-decoration: none;
     font-size: 18px;
-    margin: 0 4px; }
+    margin: 0 4px;
+    transition: .4s opacity; }
     section#random_section div.slider_wrap a.selected, section#random_section div.slider_wrap a:hover {
       color: #FFF; }
 
@@ -1347,7 +1348,12 @@ footer {
 
 @media only screen and (max-width: 1160px) {
   section#random_section div.all_cards div.card {
-    flex-grow: .040; } }
+    flex-grow: .040; }
+  section#random_section div.pager {
+    display: inline !important; }
+    section#random_section div.pager a {
+      display: inline;
+      opacity: 1; } }
 
 @media only screen and (max-width: 800px) {
   section#random_section div.all_cards div.card {

@@ -1,7 +1,6 @@
 #random_section>* {
     -webkit-transform: skewY(4deg);
     transform: skewY(4deg);
-    // display: inline;
 }
 
 section#random_section {
@@ -68,11 +67,7 @@ section#random_section {
             }
         }
         div.pager {
-            display: inline !important;
-            visibility: visible;
-                // margin-left: 380px;
                 position: absolute;
-              
                 // left: 30%;
                 float: center;
                 width: 100%;
@@ -84,9 +79,12 @@ section#random_section {
               }
 
               a{
+                  display: none;
+                  opacity: 0;
                   text-decoration: none;
                   font-size: 18px;
                   margin: 0 4px;
+                  transition: .4s opacity;
                   &.selected, &:hover {
                     color: #FFF;
 
