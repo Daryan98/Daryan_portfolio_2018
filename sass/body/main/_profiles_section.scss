@@ -9,14 +9,17 @@ section#profiles_section {
     h1 {
         @include header_blue_background; // margin-bottom: 0;
     }
+    h4 {
+   
+        display: none;
+    }
     .container {
         width: 70%;
         #carousel {
+            border-bottom: 0;
             & .pager {
-                // margin-left: 380px;
-                // position: absolute;
-                // left: 50%;
-                // transform: translateX(-50%);
+                margin-top: -10px;
+
                 a {
                     border-radius: 50%;
                     display: inline-block;
@@ -28,27 +31,27 @@ section#profiles_section {
                     margin: 0 10px 0 0;
                     border: solid 1px #fff;
                     &:first-child{
-                        background: url('../../../img/profiles/treehouse.png');
+                        background-image: url('../../../img/profiles/treehouse.png');
                         background-size: cover;
                     }
                     &:nth-child(2){
-                        background: url('../../../img/profiles/udemy.jpg');
+                        background-image: url('../../../img/profiles/udemy.jpg');
                         background-size: cover;
                     }
                     &:nth-child(3){
-                        background: url('../../../img/profiles/codecademy.png');
+                        background-image: url('../../../img/profiles/codecademy.png');
                         background-size: cover;
                     }
                     &:nth-child(4){
-                        background: url('../../../img/profiles/freecodecamp.png');
+                        background-image: url('../../../img/profiles/freecodecamp.png');
                         background-size: cover;
                     }
                     &:nth-child(5){
-                        background: url('../../../img/profiles/khanacademy.jpg');
+                        background-image: url('../../../img/profiles/khanacademy.jpg');
                         background-size: cover;
                     }
                     &:nth-child(6){
-                        background: url('../../../img/profiles/github.png');
+                        background-image: url('../../../img/profiles/github.png');
                         background-size: cover;
                     }
 
@@ -94,16 +97,17 @@ section#profiles_section {
             span#left {
                 margin-right: 3px;
                 left: 0%;
-                top: 40%;
+                top: 37%;
                 transform: translateY(-50%);
             }
             span#right {
                 margin-left: 3px;
                 right: 0%;
-                top: 40%;
+                top: 37%;
                 transform: translateY(-50%);
             }
             ul.all_boxes {
+                border-bottom: 0;
                 width: 100%; // margin-left: 15%;
                 li.box {
                     position: relative;
@@ -114,11 +118,13 @@ section#profiles_section {
                     margin: 30px 0%;
                     height: 200px;
                     div.content {
-
-                        width: 70%;
+                        overflow: auto;
+                        width: 90%;
                         height: 100%;
                         background: rgba($white-color, .7);
                         padding-right: 70px;
+//                         -webkit-clip-path: polygon(15% 0, 85% 0, 100% 50%, 100% 50%, 85% 100%, 15% 100%, 0 50%, 0 50%);
+// clip-path: polygon(15% 0, 85% 0, 100% 50%, 100% 50%, 85% 100%, 15% 100%, 0 50%, 0 50%);
                         -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
                         clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
                         border-radius: 5px;
@@ -133,7 +139,7 @@ section#profiles_section {
                             float: left;
                             position: relative;
                             img {
-                                height: 80px;
+                                height: 70px;
                                 border-radius: 50%;
                                 display: inline-block;
                                 float: left;
@@ -177,34 +183,6 @@ section#profiles_section {
                         }
                         &:hover {
                             background: rgba($white-color, .85);
-                        }
-                    }
-                }
-            }
-            ul.slider_images {
-                display: block;
-                margin-left: 55%;
-                transform: translateX(-50%);
-                margin-top: 20px;
-                li {
-                    width: 40px;
-                    height: 60px;
-                    border-radius: 50%;
-                    padding: 3px;
-                    list-style: none;
-                    display: inline;
-                    margin: 10px;
-                    img {
-                        opacity: .8;
-                        width: 34px;
-                        height: 34px;
-                        border-radius: 50%;
-                        background: #FFF;
-                        transition: all .2s;
-                        &:hover {
-                            transform: scale(1.1);
-                            opacity: 1;
-                            @include box_shadow;
                         }
                     }
                 }
