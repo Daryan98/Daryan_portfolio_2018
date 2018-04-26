@@ -30,7 +30,7 @@ section#random_section {
                     width: 100%;
                     min-height: 300px;
                     -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-                    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+                    box-shadow: 0 0px 10px rgba(0, 0, 0, .3);
                     -webkit-transition: -webkit-transform .3s;
                     transition: -webkit-transform .3s;
                     transition: transform .3s;
@@ -43,10 +43,11 @@ section#random_section {
                     //     color: transparent
                     // }
                     &:hover {
-                        -webkit-transform: translateY(-1.5rem) scale(1.03);
-                        transform: translateY(-1.5rem) scale(1.03);
+                        z-index: 1000000;
+                        -webkit-transform: translateY(1.5rem) scale(1.03);
+                        transform: translateY(1.5rem) scale(1.03);
                         z-index: 100;
-                        background-color: rgba(255, 255, 255, 1);
+                        background-color: rgba(255, 255, 255, .9);
                     }
                     i {
                         font-size: 50px;

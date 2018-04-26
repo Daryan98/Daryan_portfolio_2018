@@ -88,10 +88,10 @@ $(function () {
     align: false,
     pagination: {
       container: "#pager2",
-			// scroll: {
-        
-			// 	duration: 400,
-			// 	timeoutDuration: 2000
+      // scroll: {
+
+      // 	duration: 400,
+      // 	timeoutDuration: 2000
       // }
     },
     items: {
@@ -99,19 +99,44 @@ $(function () {
       visible: 4,
       minimum: 4
     },
-    easing: "elastic", 
+    easing: "elastic",
     scroll: {
       items: 1,
       timeoutDuration: 4000,
-      
+
     },
-		swipe: {
-			onMouse: false,
-			onTouch: true
-		},
+    swipe: {
+      onMouse: false,
+      onTouch: true
+    },
   });
 });
 
-$('.pager').on("click", ()=> {
+$('.pager').on("click", () => {
   console.log($('.pager a'));
+})
+
+$(document).ready(() => {
+  $('.profiles_crousel').carouFredSel({
+    responsive: true,
+    circular: true,
+    prev: "#left",
+    next: "#right",
+    pagination: ".pager",
+    width: '100%',
+    align: false,
+    visible: {
+      min: 1,
+      max: 6
+    },
+    scroll: {
+      duration: 500,
+      timeoutDuration: 2500
+    },
+    //   	onCreate: function(){
+    // 	$(this).css( 'margin-left', '120px' );
+    // }
+  }, {
+    transition: true
+  })
 })

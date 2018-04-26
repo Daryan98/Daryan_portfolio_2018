@@ -58,6 +58,7 @@ function profiles_section(data) {
         const liElement = document.createElement("li");
         const div_left = document.createElement("div");
         const div_right = document.createElement("div");
+        const content_Div = document.createElement("div");        
         const imgElement = document.createElement("img");
         const aElement = document.createElement("a");
         const h2Element = document.createElement("h2");
@@ -66,6 +67,8 @@ function profiles_section(data) {
         addClass(liElement, "box");
         addClass(div_left, "left_box");
         addClass(div_right, "right_box");
+        addClass(content_Div, "content");
+        
 
         imgElement.src = profile.img_avatar;
         aElement.href = profile.profile_url;
@@ -73,8 +76,9 @@ function profiles_section(data) {
         pElement.innerHTML = profile.paragraph;
 
         ulElement.appendChild(liElement);
-        liElement.appendChild(div_left);
-        liElement.appendChild(div_right);
+        liElement.appendChild(content_Div);
+        content_Div.appendChild(div_left);
+        content_Div.appendChild(div_right);
         div_left.appendChild(imgElement);
         aElement.appendChild(h2Element);
         div_right.appendChild(aElement);
