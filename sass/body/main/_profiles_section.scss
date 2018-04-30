@@ -21,55 +21,30 @@ section#profiles_section {
                 margin-top: -10px;
 
                 a {
-                    border-radius: 50%;
+                    border-radius: 25%;
                     display: inline-block;
                     -webkit-box-sizing: border-box;
                     -moz-box-sizing: border-box;
                     box-sizing: border-box;
-                    width: 30px;
-                    height: 30px;
-                    margin: 0 10px 0 0;
-                    border: solid 1px #fff;
-                    &:first-child{
-                        background-image: url('../../../img/profiles/treehouse.png');
-                        background-size: cover;
-                    }
-                    &:nth-child(2){
-                        background-image: url('../../../img/profiles/udemy.jpg');
-                        background-size: cover;
-                    }
-                    &:nth-child(3){
-                        background-image: url('../../../img/profiles/codecademy.png');
-                        background-size: cover;
-                    }
-                    &:nth-child(4){
-                        background-image: url('../../../img/profiles/freecodecamp.png');
-                        background-size: cover;
-                    }
-                    &:nth-child(5){
-                        background-image: url('../../../img/profiles/khanacademy.jpg');
-                        background-size: cover;
-                    }
-                    &:nth-child(6){
-                        background-image: url('../../../img/profiles/github.png');
-                        background-size: cover;
-                    }
-
-                    
-                    background-color: rgba(#fff, 0.8);
-                    
+                    width: 40px;
+                    height: 2px;
+                    margin: 0 5px 0 0;
+                    background-color: rgba(#fff, 0.1);                    
+                    transition: all .3s;
                     &:hover {
-                        background-color: rgba(#fff, 0.8);
+                        background-color: $secondary-color;
+
+                    }
+//                     $color-secondary-light: #ffb900;
+// $color-secondary-dark:
+                    &.selected {
+                        background-color: rgba($color-secondary-dark, 0.8);
                     }
 
                     span {
                         display: none;
                     }
                 }
-            }
-            .carousel-pagination a.selected {
-                width: 35px;
-                height: 35px;
             }
             .clearfix {
                 float: none;
@@ -90,21 +65,31 @@ section#profiles_section {
                 font-size: 33px;
                 cursor: pointer;
                 &:hover {
-                    color: $secondary-color;
-                    @include box_shadow;
+                color: $color-secondary-dark;
+                @include box_shadow;
                 }
             }
             span#left {
                 margin-right: 3px;
-                left: 0%;
-                top: 37%;
+                left: -1%;
+                top: 43%;
                 transform: translateY(-50%);
+                transition: all .3s;
+                &:hover {
+                background: rgba($white-color, .9);                    
+                    left: -2%;
+                }
             }
             span#right {
                 margin-left: 3px;
-                right: 0%;
-                top: 37%;
+                right: -1%;
+                top: 43%;
                 transform: translateY(-50%);
+                transition: all .3s;
+                &:hover {
+                    background: rgba($white-color, .9);                    
+                    right: -2%;
+                }
             }
             ul.all_boxes {
                 border-bottom: 0;
@@ -119,15 +104,13 @@ section#profiles_section {
                     height: 200px;
                     div.content {
                         overflow: auto;
-                        width: 90%;
+                        width: 100%;
                         height: 100%;
                         background: rgba($white-color, .7);
                         padding-right: 70px;
-//                         -webkit-clip-path: polygon(15% 0, 85% 0, 100% 50%, 100% 50%, 85% 100%, 15% 100%, 0 50%, 0 50%);
-// clip-path: polygon(15% 0, 85% 0, 100% 50%, 100% 50%, 85% 100%, 15% 100%, 0 50%, 0 50%);
                         -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
                         clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-                        border-radius: 5px;
+                        border-radius: 3px;
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
@@ -156,19 +139,8 @@ section#profiles_section {
                             display: inline;
                             float: left;
                             position: relative;
-                            a {
-                                &:hover {
-                                    h2 {
-                                        // color: $primary-color;
-                                        @include header_white_background;
-                                        margin-top: 15px;
-                                        margin-bottom: 10px;
-                                        font-weight: 500;
-                                    }
-                                }
-                            }
                             h2 {
-                                margin-top: 15px;
+                                margin-top: 25px;
                                 color: $font-color-dark;
                                 display: inline-block;
                                 text-align: left;

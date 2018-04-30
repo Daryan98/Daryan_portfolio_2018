@@ -99,12 +99,14 @@ $(function () {
       visible: 4,
       minimum: 4
     },
-    easing: "elastic",
     scroll: {
       items: 1,
-      timeoutDuration: 4000,
-
-    },
+      queue: true,
+      fx: "scroll",
+      easing: "swing",
+      duration: 1000,
+      timeoutDuration: 4000
+  },
     swipe: {
       onMouse: false,
       onTouch: true
@@ -120,11 +122,20 @@ $(document).ready(() => {
   $('.profiles_crousel').carouFredSel({
     responsive: true,
     circular: true,
-    prev: "#left",
-    next: "#right",
+    // prev: "#left",
+    // next: "#right",
+    prev    : {  
+      button  : "#left",  
+      key     : "left"  
+  },  
+  next    : {  
+      button  : "#right",  
+      key     : "right"  
+  }, 
     pagination: ".pager",
     width: '100%',
     align: false,
+    
     visible: {
       min: 1,
       max: 6
