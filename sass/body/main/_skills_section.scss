@@ -1,5 +1,6 @@
 section#skills_section {
-    padding: 70px;
+    width: 100%;
+    padding: 70px 0;
     .small_screen{
         display: none;
         position: absolute;
@@ -9,6 +10,7 @@ section#skills_section {
         @include header_white_background;
     }
     & .container {
+    width: 100%; 
         div.all_content {
             width: 100%;
             height: 100%;
@@ -17,7 +19,8 @@ section#skills_section {
                 height: 100%;
                 background: url(../img/skills.png) repeat-y;
                 background-size: 100%;
-                ul.skills_header,
+        
+                div.skills_header,
                 ul.developemnt_skill,
                 ul.design_skill {
                     width: 100%;
@@ -25,15 +28,14 @@ section#skills_section {
                     display: inline-block;
                     display: flex;
                     flex: row wrap;
-                    justify-items: center;
+                    // justify-items: center;
                     justify-content: center;
                     li {
+                 margin: 0 auto;
+                        
                         list-style: none;
-                        display: inline;
-                        float: left;
-                        margin-left: -50px;
                         &:first-child {
-                            margin-left: 0;
+                            margin-left: 0; 
                         }
                         &#development .circle {
                             background-color: $primary-color;
@@ -88,7 +90,7 @@ section#skills_section {
                             transition: all .2s;
                             &:hover {
                                 opacity: 1;
-                                box-shadow: 0px 0px 10px #000;
+                                box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
                             }
                             .circle__spin {
                                 position: absolute;
@@ -139,14 +141,33 @@ section#skills_section {
                         }
                     }
                 }
-                ul.developemnt_skill,
-                ul.design_skill {
+                div.skills_header{
+                    width: 100%;
                     margin-left: 50%;
                     transform: translateX(-50%);
+                    position: relative;
+           
+                    div.lSAction{
+                        display: none;
+                        visibility: hidden;
+                        
+                        }
+                    }
+                
+                ul.developemnt_skill,
+                ul.design_skill {
+                    
+                    // margin-left: 50%;
+                    // transform: translateX(-50%);
+                    li {
+                        padding: 30px;
+                    }
                     li .circle {
                         width: 150px;
                         height: 150px;
                         opacity: .9;
+                        margin: 0 auto;
+                      
                         .circle__spin {
                             width: 174px;
                             height: 174px;
@@ -181,6 +202,10 @@ section#skills_section {
                             display: none;
                             opacity: 0;
                         }
+                    }
+                    div.lSAction{
+                        display: none;
+                        visibility: hidden;
                     }
                 }
             }

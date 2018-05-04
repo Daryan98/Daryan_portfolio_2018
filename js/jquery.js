@@ -76,78 +76,177 @@ $(window).scroll(function () {
 });
 
 ///////////////////////////////////////////
-// Random Section
+// Random Section skills_header_slider
 ////////////////////////////////////////
+$(document).ready(function () {
+  var slider = $('.random_slider').lightSlider({
+    item: 4,
+    loop: false,
+    slideMove: 1,
+    slideMargin: 10,
+    easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+    speed: 600,
 
+    responsive: [{
+        breakpoint: 1000,
+        settings: {
+          item: 3,
+          slideMove: 1,
+          slideMargin: 6,
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          item: 2,
+          slideMove: 1,
+          slideMargin: 6,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          item: 1,
+          slideMove: 1
+        }
+      }
+    ]
+  });
+  $('.slider_wrap #prev').click(function () {
+    slider.goToPrevSlide();
+  });
 
-
-$(function () {
-  $('.slider').carouFredSel({
-    responsive: true,
-    width: '100%',
-    align: false,
-    pagination: {
-      container: "#pager2",
-      // scroll: {
-
-      // 	duration: 400,
-      // 	timeoutDuration: 2000
-      // }
-    },
-    items: {
-      width: 640,
-      visible: 4,
-      minimum: 4
-    },
-    scroll: {
-      items: 1,
-      queue: true,
-      fx: "scroll",
-      easing: "swing",
-      duration: 1000,
-      timeoutDuration: 4000
-  },
-    swipe: {
-      onMouse: false,
-      onTouch: true
-    },
+  $('.slider_wrap #next').click(function () {
+    slider.goToNextSlide();
   });
 });
 
-$('.pager').on("click", () => {
-  console.log($('.pager a'));
+
+///////////////////////////////////////////
+// Skills section
+////////////////////////////////////////
+
+// SKills Header
+$(document).ready(function () {
+  var slider = $('.skills_header_slider').lightSlider({
+    item: 2,
+    slideMargin: 0,
+    loop: false,
+    easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+    speed: 600,
+    pager: true,
+
+    responsive: [{
+      breakpoint: 625,
+      settings: {
+        item: 1,
+        slideMove: 1,
+
+        // slideMargin:6,
+      }
+    }, ]
+  })
 })
 
-$(document).ready(() => {
-  $('.profiles_crousel').carouFredSel({
-    responsive: true,
-    circular: true,
-    // prev: "#left",
-    // next: "#right",
-    prev    : {  
-      button  : "#left",  
-      key     : "left"  
-  },  
-  next    : {  
-      button  : "#right",  
-      key     : "right"  
-  }, 
-    pagination: ".pager",
-    width: '100%',
-    align: false,
-    
-    visible: {
-      min: 1,
-      max: 6
+
+// skills
+$(document).ready(function () {
+  var slider = $('ul.developemnt_skill').lightSlider({
+    item: 5,
+    loop: false,
+    // slideMove:1,
+    easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+    speed: 600,
+
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+          item: 4,
+          slideMove: 1,
+          slideMargin: 0,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          item: 3,
+          slideMove: 1,
+          slideMargin: 0,
+        }
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          item: 2,
+          slideMove: 1
+        }
+      },
+      {
+        breakpoint: 460,
+        settings: {
+          item: 1,
+          slideMove: 1
+        }
+      }
+    ]
+  });
+  $('.slider_wrap #prev').click(function () {
+    slider.goToPrevSlide();
+  });
+
+  $('.slider_wrap #next').click(function () {
+    slider.goToNextSlide();
+  });
+});
+
+
+
+
+
+
+///////////////////////////////////////////
+//profiles section
+////////////////////////////////////////
+$(document).ready(function () {
+  var slider = $('.profiles_crousel').lightSlider({
+    item: 4,
+    adaptiveHeight: true,
+    slideMargin: 10,
+    easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+    speed: 600,
+    loop: false,
+    pager: true,
+    responsive: [{
+      breakpoint: 1300,
+      settings: {
+        item: 3,
+        slideMove: 1,
+        slideMargin: 6,
+      }
     },
-    scroll: {
-      duration: 500,
-      timeoutDuration: 2500
+    {
+      breakpoint: 1035,
+      settings: {
+        item: 2,
+        slideMove: 1,
+        slideMargin: 6,
+      }
     },
-    //   	onCreate: function(){
-    // 	$(this).css( 'margin-left', '120px' );
-    // }
-  }, {
-    transition: true
-  })
+    {
+      breakpoint: 550,
+      settings: {
+        item: 1,
+        slideMove: 1
+      }
+    }
+  ]
+
+  });
+  $('#profiles_section #prev').click(function () {
+    slider.goToPrevSlide();
+  });
+
+  $('#profiles_section #next').click(function () {
+    slider.goToNextSlide();
+  });
 })

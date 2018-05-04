@@ -17,10 +17,15 @@
     <!-- Other Files -->
     <link rel="stylesheet" href="cdns/bootstrap/css/bootstrap.css">
 
+    <!-- Light slider cdn-->
+    <link rel="stylesheet" href="cdns/lightslider-master/src/css/lightslider.css">
+
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
 
-
+    <!--light slider-->
+    <script src="js/cdns/jquery-3.3.1.min.js"></script>
+    <script src="cdns/lightslider-master/src/js/lightslider.js"></script>
 </head>
 
 <body>
@@ -192,8 +197,11 @@
             <!-- </div> -->
         </section>
         <section id="random_section">
+           
             <div class="slider_wrap">
-                <div class="all_cards slider">
+                    <span id="prev">&#8249;</span>
+                    <span id="next">&#8250;</span>
+                <div class="all_cards random_slider">
 
                     <div class="card card_1">
                         <div class="feature-box">
@@ -235,7 +243,6 @@
                         </div>
                     </div>
                 </div>
-                <div id="pager2" class="pager"></div>
             </div>
 
 
@@ -245,7 +252,8 @@
             <div class="container">
                 <div class="all_content">
                     <div class="circles">
-                        <ul class="skills_header">
+                        <div class="skills_header">
+                          <ul class="skills_header_slider">
                             <li id="development">
                                 <div class="circle develpment">
                                     <div class="circle__spin skills__header dev active">
@@ -272,7 +280,9 @@
                                     </div>
                                 </div>
                             </li>
-                        </ul>
+                        </ul>  
+                        </div>
+                        
                         <div class="skills">
                             <ul class="developemnt_skill">
                                 <li id="html">
@@ -393,17 +403,16 @@
             <h1>My Profiles</h1>
             <h4>This Section Will Work on Bigger screen</h4>
             <div class="container">
-                <div id="carousel">                                                          
+                <div id="carousel">
                     <ul class="all_boxes profiles_crousel">
-
-                    </ul>
-                    <span id="left"> &#8249;</span>
-                    <span id="right">&#8250;</span>
+                           
+                    </ul> 
+                    <span id="prev"> &#8249;</span>
+                    <span id="next">&#8250;</span>
                     <div class="clearfix"></div>
-                    <div class="pager" id="pager">
-                    </div>
+                    <!-- <div class="pager" id="pager"></div> -->
                 </div>
-
+               
             </div>
 
         </section>
@@ -512,9 +521,11 @@
     <script src="cdns/fontawesome/svg-with-js/js/fontawesome-all.js"></script>
 
     <!-- CDNS -->
-    <script src="js/cdns/jquery-3.3.1.min.js"></script>
+
     <script src="js/cdns/jquery.carouFredSel-6.0.4-packed.js"></script>
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
+
+
 
     <script src="js/use_json.js"></script>
     <script src="js/jquery.js"></script>

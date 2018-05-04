@@ -10,6 +10,10 @@ body {
   box-sizing: border-box;
   width: 100%; }
 
+@media only screen and (max-width: 334px) {
+  body {
+    display: none; } }
+
 .btn {
   outline: none;
   position: relative;
@@ -520,73 +524,112 @@ section#scheduel_section {
 
 section#random_section {
   margin-top: 60px;
-  padding: 120px 10%;
+  padding: 100px 10%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(41, 152, 255, 0.8)), to(rgba(86, 67, 250, 0.8))), url(../img/random.jpg);
   background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/random.jpg);
   background-size: cover;
   -webkit-transform: skewY(-4deg);
   transform: skewY(-4deg);
-  position: relative; }
-  section#random_section div.slider_wrap div.all_cards {
-    width: 50%;
-    height: 300px;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap; }
-    section#random_section div.slider_wrap div.all_cards div.card {
-      margin: 0 10px; }
-      section#random_section div.slider_wrap div.all_cards div.card .feature-box {
-        background-color: rgba(255, 255, 255, 0.8);
-        font-size: 1.5rem;
-        padding: 2.5rem;
-        text-align: center;
-        border-radius: 3px;
-        width: 100%;
-        min-height: 300px;
-        -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
-        -webkit-transition: -webkit-transform .3s;
-        transition: -webkit-transform .3s;
-        transition: transform .3s;
-        transition: transform .3s, -webkit-transform .3s; }
-        section#random_section div.slider_wrap div.all_cards div.card .feature-box:hover {
-          z-index: 1000000;
-          -webkit-transform: translateY(1.5rem) scale(1.03);
-          transform: translateY(1.5rem) scale(1.03);
-          z-index: 100;
-          background-color: rgba(255, 255, 255, 0.9); }
-        section#random_section div.slider_wrap div.all_cards div.card .feature-box i {
-          font-size: 50px;
-          color: #2998ff; }
-        section#random_section div.slider_wrap div.all_cards div.card .feature-box h3 {
-          color: #3a3a3a;
-          margin-top: 15px;
-          font-size: 20px; }
-        section#random_section div.slider_wrap div.all_cards div.card .feature-box p {
-          word-spacing: 1px;
-          text-align: left;
-          font-weight: 500;
-          color: #3a3a3a; }
-  section#random_section div.slider_wrap div.pager {
-    position: absolute;
-    float: center;
-    width: 100%;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 2em;
-    font-family: 'roboto'; }
-  section#random_section div.slider_wrap a {
-    display: none;
-    opacity: 0;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0 4px;
-    transition: .4s opacity; }
-    section#random_section div.slider_wrap a.selected, section#random_section div.slider_wrap a:hover {
-      color: #FFF; }
+  position: relative;
+  background-attachment: fixed; }
+  section#random_section div.slider_wrap {
+    margin-top: 0px;
+    height: 300px; }
+    section#random_section div.slider_wrap span {
+      font-size: 27px;
+      color: #2998ff;
+      width: 34px;
+      height: 34px;
+      text-align: center;
+      line-height: 27px;
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #fff;
+      z-index: 1000000;
+      transition: all 0.3s cubic-bezier(0.25, 0, 0.25, 1);
+      border: 1px solid #2998ff;
+      cursor: pointer; }
+      section#random_section div.slider_wrap span:hover#prev {
+        left: -22px;
+        color: #ff7730;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2); }
+      section#random_section div.slider_wrap span:hover#next {
+        right: -22px;
+        color: #ff7730;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2); }
+      section#random_section div.slider_wrap span#prev {
+        position: absolute;
+        left: -17px;
+        top: 50%;
+        transform: translateY(-50%); }
+      section#random_section div.slider_wrap span#next {
+        position: absolute;
+        right: -17px;
+        top: 50%;
+        transform: translateY(-50%); }
+    section#random_section div.slider_wrap div.all_cards {
+      width: 50%;
+      height: 300px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap; }
+      section#random_section div.slider_wrap div.all_cards div.card {
+        height: 100%; }
+        section#random_section div.slider_wrap div.all_cards div.card .feature-box {
+          position: relative;
+          background-color: rgba(255, 255, 255, 0.8);
+          font-size: 1.5rem;
+          padding: 2.5rem;
+          text-align: center;
+          border-radius: 3px;
+          width: 100%;
+          min-height: 300px;
+          -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+          -webkit-transition: -webkit-transform .3s;
+          transition: -webkit-transform .3s;
+          transition: transform .3s;
+          transition: transform .3s, -webkit-transform .3s; }
+          section#random_section div.slider_wrap div.all_cards div.card .feature-box:hover {
+            z-index: 1000000;
+            -webkit-transform: translateY(1.5rem) scale(1.03);
+            transform: translateY(1.5rem) scale(1.03);
+            z-index: 100;
+            background-color: rgba(255, 255, 255, 0.9); }
+          section#random_section div.slider_wrap div.all_cards div.card .feature-box i {
+            font-size: 50px;
+            color: #2998ff; }
+          section#random_section div.slider_wrap div.all_cards div.card .feature-box h3 {
+            color: #3a3a3a;
+            margin-top: 15px;
+            font-size: 20px; }
+          section#random_section div.slider_wrap div.all_cards div.card .feature-box p {
+            word-spacing: 1px;
+            text-align: left;
+            font-weight: 500;
+            color: #3a3a3a; }
+    section#random_section div.slider_wrap div.pager {
+      position: absolute;
+      float: center;
+      width: 100%;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 2em;
+      font-family: 'roboto'; }
+    section#random_section div.slider_wrap a {
+      display: none;
+      opacity: 0;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 4px;
+      transition: .4s opacity; }
+      section#random_section div.slider_wrap a.selected, section#random_section div.slider_wrap a:hover {
+        color: #FFF; }
 
 section#skills_section {
-  padding: 70px; }
+  width: 100%;
+  padding: 70px 0; }
   section#skills_section .small_screen {
     display: none;
     position: absolute;
@@ -602,167 +645,174 @@ section#skills_section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600; }
-  section#skills_section .container div.all_content {
-    width: 100%;
-    height: 100%; }
-    section#skills_section .container div.all_content div.circles {
+  section#skills_section .container {
+    width: 100%; }
+    section#skills_section .container div.all_content {
       width: 100%;
-      height: 100%;
-      background: url(../img/skills.png) repeat-y;
-      background-size: 100%; }
-      section#skills_section .container div.all_content div.circles ul.skills_header,
-      section#skills_section .container div.all_content div.circles ul.developemnt_skill,
-      section#skills_section .container div.all_content div.circles ul.design_skill {
+      height: 100%; }
+      section#skills_section .container div.all_content div.circles {
         width: 100%;
         height: 100%;
-        display: inline-block;
-        display: flex;
-        flex: row wrap;
-        justify-items: center;
-        justify-content: center; }
-        section#skills_section .container div.all_content div.circles ul.skills_header li,
+        background: url(../img/skills.png) repeat-y;
+        background-size: 100%; }
+        section#skills_section .container div.all_content div.circles div.skills_header,
+        section#skills_section .container div.all_content div.circles ul.developemnt_skill,
+        section#skills_section .container div.all_content div.circles ul.design_skill {
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+          display: flex;
+          flex: row wrap;
+          justify-content: center; }
+          section#skills_section .container div.all_content div.circles div.skills_header li,
+          section#skills_section .container div.all_content div.circles ul.developemnt_skill li,
+          section#skills_section .container div.all_content div.circles ul.design_skill li {
+            margin: 0 auto;
+            list-style: none; }
+            section#skills_section .container div.all_content div.circles div.skills_header li:first-child,
+            section#skills_section .container div.all_content div.circles ul.developemnt_skill li:first-child,
+            section#skills_section .container div.all_content div.circles ul.design_skill li:first-child {
+              margin-left: 0; }
+            section#skills_section .container div.all_content div.circles div.skills_header li#development .circle,
+            section#skills_section .container div.all_content div.circles ul.developemnt_skill li#development .circle,
+            section#skills_section .container div.all_content div.circles ul.design_skill li#development .circle {
+              background-color: #2998ff; }
+              section#skills_section .container div.all_content div.circles div.skills_header li#development .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.developemnt_skill li#development .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.design_skill li#development .circle .circle__spin.active circle {
+                stroke: #2998ff; }
+            section#skills_section .container div.all_content div.circles div.skills_header li#design .circle,
+            section#skills_section .container div.all_content div.circles ul.developemnt_skill li#design .circle,
+            section#skills_section .container div.all_content div.circles ul.design_skill li#design .circle {
+              background-color: #5643fa; }
+              section#skills_section .container div.all_content div.circles div.skills_header li#design .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.developemnt_skill li#design .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.design_skill li#design .circle .circle__spin.active circle {
+                stroke: #5643fa; }
+            section#skills_section .container div.all_content div.circles div.skills_header li:nth-child(1) .circle,
+            section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(1) .circle,
+            section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(1) .circle {
+              background-color: #FF0033; }
+              section#skills_section .container div.all_content div.circles div.skills_header li:nth-child(1) .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(1) .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(1) .circle .circle__spin.active circle {
+                stroke: #FF0033; }
+            section#skills_section .container div.all_content div.circles div.skills_header li:nth-child(2) .circle,
+            section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(2) .circle,
+            section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(2) .circle {
+              background-color: #7D2582; }
+              section#skills_section .container div.all_content div.circles div.skills_header li:nth-child(2) .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(2) .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(2) .circle .circle__spin.active circle {
+                stroke: #7D2582; }
+            section#skills_section .container div.all_content div.circles div.skills_header li:nth-child(3) .circle,
+            section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(3) .circle,
+            section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(3) .circle {
+              background-color: #09B7E3; }
+              section#skills_section .container div.all_content div.circles div.skills_header li:nth-child(3) .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(3) .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(3) .circle .circle__spin.active circle {
+                stroke: #09B7E3; }
+            section#skills_section .container div.all_content div.circles div.skills_header li:nth-child(4) .circle,
+            section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(4) .circle,
+            section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(4) .circle {
+              background-color: #50953A; }
+              section#skills_section .container div.all_content div.circles div.skills_header li:nth-child(4) .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(4) .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(4) .circle .circle__spin.active circle {
+                stroke: #50953A; }
+            section#skills_section .container div.all_content div.circles div.skills_header li:nth-child(5) .circle,
+            section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(5) .circle,
+            section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(5) .circle {
+              background-color: #FF7209; }
+              section#skills_section .container div.all_content div.circles div.skills_header li:nth-child(5) .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(5) .circle .circle__spin.active circle,
+              section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(5) .circle .circle__spin.active circle {
+                stroke: #FF7209; }
+            section#skills_section .container div.all_content div.circles div.skills_header li .circle,
+            section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle,
+            section#skills_section .container div.all_content div.circles ul.design_skill li .circle {
+              position: relative;
+              margin: 40px;
+              height: 200px;
+              width: 200px;
+              background-color: orange;
+              border-radius: 50%;
+              opacity: .9;
+              transition: all .2s; }
+              section#skills_section .container div.all_content div.circles div.skills_header li .circle:hover,
+              section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle:hover,
+              section#skills_section .container div.all_content div.circles ul.design_skill li .circle:hover {
+                opacity: 1;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
+              section#skills_section .container div.all_content div.circles div.skills_header li .circle .circle__spin,
+              section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle .circle__spin,
+              section#skills_section .container div.all_content div.circles ul.design_skill li .circle .circle__spin {
+                position: absolute;
+                left: -16px;
+                top: -15px;
+                width: 220px;
+                height: 220px; }
+                section#skills_section .container div.all_content div.circles div.skills_header li .circle .circle__spin.not_active svg,
+                section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle .circle__spin.not_active svg,
+                section#skills_section .container div.all_content div.circles ul.design_skill li .circle .circle__spin.not_active svg {
+                  display: none; }
+                section#skills_section .container div.all_content div.circles div.skills_header li .circle .circle__spin.active svg,
+                section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle .circle__spin.active svg,
+                section#skills_section .container div.all_content div.circles ul.design_skill li .circle .circle__spin.active svg {
+                  display: block;
+                  animation: circle_border_spin 10s linear infinite; }
+                section#skills_section .container div.all_content div.circles div.skills_header li .circle .circle__spin.active circle,
+                section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle .circle__spin.active circle,
+                section#skills_section .container div.all_content div.circles ul.design_skill li .circle .circle__spin.active circle {
+                  stroke: orange; }
+                section#skills_section .container div.all_content div.circles div.skills_header li .circle .circle__spin svg,
+                section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle .circle__spin svg,
+                section#skills_section .container div.all_content div.circles ul.design_skill li .circle .circle__spin svg {
+                  width: 105%;
+                  height: 105%; }
+                section#skills_section .container div.all_content div.circles div.skills_header li .circle .circle__spin circle,
+                section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle .circle__spin circle,
+                section#skills_section .container div.all_content div.circles ul.design_skill li .circle .circle__spin circle {
+                  stroke-width: 4;
+                  stroke-dasharray: 0, 10;
+                  stroke-linecap: round;
+                  fill: none; }
+              section#skills_section .container div.all_content div.circles div.skills_header li .circle div.content,
+              section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle div.content,
+              section#skills_section .container div.all_content div.circles ul.design_skill li .circle div.content {
+                text-align: center;
+                line-height: 120px; }
+                section#skills_section .container div.all_content div.circles div.skills_header li .circle div.content img,
+                section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle div.content img,
+                section#skills_section .container div.all_content div.circles ul.design_skill li .circle div.content img {
+                  height: 50px;
+                  margin-top: 35px; }
+                section#skills_section .container div.all_content div.circles div.skills_header li .circle div.content h2,
+                section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle div.content h2,
+                section#skills_section .container div.all_content div.circles ul.design_skill li .circle div.content h2 {
+                  font-size: 16px;
+                  margin: 0;
+                  margin-top: 10px;
+                  font-weight: 500;
+                  color: #FFF; }
+        section#skills_section .container div.all_content div.circles div.skills_header {
+          width: 100%;
+          margin-left: 50%;
+          transform: translateX(-50%);
+          position: relative; }
+          section#skills_section .container div.all_content div.circles div.skills_header div.lSAction {
+            display: none;
+            visibility: hidden; }
         section#skills_section .container div.all_content div.circles ul.developemnt_skill li,
         section#skills_section .container div.all_content div.circles ul.design_skill li {
-          list-style: none;
-          display: inline;
-          float: left;
-          margin-left: -50px; }
-          section#skills_section .container div.all_content div.circles ul.skills_header li:first-child,
-          section#skills_section .container div.all_content div.circles ul.developemnt_skill li:first-child,
-          section#skills_section .container div.all_content div.circles ul.design_skill li:first-child {
-            margin-left: 0; }
-          section#skills_section .container div.all_content div.circles ul.skills_header li#development .circle,
-          section#skills_section .container div.all_content div.circles ul.developemnt_skill li#development .circle,
-          section#skills_section .container div.all_content div.circles ul.design_skill li#development .circle {
-            background-color: #2998ff; }
-            section#skills_section .container div.all_content div.circles ul.skills_header li#development .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.developemnt_skill li#development .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.design_skill li#development .circle .circle__spin.active circle {
-              stroke: #2998ff; }
-          section#skills_section .container div.all_content div.circles ul.skills_header li#design .circle,
-          section#skills_section .container div.all_content div.circles ul.developemnt_skill li#design .circle,
-          section#skills_section .container div.all_content div.circles ul.design_skill li#design .circle {
-            background-color: #5643fa; }
-            section#skills_section .container div.all_content div.circles ul.skills_header li#design .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.developemnt_skill li#design .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.design_skill li#design .circle .circle__spin.active circle {
-              stroke: #5643fa; }
-          section#skills_section .container div.all_content div.circles ul.skills_header li:nth-child(1) .circle,
-          section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(1) .circle,
-          section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(1) .circle {
-            background-color: #FF0033; }
-            section#skills_section .container div.all_content div.circles ul.skills_header li:nth-child(1) .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(1) .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(1) .circle .circle__spin.active circle {
-              stroke: #FF0033; }
-          section#skills_section .container div.all_content div.circles ul.skills_header li:nth-child(2) .circle,
-          section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(2) .circle,
-          section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(2) .circle {
-            background-color: #7D2582; }
-            section#skills_section .container div.all_content div.circles ul.skills_header li:nth-child(2) .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(2) .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(2) .circle .circle__spin.active circle {
-              stroke: #7D2582; }
-          section#skills_section .container div.all_content div.circles ul.skills_header li:nth-child(3) .circle,
-          section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(3) .circle,
-          section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(3) .circle {
-            background-color: #09B7E3; }
-            section#skills_section .container div.all_content div.circles ul.skills_header li:nth-child(3) .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(3) .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(3) .circle .circle__spin.active circle {
-              stroke: #09B7E3; }
-          section#skills_section .container div.all_content div.circles ul.skills_header li:nth-child(4) .circle,
-          section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(4) .circle,
-          section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(4) .circle {
-            background-color: #50953A; }
-            section#skills_section .container div.all_content div.circles ul.skills_header li:nth-child(4) .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(4) .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(4) .circle .circle__spin.active circle {
-              stroke: #50953A; }
-          section#skills_section .container div.all_content div.circles ul.skills_header li:nth-child(5) .circle,
-          section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(5) .circle,
-          section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(5) .circle {
-            background-color: #FF7209; }
-            section#skills_section .container div.all_content div.circles ul.skills_header li:nth-child(5) .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.developemnt_skill li:nth-child(5) .circle .circle__spin.active circle,
-            section#skills_section .container div.all_content div.circles ul.design_skill li:nth-child(5) .circle .circle__spin.active circle {
-              stroke: #FF7209; }
-          section#skills_section .container div.all_content div.circles ul.skills_header li .circle,
-          section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle,
-          section#skills_section .container div.all_content div.circles ul.design_skill li .circle {
-            position: relative;
-            margin: 40px;
-            height: 200px;
-            width: 200px;
-            background-color: orange;
-            border-radius: 50%;
-            opacity: .9;
-            transition: all .2s; }
-            section#skills_section .container div.all_content div.circles ul.skills_header li .circle:hover,
-            section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle:hover,
-            section#skills_section .container div.all_content div.circles ul.design_skill li .circle:hover {
-              opacity: 1;
-              box-shadow: 0px 0px 10px #000; }
-            section#skills_section .container div.all_content div.circles ul.skills_header li .circle .circle__spin,
-            section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle .circle__spin,
-            section#skills_section .container div.all_content div.circles ul.design_skill li .circle .circle__spin {
-              position: absolute;
-              left: -16px;
-              top: -15px;
-              width: 220px;
-              height: 220px; }
-              section#skills_section .container div.all_content div.circles ul.skills_header li .circle .circle__spin.not_active svg,
-              section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle .circle__spin.not_active svg,
-              section#skills_section .container div.all_content div.circles ul.design_skill li .circle .circle__spin.not_active svg {
-                display: none; }
-              section#skills_section .container div.all_content div.circles ul.skills_header li .circle .circle__spin.active svg,
-              section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle .circle__spin.active svg,
-              section#skills_section .container div.all_content div.circles ul.design_skill li .circle .circle__spin.active svg {
-                display: block;
-                animation: circle_border_spin 10s linear infinite; }
-              section#skills_section .container div.all_content div.circles ul.skills_header li .circle .circle__spin.active circle,
-              section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle .circle__spin.active circle,
-              section#skills_section .container div.all_content div.circles ul.design_skill li .circle .circle__spin.active circle {
-                stroke: orange; }
-              section#skills_section .container div.all_content div.circles ul.skills_header li .circle .circle__spin svg,
-              section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle .circle__spin svg,
-              section#skills_section .container div.all_content div.circles ul.design_skill li .circle .circle__spin svg {
-                width: 105%;
-                height: 105%; }
-              section#skills_section .container div.all_content div.circles ul.skills_header li .circle .circle__spin circle,
-              section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle .circle__spin circle,
-              section#skills_section .container div.all_content div.circles ul.design_skill li .circle .circle__spin circle {
-                stroke-width: 4;
-                stroke-dasharray: 0, 10;
-                stroke-linecap: round;
-                fill: none; }
-            section#skills_section .container div.all_content div.circles ul.skills_header li .circle div.content,
-            section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle div.content,
-            section#skills_section .container div.all_content div.circles ul.design_skill li .circle div.content {
-              text-align: center;
-              line-height: 120px; }
-              section#skills_section .container div.all_content div.circles ul.skills_header li .circle div.content img,
-              section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle div.content img,
-              section#skills_section .container div.all_content div.circles ul.design_skill li .circle div.content img {
-                height: 50px;
-                margin-top: 35px; }
-              section#skills_section .container div.all_content div.circles ul.skills_header li .circle div.content h2,
-              section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle div.content h2,
-              section#skills_section .container div.all_content div.circles ul.design_skill li .circle div.content h2 {
-                font-size: 16px;
-                margin: 0;
-                margin-top: 10px;
-                font-weight: 500;
-                color: #FFF; }
-      section#skills_section .container div.all_content div.circles ul.developemnt_skill,
-      section#skills_section .container div.all_content div.circles ul.design_skill {
-        margin-left: 50%;
-        transform: translateX(-50%); }
+          padding: 30px; }
         section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle,
         section#skills_section .container div.all_content div.circles ul.design_skill li .circle {
           width: 150px;
           height: 150px;
-          opacity: .9; }
+          opacity: .9;
+          margin: 0 auto; }
           section#skills_section .container div.all_content div.circles ul.developemnt_skill li .circle .circle__spin,
           section#skills_section .container div.all_content div.circles ul.design_skill li .circle .circle__spin {
             width: 174px;
@@ -778,44 +828,47 @@ section#skills_section {
         section#skills_section .container div.all_content div.circles ul.developemnt_skill h2,
         section#skills_section .container div.all_content div.circles ul.design_skill h2 {
           line-height: 150px; }
-      section#skills_section .container div.all_content div.circles div.skills {
-        width: 100%; }
-        section#skills_section .container div.all_content div.circles div.skills ul.developemnt_skill {
-          width: 100%;
-          transition: all .3s; }
-          section#skills_section .container div.all_content div.circles div.skills ul.developemnt_skill.remove {
+        section#skills_section .container div.all_content div.circles div.skills {
+          width: 100%; }
+          section#skills_section .container div.all_content div.circles div.skills ul.developemnt_skill {
+            width: 100%;
+            transition: all .3s; }
+            section#skills_section .container div.all_content div.circles div.skills ul.developemnt_skill.remove {
+              display: none;
+              opacity: 0; }
+          section#skills_section .container div.all_content div.circles div.skills ul.design_skill {
+            transition: all .3s; }
+            section#skills_section .container div.all_content div.circles div.skills ul.design_skill.remove {
+              display: none;
+              opacity: 0; }
+          section#skills_section .container div.all_content div.circles div.skills div.lSAction {
             display: none;
-            opacity: 0; }
-        section#skills_section .container div.all_content div.circles div.skills ul.design_skill {
-          transition: all .3s; }
-          section#skills_section .container div.all_content div.circles div.skills ul.design_skill.remove {
-            display: none;
-            opacity: 0; }
-    section#skills_section .container div.all_content div.skill_content {
-      width: 100%;
-      margin-top: 70px;
-      opacity: 0;
-      display: block;
-      transition: opacity 2s; }
-      section#skills_section .container div.all_content div.skill_content.animate-to-top {
-        opacity: 1;
-        transition: opacity .3s; }
-      section#skills_section .container div.all_content div.skill_content h2 {
+            visibility: hidden; }
+      section#skills_section .container div.all_content div.skill_content {
+        width: 100%;
+        margin-top: 70px;
+        opacity: 0;
         display: block;
-        text-align: center;
-        margin-bottom: 30px;
-        background: linear-gradient(to right, #2998ff 0%, #5643fa 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 600; }
-      section#skills_section .container div.all_content div.skill_content p {
-        text-align: left;
-        display: inline-block;
-        margin-left: 10%;
-        width: 80%; }
-        section#skills_section .container div.all_content div.skill_content p strong {
-          color: #ff7730;
+        transition: opacity 2s; }
+        section#skills_section .container div.all_content div.skill_content.animate-to-top {
+          opacity: 1;
+          transition: opacity .3s; }
+        section#skills_section .container div.all_content div.skill_content h2 {
+          display: block;
+          text-align: center;
+          margin-bottom: 30px;
+          background: linear-gradient(to right, #2998ff 0%, #5643fa 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
           font-weight: 600; }
+        section#skills_section .container div.all_content div.skill_content p {
+          text-align: left;
+          display: inline-block;
+          margin-left: 10%;
+          width: 80%; }
+          section#skills_section .container div.all_content div.skill_content p strong {
+            color: #ff7730;
+            font-weight: 600; }
 
 section#profiles_section {
   width: 100%;
@@ -832,38 +885,126 @@ section#profiles_section {
     text-align: center;
     margin-bottom: 70px;
     color: #FFF;
-    font-weight: 600; }
+    font-weight: 600;
+    margin-bottom: 20px; }
   section#profiles_section h4 {
     display: none; }
   section#profiles_section .container {
-    width: 70%; }
+    position: relative;
+    width: 100%; }
     section#profiles_section .container #carousel {
       border-bottom: 0; }
-      section#profiles_section .container #carousel .pager {
-        margin-top: -10px; }
-        section#profiles_section .container #carousel .pager a {
-          border-radius: 25%;
-          display: inline-block;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          width: 40px;
-          height: 2px;
-          margin: 0 5px 0 0;
-          background-color: rgba(255, 255, 255, 0.1);
-          transition: all .3s; }
-          section#profiles_section .container #carousel .pager a:hover {
-            background-color: #5643fa; }
-          section#profiles_section .container #carousel .pager a.selected {
-            background-color: rgba(255, 119, 48, 0.8); }
-          section#profiles_section .container #carousel .pager a span {
-            display: none; }
+      section#profiles_section .container #carousel div.lSAction {
+        visibility: hidden; }
+      section#profiles_section .container #carousel ul.all_boxes {
+        border-bottom: 0;
+        width: 100%;
+        position: relative; }
+        section#profiles_section .container #carousel ul.all_boxes li.box {
+          position: relative;
+          list-style: none;
+          width: 100%;
+          margin: 30px 0px;
+          height: 350px; }
+          section#profiles_section .container #carousel ul.all_boxes li.box div.content {
+            padding: 20px;
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 5px;
+            position: relative;
+            transition: all .3s; }
+            section#profiles_section .container #carousel ul.all_boxes li.box div.content div.left_box {
+              width: 100%;
+              height: 20%;
+              position: relative; }
+              section#profiles_section .container #carousel ul.all_boxes li.box div.content div.left_box img {
+                height: 60px;
+                border-radius: 50%;
+                display: inline-block;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: .9;
+                transition: all .3s;
+                -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); }
+                section#profiles_section .container #carousel ul.all_boxes li.box div.content div.left_box img:hover {
+                  opacity: 1;
+                  transform: scale(1.1) top;
+                  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+            section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box {
+              width: 100%;
+              height: 70%; }
+              section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box a {
+                text-decoration: none; }
+              section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box h2 {
+                margin-top: 25px;
+                color: #3a3a3a;
+                display: block;
+                text-align: center;
+                font-size: 20px;
+                font-weight: 500;
+                transition: all .3s ease; }
+                section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box h2:hover {
+                  color: #2998ff; }
+              section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box p {
+                letter-spacing: .4px;
+                word-spacing: 1.2px;
+                color: #3a3a3a;
+                line-height: 20px; }
+            section#profiles_section .container #carousel ul.all_boxes li.box div.content:hover {
+              background: rgba(255, 255, 255, 0.85); }
+      section#profiles_section .container #carousel ul.lSPager.lSpg {
+        height: 70px;
+        line-height: 70px; }
+      section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:hover,
+      section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li.active {
+        opacity: 1; }
+        section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:hover a,
+        section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li.active a {
+          width: 30px;
+          height: 30px;
+          margin-bottom: -4px; }
+      section#profiles_section .container #carousel .lSSlideOuter {
+        margin-top: 30px; }
+        section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li {
+          opacity: .5;
+          margin: 0 3px;
+          padding: 0 2px; }
+          section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(1) a {
+            background-image: url("../../../img/profiles/treehouse.png");
+            background-size: cover; }
+          section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(2) a {
+            background-image: url("../../../img/profiles/udemy.jpg");
+            background-size: cover; }
+          section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(3) a {
+            background-image: url("../../../img/profiles/codecademy.png");
+            background-size: cover; }
+          section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(4) a {
+            background-image: url("../../../img/profiles/freecodecamp.png");
+            background-size: cover; }
+          section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(5) a {
+            background-image: url("../../../img/profiles/khanacademy.jpg");
+            background-size: cover; }
+          section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(6) a {
+            background-image: url("../../../img/profiles/github.png");
+            background-size: cover; }
+          section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(7) a {
+            background-image: url("../../../img/profiles/heroku.png");
+            background-size: cover; }
+          section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li a {
+            width: 22px;
+            height: 22px;
+            background-color: white; }
       section#profiles_section .container #carousel .clearfix {
         float: none;
         clear: both; }
-      section#profiles_section .container #carousel span#right,
-      section#profiles_section .container #carousel span#left {
-        background: rgba(255, 255, 255, 0.7);
+      section#profiles_section .container #carousel span#next,
+      section#profiles_section .container #carousel span#prev {
+        background: rgba(255, 255, 255, 0.85);
         height: 40px;
         width: 40px;
         text-align: center;
@@ -875,95 +1016,30 @@ section#profiles_section {
         color: #2998ff;
         font-size: 33px;
         cursor: pointer; }
-        section#profiles_section .container #carousel span#right:hover,
-        section#profiles_section .container #carousel span#left:hover {
+        section#profiles_section .container #carousel span#next:hover,
+        section#profiles_section .container #carousel span#prev:hover {
           color: #ff7730;
           -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
           -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); }
-      section#profiles_section .container #carousel span#left {
+      section#profiles_section .container #carousel span#prev {
         margin-right: 3px;
         left: -1%;
-        top: 43%;
+        top: 50%;
         transform: translateY(-50%);
         transition: all .3s; }
-        section#profiles_section .container #carousel span#left:hover {
-          background: rgba(255, 255, 255, 0.9);
-          left: -2%; }
-      section#profiles_section .container #carousel span#right {
+        section#profiles_section .container #carousel span#prev:hover {
+          background: white;
+          left: -1.5%; }
+      section#profiles_section .container #carousel span#next {
         margin-left: 3px;
         right: -1%;
-        top: 43%;
+        top: 50%;
         transform: translateY(-50%);
         transition: all .3s; }
-        section#profiles_section .container #carousel span#right:hover {
-          background: rgba(255, 255, 255, 0.9);
-          right: -2%; }
-      section#profiles_section .container #carousel ul.all_boxes {
-        border-bottom: 0;
-        width: 100%; }
-        section#profiles_section .container #carousel ul.all_boxes li.box {
-          position: relative;
-          list-style: none;
-          width: 100%;
-          padding: 0;
-          margin: 0;
-          margin: 30px 0%;
-          height: 200px; }
-          section#profiles_section .container #carousel ul.all_boxes li.box div.content {
-            overflow: auto;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.7);
-            padding-right: 70px;
-            -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-            border-radius: 3px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            transition: all .3s; }
-            section#profiles_section .container #carousel ul.all_boxes li.box div.content div.left_box {
-              width: 30%;
-              height: 100%;
-              display: inline;
-              float: left;
-              position: relative; }
-              section#profiles_section .container #carousel ul.all_boxes li.box div.content div.left_box img {
-                height: 70px;
-                border-radius: 50%;
-                display: inline-block;
-                float: left;
-                margin-left: 10px;
-                position: relative;
-                transition: all .2s;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50% -50%);
-                -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-                -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); }
-            section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box {
-              width: 70%;
-              height: 100%;
-              display: inline;
-              float: left;
-              position: relative; }
-              section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box h2 {
-                margin-top: 25px;
-                color: #3a3a3a;
-                display: inline-block;
-                text-align: left;
-                font-size: 20px;
-                font-weight: 500; }
-              section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box p {
-                letter-spacing: .4px;
-                word-spacing: 1.2px;
-                color: #3a3a3a; }
-            section#profiles_section .container #carousel ul.all_boxes li.box div.content:hover {
-              background: rgba(255, 255, 255, 0.85); }
+        section#profiles_section .container #carousel span#next:hover {
+          background: white;
+          right: -1.5%; }
 
 #profiles_section > * {
   -webkit-transform: skewY(4deg);
@@ -1387,29 +1463,23 @@ footer {
   section#scheduel_section #development-colum {
     margin-right: 35px; } }
 
-@media only screen and (max-width: 1160px) {
-  section#random_section div.all_cards div.card {
-    flex-grow: .040; }
-  section#random_section div.pager {
-    display: inline !important; }
-    section#random_section div.pager a {
-      display: inline;
-      opacity: 1; } }
+@media only screen and (max-width: 1060px) {
+  section#skills_section .container div.all_content div.circles div.skills_header {
+    width: 65%; } }
 
-@media only screen and (max-width: 800px) {
-  section#random_section div.all_cards div.card {
-    flex-grow: .125; } }
+@media only screen and (max-width: 805px) {
+  section#skills_section .container div.all_content div.circles div.skills_header {
+    width: 75%; } }
 
-@media only screen and (max-width: 535px) {
-  section#random_section div.all_cards div.card {
-    flex-grow: 10; } }
-
-@media only screen and (max-width: 960px) {
-  section#skills_section .small_screen {
-    display: inline;
-    text-align: center; }
-  section#skills_section .container {
-    display: none; } }
+@media only screen and (max-width: 625px) {
+  section#skills_section .container div.all_content div.circles div.skills_header li div.circle {
+    margin-left: 50%;
+    transform: translateX(-50%); }
+  section#skills_section .container div.all_content div.circles {
+    width: 100%;
+    height: 100%;
+    background: none;
+    background-size: 100%; } }
 
 @media only screen and (max-width: 1200px) {
   section#profiles_section {
@@ -1427,10 +1497,20 @@ footer {
         section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box p {
           font-size: 14px; } }
 
+@media only screen and (max-width: 1200px) {
+  section#profiles_section {
+    padding: 100px; } }
+
+@media only screen and (max-width: 1000px) {
+  section#profiles_section {
+    padding: 80px; } }
+
 @media only screen and (max-width: 800px) {
+  section#profiles_section .container #carousel ul.lSSlideOuter.lSpg {
+    margin-top: -50px; }
   section#profiles_section {
     width: 100%;
-    padding: 70px; }
+    padding: 60px; }
     section#profiles_section .container {
       width: 100%; }
       section#profiles_section .container #carousel {
@@ -1454,91 +1534,7 @@ footer {
           section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box p {
             font-size: 12px; } }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 688px) {
   section#profiles_section {
     width: 100%;
-    padding: 70px; }
-    section#profiles_section .container {
-      width: 100%; }
-      section#profiles_section .container #carousel {
-        border-bottom: 0; }
-        section#profiles_section .container #carousel .pager {
-          margin-top: -30px; }
-        section#profiles_section .container #carousel span#left {
-          margin-right: 3px;
-          top: 40%;
-          transform: translateY(-50%); }
-        section#profiles_section .container #carousel span#right {
-          margin-left: 3px;
-          top: 40%;
-          transform: translateY(-50%); }
-        section#profiles_section .container #carousel ul.all_boxes li.box div.content {
-          overflow: auto;
-          width: 100%;
-          height: 90%;
-          left: 0%;
-          transform: translateX(0%); }
-          section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box p {
-            font-size: 12px; } }
-
-@media only screen and (max-width: 576px) {
-  section#profiles_section {
-    width: 100%; }
-    section#profiles_section .container {
-      width: 100%; }
-      section#profiles_section .container #carousel .pager {
-        margin-top: 10px; }
-      section#profiles_section .container #carousel ul.all_boxes li.box div.content {
-        width: 100%;
-        height: auto;
-        padding-right: 0px;
-        left: 0%;
-        transform: translateX(0%); }
-        section#profiles_section .container #carousel ul.all_boxes li.box div.content div.left_box {
-          width: 100%;
-          height: 30%;
-          display: block;
-          float: left; }
-          section#profiles_section .container #carousel ul.all_boxes li.box div.content div.left_box img {
-            height: 60px;
-            border-radius: 50%;
-            display: inline-block;
-            float: left;
-            margin-left: 0px;
-            margin-top: 40px; }
-        section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box {
-          width: 100%;
-          height: 70%;
-          text-align: center;
-          display: block;
-          margin-top: 70px; }
-          section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box h2 {
-            margin-top: 15px;
-            font-size: 17px; }
-          section#profiles_section .container #carousel ul.all_boxes li.box div.content div.right_box p {
-            font-size: 13px;
-            width: 80%;
-            margin-left: 10%; } }
-
-@media only screen and (max-width: 518px) {
-  section#profiles_section h4 {
-    text-align: center;
-    display: inline-block;
-    color: #FFF; }
-  section#profiles_section .container {
-    display: none; } }
-
-@media only screen and (max-width: 1095px) {
-  section#projects_section div.container div.all_projects ul li {
-    width: 31.3%;
-    height: 135px; } }
-
-@media only screen and (max-width: 750px) {
-  section#projects_section div.container div.all_projects ul li {
-    width: 48%;
-    height: 135px; } }
-
-@media only screen and (max-width: 560px) {
-  section#projects_section div.container div.all_projects ul li {
-    width: 98%;
-    height: 135px; } }
+    padding: 50px 30px; } }

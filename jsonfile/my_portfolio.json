@@ -67,6 +67,12 @@
             "img_avatar": "img/profiles/github.png",
             "profile_url": "https://github.com/Daryan98",
             "paragraph": "GitHub page includes most of my projects and it includes HTML/CSS, C#, javascript and node projects.there are more websites in my GitHub profile because I love development."
+        },
+        {
+            "name": "Heroku",
+            "img_avatar": "img/profiles/heroku.png",
+            "profile_url": "https://dashboard.heroku.com/apps",
+            "paragraph": "GitHub page includes most of my projects and it includes HTML/CSS, C#, javascript and node projects.there are more websites in my GitHub profile because I love development."
         }
 
     ],
