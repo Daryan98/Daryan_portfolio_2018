@@ -1,7 +1,7 @@
 section#skills_section {
     width: 100%;
-    padding: 70px 0;
-    .small_screen{
+    padding: 70px 10%;
+    .small_screen {
         display: none;
         position: absolute;
         left: 50%;
@@ -10,7 +10,6 @@ section#skills_section {
         @include header_white_background;
     }
     & .container {
-    width: 100%; 
         div.all_content {
             width: 100%;
             height: 100%;
@@ -19,7 +18,6 @@ section#skills_section {
                 height: 100%;
                 background: url(../img/skills.png) repeat-y;
                 background-size: 100%;
-        
                 div.skills_header,
                 ul.developemnt_skill,
                 ul.design_skill {
@@ -28,15 +26,11 @@ section#skills_section {
                     display: inline-block;
                     display: flex;
                     flex: row wrap;
-                    // justify-items: center;
+                    justify-items: center;
                     justify-content: center;
                     li {
-                 margin: 0 auto;
-                        
+                        margin: 0 auto;
                         list-style: none;
-                        &:first-child {
-                            margin-left: 0; 
-                        }
                         &#development .circle {
                             background-color: $primary-color;
                             .circle__spin.active circle {
@@ -141,24 +135,19 @@ section#skills_section {
                         }
                     }
                 }
-                div.skills_header{
+                div.skills_header {
                     width: 100%;
                     margin-left: 50%;
                     transform: translateX(-50%);
                     position: relative;
-           
-                    div.lSAction{
+                    div.lSAction {
                         display: none;
                         visibility: hidden;
-                        
-                        }
                     }
-                
+                }
                 ul.developemnt_skill,
                 ul.design_skill {
-                    
-                    // margin-left: 50%;
-                    // transform: translateX(-50%);
+                    height: 200px;
                     li {
                         padding: 30px;
                     }
@@ -167,7 +156,6 @@ section#skills_section {
                         height: 150px;
                         opacity: .9;
                         margin: 0 auto;
-                      
                         .circle__spin {
                             width: 174px;
                             height: 174px;
@@ -196,14 +184,19 @@ section#skills_section {
                         }
                     }
                     ul.design_skill {
-                        // display: none;
+                        width: 100%;
+                        height: 100%;
                         transition: all .3s;
+                        // &.lightSlider.lsGrab.lSSlide {
+                        //     height: 200px;
+                        // }
                         &.remove {
                             display: none;
                             opacity: 0;
                         }
+                      
                     }
-                    div.lSAction{
+                    div.lSAction {
                         display: none;
                         visibility: hidden;
                     }

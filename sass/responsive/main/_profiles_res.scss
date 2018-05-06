@@ -31,22 +31,26 @@
         }
     }
 }
+
 @media only screen and (max-width: 1200px) {
     section#profiles_section {
-        padding: 100px ;
-    }    
+        padding: 100px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
     section#profiles_section {
-        padding: 80px ;
-    }    
+        padding: 80px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
-    section#profiles_section .container #carousel ul.lSSlideOuter.lSpg{
-        margin-top: -50px; }
-
+    section#profiles_section .container #carousel ul.all_boxes{
+        margin-bottom: 0;
+    }
+    section#profiles_section .container #carousel ul.lSSlideOuter.lSpg {
+        margin-top: 0px;
+    }
     section#profiles_section {
         width: 100%;
         padding: 60px;
@@ -69,7 +73,6 @@
                 }
                 ul.all_boxes {
                     li.box {
-                        
                         div.content {
                             overflow: auto;
                             width: 100%;
@@ -89,11 +92,64 @@
     }
 }
 
-
 @media only screen and (max-width: 688px) {
     section#profiles_section {
         width: 100%;
-        padding:50px 30px;
+        padding: 50px 30px;
     }
 }
 
+@media only screen and (max-width: 550px) {
+    section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:hover,
+    section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li.active  {
+        a {
+            width: 30px;
+            height: 30px;
+            background-color: #FFF;
+        }
+        opacity: 1;
+    }
+    section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg {
+        height: 35px;
+     li {
+        opacity: .5;
+        margin: 0 3px;
+        padding: 0 2px;
+        margin-top: 6px;
+        
+    }}
+    section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(1) a {
+        background-image: url("../../../img/profiles/treehouse.png");
+        background-size: cover;
+    }
+    section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(2) a {
+        background-image: url("../../../img/profiles/udemy.jpg");
+        background-size: cover;
+    }
+    section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(3) a {
+        background-image: url("../../../img/profiles/codecademy.png");
+        background-size: cover;
+    }
+    section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(4) a {
+        background-image: url("../../../img/profiles/freecodecamp.png");
+        background-size: cover;
+    }
+    section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(5) a {
+        background-image: url("../../../img/profiles/khanacademy.jpg");
+        background-size: cover;
+    }
+    section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(6) a {
+        background-image: url("../../../img/profiles/github.png");
+        background-size: cover;
+    }
+    section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li:nth-child(7) a {
+        background-image: url("../../../img/profiles/heroku.png");
+        background-size: cover;
+    }
+    section#profiles_section .container #carousel .lSSlideOuter .lSPager.lSpg li a {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: white;
+    }
+}

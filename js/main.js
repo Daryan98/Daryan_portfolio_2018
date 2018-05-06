@@ -21,6 +21,7 @@ window.addEventListener("load", ()=> {
       });
   }
 
+  
   // get all circle spin
   let skill = document.getElementsByClassName("skill");
 
@@ -32,10 +33,11 @@ window.addEventListener("load", ()=> {
           skill[i].classList.add("active");
       });
   }
+  
 
   function showSkills() {
-      const development = document.querySelector("ul.skills_header li#development");
-      const design = document.querySelector("ul.skills_header li#design");
+      const development = document.querySelector("div.skills_header ul li#development");
+      const design = document.querySelector("div.skills_header ul li#design");
 
       const developmentSkils = document.querySelector("div.skills ul.developemnt_skill");
       const designSkills = document.querySelector("div.skills ul.design_skill");

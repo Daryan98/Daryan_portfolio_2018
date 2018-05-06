@@ -151,7 +151,7 @@ $(document).ready(function () {
 
 // skills
 $(document).ready(function () {
-  var slider = $('ul.developemnt_skill').lightSlider({
+  var slider = $('.skills ul.developemnt_skill').lightSlider({
     item: 5,
     loop: false,
     // slideMove:1,
@@ -199,6 +199,40 @@ $(document).ready(function () {
   });
 });
 
+
+$(document).ready(function () {
+  var skills_slider = $('.skills ul.design_skill').lightSlider({
+    item: 3,
+    loop: false,
+    slideMove:1,
+    easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+    speed: 600,
+
+    responsive: [
+      {
+        breakpoint: 680,
+        settings: {
+          item: 2,
+          slideMove: 1
+        }
+      },
+      {
+        breakpoint: 460,
+        settings: {
+          item: 1,
+          slideMove: 1
+        }
+      }
+    ]
+  });
+  $('.slider_wrap #prev').click(function () {
+    skills_slider.goToPrevSlide();
+  });
+
+  $('.slider_wrap #next').click(function () {
+    skills_slider.goToNextSlide();
+  });
+});
 
 
 

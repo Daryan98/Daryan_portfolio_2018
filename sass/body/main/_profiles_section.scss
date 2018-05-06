@@ -1,6 +1,9 @@
 section#profiles_section {
     width: 100%;
-    background: linear-gradient(to right bottom, rgba($primary-color, .8), rgba($secondary-color, .8));
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($primary-color, 0.6)), to(rgba($secondary-color, 0.6))), url(../img/random.jpg);
+    background-image: linear-gradient(to right bottom, rgba($primary-color, 0.8), rgba($secondary-color, 0.8)), url(../img/random.jpg);
+    background-size: cover;
+    background-attachment: fixed;    
     padding: 120px 160px;
     -webkit-transform: skewY(-4deg);
     transform: skewY(-4deg);
@@ -25,11 +28,14 @@ section#profiles_section {
                 border-bottom: 0;
                 width: 100%; // margin-left: 15%;
                 position: relative;
+                margin-top: 20px;
+                margin-bottom: 20px;
                 li.box {
                     position: relative;
                     list-style: none;
-                    width: 100%; // padding: 10px;
-                    margin: 30px 0px;
+                    width: 100%; 
+                    height: 100%;
+                    
                     height: 350px;
                     div.content {
                         padding: 20px;
@@ -94,16 +100,11 @@ section#profiles_section {
                     }
                 }
             }
-            ul.lSPager.lSpg {
-                height: 70px;
-                line-height: 70px;
-            }
+          
             .lSSlideOuter .lSPager.lSpg li:hover,
             .lSSlideOuter .lSPager.lSpg li.active {
                 a {
-                    width: 30px;
-                    height: 30px;
-                    margin-bottom: -4px;
+                    background: $color-secondary-dark;
                 }
                 opacity: 1;
             }
@@ -111,50 +112,22 @@ section#profiles_section {
                 margin-top: 30px;
                 .lSPager.lSpg li {
                     opacity: .5;
-                    margin: 0 3px;
+                    margin: 0 1px;
                     padding: 0 2px;
-                    &:nth-child(1) a {
-                        background-image: url("../../../img/profiles/treehouse.png");
-                        background-size: cover;
-                    }
-                    &:nth-child(2) a {
-                        background-image: url("../../../img/profiles/udemy.jpg");
-                        background-size: cover;
-                    }
-                    &:nth-child(3) a {
-                        background-image: url("../../../img/profiles/codecademy.png");
-                        background-size: cover;
-                    }
-                    &:nth-child(4) a {
-                        background-image: url("../../../img/profiles/freecodecamp.png");
-                        background-size: cover;
-                    }
-                    &:nth-child(5) a {
-                        background-image: url("../../../img/profiles/khanacademy.jpg");
-                        background-size: cover;
-                    }
-                    &:nth-child(6) a {
-                        background-image: url("../../../img/profiles/github.png");
-                        background-size: cover;
-                    }
-                    &:nth-child(7) a {
-                        background-image: url("../../../img/profiles/heroku.png");
-                        background-size: cover;
-                    }
                     a {
-                        width: 22px;
-                        height: 22px;
-                        background-color: white; // background-color: #FFF;
-                        // border-radius: 25%;
-                        // display: inline-block;
-                        // -webkit-box-sizing: border-box;
-                        // -moz-box-sizing: border-box;
-                        // box-sizing: border-box;
-                        // width: 40px;
-                        // height: 2px;
-                        // margin: 0 0px 0 0;
+                        // width: 22px;
+                        // height: 22px;
+                        background-color: white; 
+                        border-radius: 25%;
+                        display: inline-block;
+                        -webkit-box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+                        width: 40px;
+                        height: 2px;
+                        margin: 0 ;
                         // background-color: rgba(#fff, 0.1);
-                        // transition: all .3s;
+                        transition: all .3s;
                     }
                 }
             }
@@ -165,16 +138,16 @@ section#profiles_section {
             span#next,
             span#prev {
                 background: rgba($white-color, .85);
-                height: 40px;
-                width: 40px;
+                height: 35px;
+                width: 35px;
                 text-align: center;
-                line-height: 36px;
+                line-height: 27px;
                 border-radius: 50%;
                 position: absolute;
                 z-index: 1000;
                 text-decoration: none;
                 color: $primary-color;
-                font-size: 33px;
+                font-size: 29px;
                 cursor: pointer;
                 &:hover {
                     color: $color-secondary-dark;
@@ -183,24 +156,24 @@ section#profiles_section {
             }
             span#prev {
                 margin-right: 3px;
-                left: -1%;
+                left: -3px;
                 top: 50%;
                 transform: translateY(-50%);
                 transition: all .3s;
                 &:hover {
                     background: rgba($white-color, 1);
-                    left: -1.5%;
+                    left: -8px;
                 }
             }
             span#next {
                 margin-left: 3px;
-                right: -1%;
+                right: -3px;
                 top: 50%;
                 transform: translateY(-50%);
                 transition: all .3s;
                 &:hover {
                     background: rgba($white-color, 1);
-                    right: -1.5%;
+                    right: -8px;
                 }
             }
         }

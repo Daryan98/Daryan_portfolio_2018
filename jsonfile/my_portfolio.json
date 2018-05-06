@@ -227,13 +227,13 @@
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
         {
-            "id": "p16",
-            "name": "Calc Power Game",
-            "website_url": "https://daryan98.github.io/powerGame/",
-            "github_url": "https://github.com/Daryan98/powerGame",
-            "img_avatar_small": "img/projects/project_16.png",
-            "img_avatar_big": "img/projects/project_16.png",
-            "used_languges": "Html, CSS, JavaScript, Dom",
+            "id": "p22",
+            "name": "Omni Food Buisness Website",
+            "website_url": "https://daryan98.github.io/Omni-Food/",
+            "github_url": "https://github.com/Daryan98/Omni-Food",
+            "img_avatar_small": "img/projects/project_22.jpg",
+            "img_avatar_big": "img/projects/project_22_big.jpg",
+            "used_languges": "Html, CSS, BootStrap, JavaScript",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
         {
@@ -287,13 +287,13 @@
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         },
         {
-            "id": "p22",
-            "name": "Omni Food Buisness Website",
-            "website_url": "https://daryan98.github.io/Omni-Food/",
-            "github_url": "https://github.com/Daryan98/Omni-Food",
-            "img_avatar_small": "img/projects/project_22.jpg",
-            "img_avatar_big": "img/projects/project_22_big.jpg",
-            "used_languges": "Html, CSS, BootStrap, JavaScript",
+            "id": "p16",
+            "name": "Calc Power Game",
+            "website_url": "https://daryan98.github.io/powerGame/",
+            "github_url": "https://github.com/Daryan98/powerGame",
+            "img_avatar_small": "img/projects/project_16.png",
+            "img_avatar_big": "img/projects/project_16.png",
+            "used_languges": "Html, CSS, JavaScript, Dom",
             "paragraph": "lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione laborum! Quisquam harum rem vitae reprehenderit cum quae nobis dolorum, sit eaque adipisci? Sit deserunt explicabo perspiciatis, amet delectus odio"
         }
     ]
