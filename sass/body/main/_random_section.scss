@@ -22,7 +22,7 @@ section#random_section {
             width: 35px;
             height: 35px;
             text-align: center;
-            line-height: 27px;
+            line-height: 29px;
             display: flex;
             justify-content: center;
             border-radius: 50%;
@@ -53,6 +53,9 @@ section#random_section {
                 right: -17px; // margin-top: -34px;
                 top: 50%; // line-height: 100%;
                 transform: translateY(-50%);
+            }
+            &.hide {
+                opacity: 0;
             }
         }
         div.all_cards {

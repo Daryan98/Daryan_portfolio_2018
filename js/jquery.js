@@ -83,6 +83,7 @@ $(document).ready(function () {
     item: 4,
     loop: false,
     slideMove: 1,
+    
     slideMargin: 10,
     easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
     speed: 600,
@@ -154,10 +155,10 @@ $(document).ready(function () {
   var slider = $('.skills ul.developemnt_skill').lightSlider({
     item: 5,
     loop: false,
-    // slideMove:1,
+    slideMove:1,
     easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-    speed: 600,
 
+    speed: 600,
     responsive: [{
         breakpoint: 1200,
         settings: {
@@ -190,7 +191,8 @@ $(document).ready(function () {
       }
     ]
   });
-  $('.slider_wrap #prev').click(function () {
+
+  $('.slider_wrap # prev ').click(function () {
     slider.goToPrevSlide();
   });
 
@@ -204,12 +206,11 @@ $(document).ready(function () {
   var skills_slider = $('.skills ul.design_skill').lightSlider({
     item: 3,
     loop: false,
-    slideMove:1,
+    slideMove: 1,
     easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
     speed: 600,
 
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 680,
         settings: {
           item: 2,
@@ -251,29 +252,29 @@ $(document).ready(function () {
     loop: false,
     pager: true,
     responsive: [{
-      breakpoint: 1300,
-      settings: {
-        item: 3,
-        slideMove: 1,
-        slideMargin: 6,
+        breakpoint: 1300,
+        settings: {
+          item: 3,
+          slideMove: 1,
+          slideMargin: 6,
+        }
+      },
+      {
+        breakpoint: 1035,
+        settings: {
+          item: 2,
+          slideMove: 1,
+          slideMargin: 6,
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          item: 1,
+          slideMove: 1
+        }
       }
-    },
-    {
-      breakpoint: 1035,
-      settings: {
-        item: 2,
-        slideMove: 1,
-        slideMargin: 6,
-      }
-    },
-    {
-      breakpoint: 550,
-      settings: {
-        item: 1,
-        slideMove: 1
-      }
-    }
-  ]
+    ]
 
   });
   $('#profiles_section #prev').click(function () {

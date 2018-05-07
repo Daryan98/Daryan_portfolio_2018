@@ -4,7 +4,24 @@ window.addEventListener("load", ()=> {
     const loader = document.querySelector("div#loader-wrapper");
     loader.classList.add("loaded")
 })
-  
+
+/////////////////////////////////
+// Random section
+/////////////////////////////////
+    const first_card = document.querySelector(".card.card_1.lslide.active");
+
+    const prev_arrow = document.querySelector("span#prev");
+
+    if(first_card){
+        prev_arrow.classList.add("hide");
+        console.log("have");
+    }else if(!first_card) {
+        prev_arrow.classList.remove("hide");
+        console.log("!have");
+        
+    }
+
+
   
   ////////////////////////////////////////////////////////
   /////////// Skills Section Add Active class to every circle when ever i click

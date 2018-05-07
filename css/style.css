@@ -540,7 +540,7 @@ section#random_section {
       width: 35px;
       height: 35px;
       text-align: center;
-      line-height: 27px;
+      line-height: 29px;
       display: flex;
       justify-content: center;
       border-radius: 50%;
@@ -566,6 +566,8 @@ section#random_section {
         right: -17px;
         top: 50%;
         transform: translateY(-50%); }
+      section#random_section div.slider_wrap span.hide {
+        opacity: 0; }
     section#random_section div.slider_wrap div.all_cards {
       width: 50%;
       height: 300px;
@@ -992,7 +994,7 @@ section#profiles_section {
         height: 35px;
         width: 35px;
         text-align: center;
-        line-height: 27px;
+        line-height: 29px;
         border-radius: 50%;
         position: absolute;
         z-index: 1000;
@@ -1034,7 +1036,7 @@ section#projects_section {
   width: 100%;
   padding: 70px; }
   section#projects_section div.container {
-    padding: 0; }
+    width: 100%; }
     section#projects_section div.container h1 {
       margin-top: 0;
       padding-top: 0;
@@ -1048,7 +1050,7 @@ section#projects_section {
       margin-bottom: 0; }
     section#projects_section div.container p.sub-header {
       text-align: center;
-      width: 400px;
+      max-width: 400px;
       margin: 0 auto;
       margin-top: 20px; }
       section#projects_section div.container p.sub-header a {
@@ -1061,16 +1063,15 @@ section#projects_section {
       margin-top: 60px;
       width: 100%; }
       section#projects_section div.container div.all_projects ul {
-        display: -ms-flexbox;
-        -ms-flex-wrap: wrap;
-        -ms-flex-direction: column;
-        -webkit-flex-flow: row wrap;
-        flex-flow: row wrap;
-        display: -webkit-box;
-        display: flex;
         justify-content: center;
-        float: left; }
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap; }
         section#projects_section div.container div.all_projects ul li {
+          width: 250px;
           height: 128px;
           line-height: 140px;
           margin: 0 1%;
@@ -1569,6 +1570,10 @@ footer {
     height: 22px;
     border-radius: 50%;
     background-color: white; } }
+
+@media only screen and (max-width: 430px) {
+  section#projects_section {
+    padding: 70px 0; } }
 
 @media only screen and (max-width: 650px) {
   section#conatct_section div.container div.contact_box div.contact_form {

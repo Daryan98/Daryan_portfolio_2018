@@ -3,14 +3,15 @@ section#projects_section {
     width: 100%;
     padding: 70px;
     div.container {
-        padding: 0;
+        width: 100%;
+        // margin: 0 50px;
         h1 {
             @include header_white_background;
             margin-bottom: 0;
         }
         p.sub-header {
             text-align: center;
-            width: 400px;
+            max-width: 400px;
             margin: 0 auto;
             margin-top: 20px;
             a {
@@ -31,19 +32,15 @@ section#projects_section {
                 // justify-content: space-around;
                 // width: 100%;
                 // display: flex;
-                // justify-content: space-between;
-               
-                display: -ms-flexbox;
-                -ms-flex-wrap: wrap;
-                -ms-flex-direction: column;
-                -webkit-flex-flow: row wrap; 
-                flex-flow: row wrap; 
-                display: -webkit-box;
-                display: flex;
                 justify-content: center;
-                float: left;
+               
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+              
                 li {
-                 
+                    width: 250px;
                     height: 128px;
                     line-height: 140px;
                     margin: 0 1%;
